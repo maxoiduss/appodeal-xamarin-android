@@ -2,3 +2,7 @@ F:\Appodeal\AppodealXamarinPlugin\AppodealXamarinPlugin\AppodealXamarinPlugin\bi
 F:\Appodeal\AppodealXamarinPlugin\AppodealXamarinPlugin\AppodealXamarinPlugin\bin\Release\AppodealXamarinPlugin.pdb
 F:\Appodeal\AppodealXamarinPlugin\AppodealXamarinPlugin\AppodealXamarinPlugin\obj\Release\AppodealXamarinPlugin.dll
 F:\Appodeal\AppodealXamarinPlugin\AppodealXamarinPlugin\AppodealXamarinPlugin\obj\Release\AppodealXamarinPlugin.pdb
+F:\Appodeal\AppodealXamarinPlugin\AppodealXamarinPlugin\bin\Release\AppodealXamarinPlugin.dll
+F:\Appodeal\AppodealXamarinPlugin\AppodealXamarinPlugin\bin\Release\AppodealXamarinPlugin.pdb
+F:\Appodeal\AppodealXamarinPlugin\AppodealXamarinPlugin\obj\Release\AppodealXamarinPlugin.dll
+F:\Appodeal\AppodealXamarinPlugin\AppodealXamarinPlugin\obj\Release\AppodealXamarinPlugin.pdb
