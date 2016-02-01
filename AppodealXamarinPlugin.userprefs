@@ -1,10 +1,9 @@
-﻿<Properties StartupItem="AppodealXamarinPlugin\AppodealXamarinPlugin.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="Android.4" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AppodealXamarinPlugin\Properties\AssemblyInfo.cs">
+﻿<Properties StartupItem="AppodealXamarinPlugin.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="Android.079b94012133018d" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="obj\Release\generated\src\Com.Appodeal.Ads.Appodeal.cs">
     <Files>
-      <File FileName="AppodealXamarinPlugin\obj\Release\generated\src\Com.Appodeal.Ads.Appodeal.cs" Line="518" Column="9" />
-      <File FileName="AppodealXamarinPlugin\obj\Release\generated\src\__NamespaceMapping__.cs" Line="1" Column="1" />
-      <File FileName="AppodealXamarinPlugin\Properties\AssemblyInfo.cs" Line="21" Column="36" />
+      <File FileName="obj\Release\generated\src\Com.Appodeal.Ads.Appodeal.cs" Line="1" Column="1" />
+      <File FileName="obj\Release\generated\src\Com.Appodeal.Ads.UserSettings.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

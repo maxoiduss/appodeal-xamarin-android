@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppodealXamarinPlugin", "AppodealXamarinPlugin\AppodealXamarinPlugin.csproj", "{A6E15B7A-8273-4FDF-A279-D0BE26B70848}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppodealXamarinPlugin", "AppodealXamarinPlugin.csproj", "{A6E15B7A-8273-4FDF-A279-D0BE26B70848}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
