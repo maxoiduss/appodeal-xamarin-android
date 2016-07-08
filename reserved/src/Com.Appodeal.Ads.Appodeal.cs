@@ -139,6 +139,23 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
+		static IntPtr id_a_Landroid_content_Context_I;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='a' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int']]"
+		[Register ("a", "(Landroid/content/Context;I)Ljava/util/List;", "")]
+		public static unsafe global::System.Collections.Generic.IList<string> A (global::Android.Content.Context p0, int p1)
+		{
+			if (id_a_Landroid_content_Context_I == IntPtr.Zero)
+				id_a_Landroid_content_Context_I = JNIEnv.GetStaticMethodID (class_ref, "a", "(Landroid/content/Context;I)Ljava/util/List;");
+			try {
+				JValue* __args = stackalloc JValue [2];
+				__args [0] = new JValue (p0);
+				__args [1] = new JValue (p1);
+				global::System.Collections.Generic.IList<string> __ret = global::Android.Runtime.JavaList<string>.FromJniHandle (JNIEnv.CallStaticObjectMethod  (class_ref, id_a_Landroid_content_Context_I, __args), JniHandleOwnership.TransferLocalRef);
+				return __ret;
+			} finally {
+			}
+		}
+
 		static IntPtr id_a_Ljava_lang_Error_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='a' and count(parameter)=1 and parameter[1][@type='java.lang.Error']]"
 		[Register ("a", "(Ljava/lang/Error;)V", "")]
@@ -299,6 +316,19 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
+		static IntPtr id_disableWriteExternalStoragePermissionCheck;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='disableWriteExternalStoragePermissionCheck' and count(parameter)=0]"
+		[Register ("disableWriteExternalStoragePermissionCheck", "()V", "")]
+		public static unsafe void DisableWriteExternalStoragePermissionCheck ()
+		{
+			if (id_disableWriteExternalStoragePermissionCheck == IntPtr.Zero)
+				id_disableWriteExternalStoragePermissionCheck = JNIEnv.GetStaticMethodID (class_ref, "disableWriteExternalStoragePermissionCheck", "()V");
+			try {
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_disableWriteExternalStoragePermissionCheck);
+			} finally {
+			}
+		}
+
 		static IntPtr id_getBannerView_Landroid_app_Activity_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='getBannerView' and count(parameter)=1 and parameter[1][@type='android.app.Activity']]"
 		[Register ("getBannerView", "(Landroid/app/Activity;)Lcom/appodeal/ads/BannerView;", "")]
@@ -397,21 +427,6 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
-		static IntPtr id_isLoadedWithPriceFloor_I;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='isLoadedWithPriceFloor' and count(parameter)=1 and parameter[1][@type='int']]"
-		[Register ("isLoadedWithPriceFloor", "(I)Z", "")]
-		public static unsafe bool IsLoadedWithPriceFloor (int p0)
-		{
-			if (id_isLoadedWithPriceFloor_I == IntPtr.Zero)
-				id_isLoadedWithPriceFloor_I = JNIEnv.GetStaticMethodID (class_ref, "isLoadedWithPriceFloor", "(I)Z");
-			try {
-				JValue* __args = stackalloc JValue [1];
-				__args [0] = new JValue (p0);
-				return JNIEnv.CallStaticBooleanMethod  (class_ref, id_isLoadedWithPriceFloor_I, __args);
-			} finally {
-			}
-		}
-
 		static IntPtr id_isPrecache_I;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='isPrecache' and count(parameter)=1 and parameter[1][@type='int']]"
 		[Register ("isPrecache", "(I)Z", "")]
@@ -439,6 +454,37 @@ namespace Com.Appodeal.Ads {
 				__args [0] = new JValue (p0);
 				__args [1] = new JValue (p1);
 				JNIEnv.CallStaticVoidMethod  (class_ref, id_onResume_Landroid_app_Activity_I, __args);
+			} finally {
+			}
+		}
+
+		static IntPtr id_requestAndroidMPermissions_Landroid_app_Activity_Lcom_appodeal_ads_utils_PermissionsHelper_AppodealPermissionCallbacks_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='requestAndroidMPermissions' and count(parameter)=2 and parameter[1][@type='android.app.Activity'] and parameter[2][@type='com.appodeal.ads.utils.PermissionsHelper.AppodealPermissionCallbacks']]"
+		[Register ("requestAndroidMPermissions", "(Landroid/app/Activity;Lcom/appodeal/ads/utils/PermissionsHelper$AppodealPermissionCallbacks;)V", "")]
+		public static unsafe void RequestAndroidMPermissions (global::Android.App.Activity p0, global::Com.Appodeal.Ads.Utils.PermissionsHelper.IAppodealPermissionCallbacks p1)
+		{
+			if (id_requestAndroidMPermissions_Landroid_app_Activity_Lcom_appodeal_ads_utils_PermissionsHelper_AppodealPermissionCallbacks_ == IntPtr.Zero)
+				id_requestAndroidMPermissions_Landroid_app_Activity_Lcom_appodeal_ads_utils_PermissionsHelper_AppodealPermissionCallbacks_ = JNIEnv.GetStaticMethodID (class_ref, "requestAndroidMPermissions", "(Landroid/app/Activity;Lcom/appodeal/ads/utils/PermissionsHelper$AppodealPermissionCallbacks;)V");
+			try {
+				JValue* __args = stackalloc JValue [2];
+				__args [0] = new JValue (p0);
+				__args [1] = new JValue (p1);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_requestAndroidMPermissions_Landroid_app_Activity_Lcom_appodeal_ads_utils_PermissionsHelper_AppodealPermissionCallbacks_, __args);
+			} finally {
+			}
+		}
+
+		static IntPtr id_set728x90Banners_Z;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='set728x90Banners' and count(parameter)=1 and parameter[1][@type='boolean']]"
+		[Register ("set728x90Banners", "(Z)V", "")]
+		public static unsafe void Set728x90Banners (bool p0)
+		{
+			if (id_set728x90Banners_Z == IntPtr.Zero)
+				id_set728x90Banners_Z = JNIEnv.GetStaticMethodID (class_ref, "set728x90Banners", "(Z)V");
+			try {
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue (p0);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_set728x90Banners_Z, __args);
 			} finally {
 			}
 		}
@@ -699,6 +745,21 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
+		static IntPtr id_setRequestCallbacks_Lcom_appodeal_ads_AppodealRequestCallbacks_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setRequestCallbacks' and count(parameter)=1 and parameter[1][@type='com.appodeal.ads.AppodealRequestCallbacks']]"
+		[Register ("setRequestCallbacks", "(Lcom/appodeal/ads/AppodealRequestCallbacks;)V", "")]
+		public static unsafe void SetRequestCallbacks (global::Com.Appodeal.Ads.IAppodealRequestCallbacks p0)
+		{
+			if (id_setRequestCallbacks_Lcom_appodeal_ads_AppodealRequestCallbacks_ == IntPtr.Zero)
+				id_setRequestCallbacks_Lcom_appodeal_ads_AppodealRequestCallbacks_ = JNIEnv.GetStaticMethodID (class_ref, "setRequestCallbacks", "(Lcom/appodeal/ads/AppodealRequestCallbacks;)V");
+			try {
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue (p0);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_setRequestCallbacks_Lcom_appodeal_ads_AppodealRequestCallbacks_, __args);
+			} finally {
+			}
+		}
+
 		static IntPtr id_setRewardedVideoCallbacks_Lcom_appodeal_ads_RewardedVideoCallbacks_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setRewardedVideoCallbacks' and count(parameter)=1 and parameter[1][@type='com.appodeal.ads.RewardedVideoCallbacks']]"
 		[Register ("setRewardedVideoCallbacks", "(Lcom/appodeal/ads/RewardedVideoCallbacks;)V", "")]
@@ -725,6 +786,21 @@ namespace Com.Appodeal.Ads {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
 				JNIEnv.CallStaticVoidMethod  (class_ref, id_setSkippableVideoCallbacks_Lcom_appodeal_ads_SkippableVideoCallbacks_, __args);
+			} finally {
+			}
+		}
+
+		static IntPtr id_setSmartBanners_Z;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setSmartBanners' and count(parameter)=1 and parameter[1][@type='boolean']]"
+		[Register ("setSmartBanners", "(Z)V", "")]
+		public static unsafe void SetSmartBanners (bool p0)
+		{
+			if (id_setSmartBanners_Z == IntPtr.Zero)
+				id_setSmartBanners_Z = JNIEnv.GetStaticMethodID (class_ref, "setSmartBanners", "(Z)V");
+			try {
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue (p0);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_setSmartBanners_Z, __args);
 			} finally {
 			}
 		}
@@ -761,20 +837,23 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
-		static IntPtr id_showWithPriceFloor_Landroid_app_Activity_I;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='showWithPriceFloor' and count(parameter)=2 and parameter[1][@type='android.app.Activity'] and parameter[2][@type='int']]"
-		[Register ("showWithPriceFloor", "(Landroid/app/Activity;I)Z", "")]
-		public static unsafe bool ShowWithPriceFloor (global::Android.App.Activity p0, int p1)
+		static IntPtr id_show_Landroid_app_Activity_ILjava_lang_String_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='show' and count(parameter)=3 and parameter[1][@type='android.app.Activity'] and parameter[2][@type='int'] and parameter[3][@type='java.lang.String']]"
+		[Register ("show", "(Landroid/app/Activity;ILjava/lang/String;)Z", "")]
+		public static unsafe bool Show (global::Android.App.Activity p0, int p1, string p2)
 		{
-			if (id_showWithPriceFloor_Landroid_app_Activity_I == IntPtr.Zero)
-				id_showWithPriceFloor_Landroid_app_Activity_I = JNIEnv.GetStaticMethodID (class_ref, "showWithPriceFloor", "(Landroid/app/Activity;I)Z");
+			if (id_show_Landroid_app_Activity_ILjava_lang_String_ == IntPtr.Zero)
+				id_show_Landroid_app_Activity_ILjava_lang_String_ = JNIEnv.GetStaticMethodID (class_ref, "show", "(Landroid/app/Activity;ILjava/lang/String;)Z");
+			IntPtr native_p2 = JNIEnv.NewString (p2);
 			try {
-				JValue* __args = stackalloc JValue [2];
+				JValue* __args = stackalloc JValue [3];
 				__args [0] = new JValue (p0);
 				__args [1] = new JValue (p1);
-				bool __ret = JNIEnv.CallStaticBooleanMethod  (class_ref, id_showWithPriceFloor_Landroid_app_Activity_I, __args);
+				__args [2] = new JValue (native_p2);
+				bool __ret = JNIEnv.CallStaticBooleanMethod  (class_ref, id_show_Landroid_app_Activity_ILjava_lang_String_, __args);
 				return __ret;
 			} finally {
+				JNIEnv.DeleteLocalRef (native_p2);
 			}
 		}
 
