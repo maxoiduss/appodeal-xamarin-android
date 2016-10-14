@@ -33,18 +33,21 @@ namespace Com.Appodeal.Ads {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='AppodealSettings']/field[@name='c']"
 		[Register ("c")]
-		public static bool C {
+		public static global::Com.Appodeal.Ads.Utils.Log.LogLevel C {
 			get {
 				if (c_jfieldId == IntPtr.Zero)
-					c_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "c", "Z");
-				return JNIEnv.GetStaticBooleanField (class_ref, c_jfieldId);
+					c_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "c", "Lcom/appodeal/ads/utils/Log$LogLevel;");
+				IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, c_jfieldId);
+				return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.Utils.Log.LogLevel> (__ret, JniHandleOwnership.TransferLocalRef);
 			}
 			set {
 				if (c_jfieldId == IntPtr.Zero)
-					c_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "c", "Z");
+					c_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "c", "Lcom/appodeal/ads/utils/Log$LogLevel;");
+				IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
 				try {
-					JNIEnv.SetStaticField (class_ref, c_jfieldId, value);
+					JNIEnv.SetStaticField (class_ref, c_jfieldId, native_value);
 				} finally {
+					JNIEnv.DeleteLocalRef (native_value);
 				}
 			}
 		}
@@ -188,6 +191,86 @@ namespace Com.Appodeal.Ads {
 				}
 			}
 		}
+
+		static IntPtr k_jfieldId;
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='AppodealSettings']/field[@name='k']"
+		[Register ("k")]
+		public static bool K {
+			get {
+				if (k_jfieldId == IntPtr.Zero)
+					k_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "k", "Z");
+				return JNIEnv.GetStaticBooleanField (class_ref, k_jfieldId);
+			}
+			set {
+				if (k_jfieldId == IntPtr.Zero)
+					k_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "k", "Z");
+				try {
+					JNIEnv.SetStaticField (class_ref, k_jfieldId, value);
+				} finally {
+				}
+			}
+		}
+
+		static IntPtr l_jfieldId;
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='AppodealSettings']/field[@name='l']"
+		[Register ("l")]
+		public static bool L {
+			get {
+				if (l_jfieldId == IntPtr.Zero)
+					l_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "l", "Z");
+				return JNIEnv.GetStaticBooleanField (class_ref, l_jfieldId);
+			}
+			set {
+				if (l_jfieldId == IntPtr.Zero)
+					l_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "l", "Z");
+				try {
+					JNIEnv.SetStaticField (class_ref, l_jfieldId, value);
+				} finally {
+				}
+			}
+		}
+
+		static IntPtr m_jfieldId;
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='AppodealSettings']/field[@name='m']"
+		[Register ("m")]
+		public static bool M {
+			get {
+				if (m_jfieldId == IntPtr.Zero)
+					m_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "m", "Z");
+				return JNIEnv.GetStaticBooleanField (class_ref, m_jfieldId);
+			}
+			set {
+				if (m_jfieldId == IntPtr.Zero)
+					m_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "m", "Z");
+				try {
+					JNIEnv.SetStaticField (class_ref, m_jfieldId, value);
+				} finally {
+				}
+			}
+		}
+
+		static IntPtr n_jfieldId;
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='AppodealSettings']/field[@name='n']"
+		[Register ("n")]
+		public static bool N {
+			get {
+				if (n_jfieldId == IntPtr.Zero)
+					n_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "n", "Z");
+				return JNIEnv.GetStaticBooleanField (class_ref, n_jfieldId);
+			}
+			set {
+				if (n_jfieldId == IntPtr.Zero)
+					n_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "n", "Z");
+				try {
+					JNIEnv.SetStaticField (class_ref, n_jfieldId, value);
+				} finally {
+				}
+			}
+		}
 		internal static IntPtr java_class_handle;
 		internal static IntPtr class_ref {
 			get {
@@ -245,6 +328,19 @@ namespace Com.Appodeal.Ads {
 				__args [0] = new JValue (p0);
 				int __ret = JNIEnv.CallStaticIntMethod  (class_ref, id_a_Ljava_lang_Integer_, __args);
 				return __ret;
+			} finally {
+			}
+		}
+
+		static IntPtr id_disableWebViewCacheClear;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='AppodealSettings']/method[@name='disableWebViewCacheClear' and count(parameter)=0]"
+		[Register ("disableWebViewCacheClear", "()V", "")]
+		public static unsafe void DisableWebViewCacheClear ()
+		{
+			if (id_disableWebViewCacheClear == IntPtr.Zero)
+				id_disableWebViewCacheClear = JNIEnv.GetStaticMethodID (class_ref, "disableWebViewCacheClear", "()V");
+			try {
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_disableWebViewCacheClear);
 			} finally {
 			}
 		}

@@ -58,6 +58,10 @@ namespace Com.Appodeal.Ads {
 			[Register ("getTitle", "()Ljava/lang/String;", "GetGetTitleHandler:Com.Appodeal.Ads.INativeAdInvoker, AppodealXamarinPlugin")] get;
 		}
 
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/interface[@name='NativeAd']/method[@name='containsVideo' and count(parameter)=0]"
+		[Register ("containsVideo", "()Z", "GetContainsVideoHandler:Com.Appodeal.Ads.INativeAdInvoker, AppodealXamarinPlugin")]
+		bool ContainsVideo ();
+
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/interface[@name='NativeAd']/method[@name='getProviderView' and count(parameter)=1 and parameter[1][@type='android.content.Context']]"
 		[Register ("getProviderView", "(Landroid/content/Context;)Landroid/view/View;", "GetGetProviderView_Landroid_content_Context_Handler:Com.Appodeal.Ads.INativeAdInvoker, AppodealXamarinPlugin")]
 		global::Android.Views.View GetProviderView (global::Android.Content.Context p0);
@@ -65,6 +69,10 @@ namespace Com.Appodeal.Ads {
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/interface[@name='NativeAd']/method[@name='registerViewForInteraction' and count(parameter)=1 and parameter[1][@type='android.view.View']]"
 		[Register ("registerViewForInteraction", "(Landroid/view/View;)V", "GetRegisterViewForInteraction_Landroid_view_View_Handler:Com.Appodeal.Ads.INativeAdInvoker, AppodealXamarinPlugin")]
 		void RegisterViewForInteraction (global::Android.Views.View p0);
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/interface[@name='NativeAd']/method[@name='setAppodealMediaView' and count(parameter)=1 and parameter[1][@type='com.appodeal.ads.AppodealMediaView']]"
+		[Register ("setAppodealMediaView", "(Lcom/appodeal/ads/AppodealMediaView;)V", "GetSetAppodealMediaView_Lcom_appodeal_ads_AppodealMediaView_Handler:Com.Appodeal.Ads.INativeAdInvoker, AppodealXamarinPlugin")]
+		void SetAppodealMediaView (global::Com.Appodeal.Ads.AppodealMediaView p0);
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/interface[@name='NativeAd']/method[@name='unregisterViewForInteraction' and count(parameter)=0]"
 		[Register ("unregisterViewForInteraction", "()V", "GetUnregisterViewForInteractionHandler:Com.Appodeal.Ads.INativeAdInvoker, AppodealXamarinPlugin")]
@@ -76,15 +84,6 @@ namespace Com.Appodeal.Ads {
 	internal class INativeAdInvoker : global::Java.Lang.Object, INativeAd {
 
 		static IntPtr java_class_ref = JNIEnv.FindClass ("com/appodeal/ads/NativeAd");
-
-		protected override IntPtr ThresholdClass {
-			get { return class_ref; }
-		}
-
-		protected override global::System.Type ThresholdType {
-			get { return typeof (INativeAdInvoker); }
-		}
-
 		IntPtr class_ref;
 
 		public static INativeAd GetObject (IntPtr handle, JniHandleOwnership transfer)
@@ -113,6 +112,14 @@ namespace Com.Appodeal.Ads {
 			IntPtr local_ref = JNIEnv.GetObjectClass (Handle);
 			this.class_ref = JNIEnv.NewGlobalRef (local_ref);
 			JNIEnv.DeleteLocalRef (local_ref);
+		}
+
+		protected override IntPtr ThresholdClass {
+			get { return class_ref; }
+		}
+
+		protected override global::System.Type ThresholdType {
+			get { return typeof (INativeAdInvoker); }
 		}
 
 		static Delegate cb_getAdProvider;
@@ -365,6 +372,30 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
+		static Delegate cb_containsVideo;
+#pragma warning disable 0169
+		static Delegate GetContainsVideoHandler ()
+		{
+			if (cb_containsVideo == null)
+				cb_containsVideo = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, bool>) n_ContainsVideo);
+			return cb_containsVideo;
+		}
+
+		static bool n_ContainsVideo (IntPtr jnienv, IntPtr native__this)
+		{
+			global::Com.Appodeal.Ads.INativeAd __this = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.INativeAd> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			return __this.ContainsVideo ();
+		}
+#pragma warning restore 0169
+
+		IntPtr id_containsVideo;
+		public unsafe bool ContainsVideo ()
+		{
+			if (id_containsVideo == IntPtr.Zero)
+				id_containsVideo = JNIEnv.GetMethodID (class_ref, "containsVideo", "()Z");
+			return JNIEnv.CallBooleanMethod (Handle, id_containsVideo);
+		}
+
 		static Delegate cb_getProviderView_Landroid_content_Context_;
 #pragma warning disable 0169
 		static Delegate GetGetProviderView_Landroid_content_Context_Handler ()
@@ -419,6 +450,33 @@ namespace Com.Appodeal.Ads {
 			JValue* __args = stackalloc JValue [1];
 			__args [0] = new JValue (p0);
 			JNIEnv.CallVoidMethod (Handle, id_registerViewForInteraction_Landroid_view_View_, __args);
+		}
+
+		static Delegate cb_setAppodealMediaView_Lcom_appodeal_ads_AppodealMediaView_;
+#pragma warning disable 0169
+		static Delegate GetSetAppodealMediaView_Lcom_appodeal_ads_AppodealMediaView_Handler ()
+		{
+			if (cb_setAppodealMediaView_Lcom_appodeal_ads_AppodealMediaView_ == null)
+				cb_setAppodealMediaView_Lcom_appodeal_ads_AppodealMediaView_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_SetAppodealMediaView_Lcom_appodeal_ads_AppodealMediaView_);
+			return cb_setAppodealMediaView_Lcom_appodeal_ads_AppodealMediaView_;
+		}
+
+		static void n_SetAppodealMediaView_Lcom_appodeal_ads_AppodealMediaView_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		{
+			global::Com.Appodeal.Ads.INativeAd __this = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.INativeAd> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::Com.Appodeal.Ads.AppodealMediaView p0 = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.AppodealMediaView> (native_p0, JniHandleOwnership.DoNotTransfer);
+			__this.SetAppodealMediaView (p0);
+		}
+#pragma warning restore 0169
+
+		IntPtr id_setAppodealMediaView_Lcom_appodeal_ads_AppodealMediaView_;
+		public unsafe void SetAppodealMediaView (global::Com.Appodeal.Ads.AppodealMediaView p0)
+		{
+			if (id_setAppodealMediaView_Lcom_appodeal_ads_AppodealMediaView_ == IntPtr.Zero)
+				id_setAppodealMediaView_Lcom_appodeal_ads_AppodealMediaView_ = JNIEnv.GetMethodID (class_ref, "setAppodealMediaView", "(Lcom/appodeal/ads/AppodealMediaView;)V");
+			JValue* __args = stackalloc JValue [1];
+			__args [0] = new JValue (p0);
+			JNIEnv.CallVoidMethod (Handle, id_setAppodealMediaView_Lcom_appodeal_ads_AppodealMediaView_, __args);
 		}
 
 		static Delegate cb_unregisterViewForInteraction;

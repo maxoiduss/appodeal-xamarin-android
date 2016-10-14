@@ -30,15 +30,6 @@ namespace Com.Appodeal.Ads {
 	internal class INativeCallbacksInvoker : global::Java.Lang.Object, INativeCallbacks {
 
 		static IntPtr java_class_ref = JNIEnv.FindClass ("com/appodeal/ads/NativeCallbacks");
-
-		protected override IntPtr ThresholdClass {
-			get { return class_ref; }
-		}
-
-		protected override global::System.Type ThresholdType {
-			get { return typeof (INativeCallbacksInvoker); }
-		}
-
 		IntPtr class_ref;
 
 		public static INativeCallbacks GetObject (IntPtr handle, JniHandleOwnership transfer)
@@ -67,6 +58,14 @@ namespace Com.Appodeal.Ads {
 			IntPtr local_ref = JNIEnv.GetObjectClass (Handle);
 			this.class_ref = JNIEnv.NewGlobalRef (local_ref);
 			JNIEnv.DeleteLocalRef (local_ref);
+		}
+
+		protected override IntPtr ThresholdClass {
+			get { return class_ref; }
+		}
+
+		protected override global::System.Type ThresholdType {
+			get { return typeof (INativeCallbacksInvoker); }
 		}
 
 		static Delegate cb_onNativeClicked_Lcom_appodeal_ads_NativeAd_;

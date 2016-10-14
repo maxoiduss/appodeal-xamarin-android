@@ -799,40 +799,6 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
-		static Delegate cb_getFacebookId;
-#pragma warning disable 0169
-		static Delegate GetGetFacebookIdHandler ()
-		{
-			if (cb_getFacebookId == null)
-				cb_getFacebookId = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_GetFacebookId);
-			return cb_getFacebookId;
-		}
-
-		static IntPtr n_GetFacebookId (IntPtr jnienv, IntPtr native__this)
-		{
-			global::Com.Appodeal.Ads.UserSettings __this = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			return JNIEnv.NewString (__this.FacebookId);
-		}
-#pragma warning restore 0169
-
-		static IntPtr id_getFacebookId;
-		public virtual unsafe string FacebookId {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='UserSettings']/method[@name='getFacebookId' and count(parameter)=0]"
-			[Register ("getFacebookId", "()Ljava/lang/String;", "GetGetFacebookIdHandler")]
-			get {
-				if (id_getFacebookId == IntPtr.Zero)
-					id_getFacebookId = JNIEnv.GetMethodID (class_ref, "getFacebookId", "()Ljava/lang/String;");
-				try {
-
-					if (GetType () == ThresholdType)
-						return JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_getFacebookId), JniHandleOwnership.TransferLocalRef);
-					else
-						return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getFacebookId", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
-				} finally {
-				}
-			}
-		}
-
 		static Delegate cb_getInterests;
 #pragma warning disable 0169
 		static Delegate GetGetInterestsHandler ()
@@ -896,40 +862,6 @@ namespace Com.Appodeal.Ads {
 						return JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_getUserId), JniHandleOwnership.TransferLocalRef);
 					else
 						return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getUserId", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
-				} finally {
-				}
-			}
-		}
-
-		static Delegate cb_getVkId;
-#pragma warning disable 0169
-		static Delegate GetGetVkIdHandler ()
-		{
-			if (cb_getVkId == null)
-				cb_getVkId = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_GetVkId);
-			return cb_getVkId;
-		}
-
-		static IntPtr n_GetVkId (IntPtr jnienv, IntPtr native__this)
-		{
-			global::Com.Appodeal.Ads.UserSettings __this = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			return JNIEnv.NewString (__this.VkId);
-		}
-#pragma warning restore 0169
-
-		static IntPtr id_getVkId;
-		public virtual unsafe string VkId {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='UserSettings']/method[@name='getVkId' and count(parameter)=0]"
-			[Register ("getVkId", "()Ljava/lang/String;", "GetGetVkIdHandler")]
-			get {
-				if (id_getVkId == IntPtr.Zero)
-					id_getVkId = JNIEnv.GetMethodID (class_ref, "getVkId", "()Ljava/lang/String;");
-				try {
-
-					if (GetType () == ThresholdType)
-						return JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_getVkId), JniHandleOwnership.TransferLocalRef);
-					else
-						return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getVkId", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
 				} finally {
 				}
 			}
@@ -1256,47 +1188,6 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
-		static Delegate cb_setFacebookId_Ljava_lang_String_;
-#pragma warning disable 0169
-		static Delegate GetSetFacebookId_Ljava_lang_String_Handler ()
-		{
-			if (cb_setFacebookId_Ljava_lang_String_ == null)
-				cb_setFacebookId_Ljava_lang_String_ = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr, IntPtr>) n_SetFacebookId_Ljava_lang_String_);
-			return cb_setFacebookId_Ljava_lang_String_;
-		}
-
-		static IntPtr n_SetFacebookId_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
-		{
-			global::Com.Appodeal.Ads.UserSettings __this = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
-			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.SetFacebookId (p0));
-			return __ret;
-		}
-#pragma warning restore 0169
-
-		static IntPtr id_setFacebookId_Ljava_lang_String_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='UserSettings']/method[@name='setFacebookId' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
-		[Register ("setFacebookId", "(Ljava/lang/String;)Lcom/appodeal/ads/UserSettings;", "GetSetFacebookId_Ljava_lang_String_Handler")]
-		public virtual unsafe global::Com.Appodeal.Ads.UserSettings SetFacebookId (string p0)
-		{
-			if (id_setFacebookId_Ljava_lang_String_ == IntPtr.Zero)
-				id_setFacebookId_Ljava_lang_String_ = JNIEnv.GetMethodID (class_ref, "setFacebookId", "(Ljava/lang/String;)Lcom/appodeal/ads/UserSettings;");
-			IntPtr native_p0 = JNIEnv.NewString (p0);
-			try {
-				JValue* __args = stackalloc JValue [1];
-				__args [0] = new JValue (native_p0);
-
-				global::Com.Appodeal.Ads.UserSettings __ret;
-				if (GetType () == ThresholdType)
-					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallObjectMethod  (Handle, id_setFacebookId_Ljava_lang_String_, __args), JniHandleOwnership.TransferLocalRef);
-				else
-					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setFacebookId", "(Ljava/lang/String;)Lcom/appodeal/ads/UserSettings;"), __args), JniHandleOwnership.TransferLocalRef);
-				return __ret;
-			} finally {
-				JNIEnv.DeleteLocalRef (native_p0);
-			}
-		}
-
 		static Delegate cb_setGender_Lcom_appodeal_ads_UserSettings_Gender_;
 #pragma warning disable 0169
 		static Delegate GetSetGender_Lcom_appodeal_ads_UserSettings_Gender_Handler ()
@@ -1529,47 +1420,6 @@ namespace Com.Appodeal.Ads {
 					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallObjectMethod  (Handle, id_setUserId_Ljava_lang_String_, __args), JniHandleOwnership.TransferLocalRef);
 				else
 					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setUserId", "(Ljava/lang/String;)Lcom/appodeal/ads/UserSettings;"), __args), JniHandleOwnership.TransferLocalRef);
-				return __ret;
-			} finally {
-				JNIEnv.DeleteLocalRef (native_p0);
-			}
-		}
-
-		static Delegate cb_setVkId_Ljava_lang_String_;
-#pragma warning disable 0169
-		static Delegate GetSetVkId_Ljava_lang_String_Handler ()
-		{
-			if (cb_setVkId_Ljava_lang_String_ == null)
-				cb_setVkId_Ljava_lang_String_ = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr, IntPtr>) n_SetVkId_Ljava_lang_String_);
-			return cb_setVkId_Ljava_lang_String_;
-		}
-
-		static IntPtr n_SetVkId_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
-		{
-			global::Com.Appodeal.Ads.UserSettings __this = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
-			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.SetVkId (p0));
-			return __ret;
-		}
-#pragma warning restore 0169
-
-		static IntPtr id_setVkId_Ljava_lang_String_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='UserSettings']/method[@name='setVkId' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
-		[Register ("setVkId", "(Ljava/lang/String;)Lcom/appodeal/ads/UserSettings;", "GetSetVkId_Ljava_lang_String_Handler")]
-		public virtual unsafe global::Com.Appodeal.Ads.UserSettings SetVkId (string p0)
-		{
-			if (id_setVkId_Ljava_lang_String_ == IntPtr.Zero)
-				id_setVkId_Ljava_lang_String_ = JNIEnv.GetMethodID (class_ref, "setVkId", "(Ljava/lang/String;)Lcom/appodeal/ads/UserSettings;");
-			IntPtr native_p0 = JNIEnv.NewString (p0);
-			try {
-				JValue* __args = stackalloc JValue [1];
-				__args [0] = new JValue (native_p0);
-
-				global::Com.Appodeal.Ads.UserSettings __ret;
-				if (GetType () == ThresholdType)
-					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallObjectMethod  (Handle, id_setVkId_Ljava_lang_String_, __args), JniHandleOwnership.TransferLocalRef);
-				else
-					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setVkId", "(Ljava/lang/String;)Lcom/appodeal/ads/UserSettings;"), __args), JniHandleOwnership.TransferLocalRef);
 				return __ret;
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);

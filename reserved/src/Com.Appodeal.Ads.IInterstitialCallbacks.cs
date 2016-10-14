@@ -34,15 +34,6 @@ namespace Com.Appodeal.Ads {
 	internal class IInterstitialCallbacksInvoker : global::Java.Lang.Object, IInterstitialCallbacks {
 
 		static IntPtr java_class_ref = JNIEnv.FindClass ("com/appodeal/ads/InterstitialCallbacks");
-
-		protected override IntPtr ThresholdClass {
-			get { return class_ref; }
-		}
-
-		protected override global::System.Type ThresholdType {
-			get { return typeof (IInterstitialCallbacksInvoker); }
-		}
-
 		IntPtr class_ref;
 
 		public static IInterstitialCallbacks GetObject (IntPtr handle, JniHandleOwnership transfer)
@@ -71,6 +62,14 @@ namespace Com.Appodeal.Ads {
 			IntPtr local_ref = JNIEnv.GetObjectClass (Handle);
 			this.class_ref = JNIEnv.NewGlobalRef (local_ref);
 			JNIEnv.DeleteLocalRef (local_ref);
+		}
+
+		protected override IntPtr ThresholdClass {
+			get { return class_ref; }
+		}
+
+		protected override global::System.Type ThresholdType {
+			get { return typeof (IInterstitialCallbacksInvoker); }
 		}
 
 		static Delegate cb_onInterstitialClicked;
