@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{A6E15B7A-8273-4FDF-A279-D0BE26B70848}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Transforms/Metadata.xml">
     <Files>
-      <File FileName="Transforms/Metadata.xml" Line="49" Column="57" />
+      <File FileName="Transforms/Metadata.xml" Line="54" Column="98" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
