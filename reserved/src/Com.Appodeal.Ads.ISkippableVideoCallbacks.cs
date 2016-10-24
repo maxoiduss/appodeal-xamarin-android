@@ -68,7 +68,7 @@ namespace Com.Appodeal.Ads {
 
 		public ISkippableVideoCallbacksInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
 		{
-			IntPtr local_ref = JNIEnv.GetObjectClass (Handle);
+			IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
 			this.class_ref = JNIEnv.NewGlobalRef (local_ref);
 			JNIEnv.DeleteLocalRef (local_ref);
 		}
@@ -96,7 +96,7 @@ namespace Com.Appodeal.Ads {
 				id_onSkippableVideoClosed_Z = JNIEnv.GetMethodID (class_ref, "onSkippableVideoClosed", "(Z)V");
 			JValue* __args = stackalloc JValue [1];
 			__args [0] = new JValue (p0);
-			JNIEnv.CallVoidMethod (Handle, id_onSkippableVideoClosed_Z, __args);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onSkippableVideoClosed_Z, __args);
 		}
 
 		static Delegate cb_onSkippableVideoFailedToLoad;
@@ -120,7 +120,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onSkippableVideoFailedToLoad == IntPtr.Zero)
 				id_onSkippableVideoFailedToLoad = JNIEnv.GetMethodID (class_ref, "onSkippableVideoFailedToLoad", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onSkippableVideoFailedToLoad);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onSkippableVideoFailedToLoad);
 		}
 
 		static Delegate cb_onSkippableVideoFinished;
@@ -144,7 +144,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onSkippableVideoFinished == IntPtr.Zero)
 				id_onSkippableVideoFinished = JNIEnv.GetMethodID (class_ref, "onSkippableVideoFinished", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onSkippableVideoFinished);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onSkippableVideoFinished);
 		}
 
 		static Delegate cb_onSkippableVideoLoaded;
@@ -168,7 +168,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onSkippableVideoLoaded == IntPtr.Zero)
 				id_onSkippableVideoLoaded = JNIEnv.GetMethodID (class_ref, "onSkippableVideoLoaded", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onSkippableVideoLoaded);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onSkippableVideoLoaded);
 		}
 
 		static Delegate cb_onSkippableVideoShown;
@@ -192,7 +192,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onSkippableVideoShown == IntPtr.Zero)
 				id_onSkippableVideoShown = JNIEnv.GetMethodID (class_ref, "onSkippableVideoShown", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onSkippableVideoShown);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onSkippableVideoShown);
 		}
 
 	}

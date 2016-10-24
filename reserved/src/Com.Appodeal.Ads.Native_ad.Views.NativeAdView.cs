@@ -31,7 +31,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 		public unsafe NativeAdView (global::Android.Content.Context p0, global::Android.Util.IAttributeSet p1, int p2, int p3)
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
@@ -44,7 +44,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 					SetHandle (
 							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Landroid/content/Context;Landroid/util/AttributeSet;II)V", __args),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Landroid/content/Context;Landroid/util/AttributeSet;II)V", __args);
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "(Landroid/content/Context;Landroid/util/AttributeSet;II)V", __args);
 					return;
 				}
 
@@ -53,7 +53,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_II, __args),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_II, __args);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_II, __args);
 			} finally {
 			}
 		}
@@ -64,7 +64,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 		public unsafe NativeAdView (global::Android.Content.Context p0, global::Android.Util.IAttributeSet p1, int p2)
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
@@ -76,7 +76,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 					SetHandle (
 							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", __args),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", __args);
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", __args);
 					return;
 				}
 
@@ -85,7 +85,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_I, __args),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_I, __args);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_I, __args);
 			} finally {
 			}
 		}
@@ -96,7 +96,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 		public unsafe NativeAdView (global::Android.Content.Context p0, global::Android.Util.IAttributeSet p1)
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
@@ -107,7 +107,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 					SetHandle (
 							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Landroid/content/Context;Landroid/util/AttributeSet;)V", __args),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Landroid/content/Context;Landroid/util/AttributeSet;)V", __args);
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "(Landroid/content/Context;Landroid/util/AttributeSet;)V", __args);
 					return;
 				}
 
@@ -116,7 +116,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_, __args),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_, __args);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor_Landroid_content_Context_Landroid_util_AttributeSet_, __args);
 			} finally {
 			}
 		}
@@ -127,7 +127,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 		public unsafe NativeAdView (global::Android.Content.Context p0)
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
@@ -137,7 +137,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 					SetHandle (
 							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Landroid/content/Context;)V", __args),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Landroid/content/Context;)V", __args);
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "(Landroid/content/Context;)V", __args);
 					return;
 				}
 
@@ -146,7 +146,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Landroid_content_Context_, __args),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Landroid_content_Context_, __args);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor_Landroid_content_Context_, __args);
 			} finally {
 			}
 		}
@@ -157,7 +157,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 		public unsafe NativeAdView (global::Android.Content.Context p0, global::Com.Appodeal.Ads.INativeAd p1)
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
@@ -168,7 +168,7 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 					SetHandle (
 							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Landroid/content/Context;Lcom/appodeal/ads/NativeAd;)V", __args),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Landroid/content/Context;Lcom/appodeal/ads/NativeAd;)V", __args);
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "(Landroid/content/Context;Lcom/appodeal/ads/NativeAd;)V", __args);
 					return;
 				}
 
@@ -177,8 +177,42 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Landroid_content_Context_Lcom_appodeal_ads_NativeAd_, __args),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Landroid_content_Context_Lcom_appodeal_ads_NativeAd_, __args);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor_Landroid_content_Context_Lcom_appodeal_ads_NativeAd_, __args);
 			} finally {
+			}
+		}
+
+		static Delegate cb_getAppodealMediaView;
+#pragma warning disable 0169
+		static Delegate GetGetAppodealMediaViewHandler ()
+		{
+			if (cb_getAppodealMediaView == null)
+				cb_getAppodealMediaView = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_GetAppodealMediaView);
+			return cb_getAppodealMediaView;
+		}
+
+		static IntPtr n_GetAppodealMediaView (IntPtr jnienv, IntPtr native__this)
+		{
+			global::Com.Appodeal.Ads.Native_ad.Views.NativeAdView __this = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.Native_ad.Views.NativeAdView> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			return JNIEnv.ToLocalJniHandle (__this.AppodealMediaView);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_getAppodealMediaView;
+		public virtual unsafe global::Com.Appodeal.Ads.AppodealMediaView AppodealMediaView {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads.native_ad.views']/class[@name='NativeAdView']/method[@name='getAppodealMediaView' and count(parameter)=0]"
+			[Register ("getAppodealMediaView", "()Lcom/appodeal/ads/AppodealMediaView;", "GetGetAppodealMediaViewHandler")]
+			get {
+				if (id_getAppodealMediaView == IntPtr.Zero)
+					id_getAppodealMediaView = JNIEnv.GetMethodID (class_ref, "getAppodealMediaView", "()Lcom/appodeal/ads/AppodealMediaView;");
+				try {
+
+					if (GetType () == ThresholdType)
+						return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.AppodealMediaView> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getAppodealMediaView), JniHandleOwnership.TransferLocalRef);
+					else
+						return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.AppodealMediaView> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getAppodealMediaView", "()Lcom/appodeal/ads/AppodealMediaView;")), JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
 			}
 		}
 
@@ -208,9 +242,9 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				try {
 
 					if (GetType () == ThresholdType)
-						return global::Java.Lang.Object.GetObject<global::Android.Widget.TextView> (JNIEnv.CallObjectMethod  (Handle, id_getCallToActionView), JniHandleOwnership.TransferLocalRef);
+						return global::Java.Lang.Object.GetObject<global::Android.Widget.TextView> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getCallToActionView), JniHandleOwnership.TransferLocalRef);
 					else
-						return global::Java.Lang.Object.GetObject<global::Android.Widget.TextView> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getCallToActionView", "()Landroid/widget/TextView;")), JniHandleOwnership.TransferLocalRef);
+						return global::Java.Lang.Object.GetObject<global::Android.Widget.TextView> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getCallToActionView", "()Landroid/widget/TextView;")), JniHandleOwnership.TransferLocalRef);
 				} finally {
 				}
 			}
@@ -242,9 +276,9 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				try {
 
 					if (GetType () == ThresholdType)
-						return global::Java.Lang.Object.GetObject<global::Android.Widget.TextView> (JNIEnv.CallObjectMethod  (Handle, id_getDescriptionView), JniHandleOwnership.TransferLocalRef);
+						return global::Java.Lang.Object.GetObject<global::Android.Widget.TextView> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getDescriptionView), JniHandleOwnership.TransferLocalRef);
 					else
-						return global::Java.Lang.Object.GetObject<global::Android.Widget.TextView> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getDescriptionView", "()Landroid/widget/TextView;")), JniHandleOwnership.TransferLocalRef);
+						return global::Java.Lang.Object.GetObject<global::Android.Widget.TextView> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getDescriptionView", "()Landroid/widget/TextView;")), JniHandleOwnership.TransferLocalRef);
 				} finally {
 				}
 			}
@@ -276,43 +310,9 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				try {
 
 					if (GetType () == ThresholdType)
-						return global::Java.Lang.Object.GetObject<global::Android.Widget.ImageView> (JNIEnv.CallObjectMethod  (Handle, id_getIconView), JniHandleOwnership.TransferLocalRef);
+						return global::Java.Lang.Object.GetObject<global::Android.Widget.ImageView> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getIconView), JniHandleOwnership.TransferLocalRef);
 					else
-						return global::Java.Lang.Object.GetObject<global::Android.Widget.ImageView> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getIconView", "()Landroid/widget/ImageView;")), JniHandleOwnership.TransferLocalRef);
-				} finally {
-				}
-			}
-		}
-
-		static Delegate cb_getImageView;
-#pragma warning disable 0169
-		static Delegate GetGetImageViewHandler ()
-		{
-			if (cb_getImageView == null)
-				cb_getImageView = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_GetImageView);
-			return cb_getImageView;
-		}
-
-		static IntPtr n_GetImageView (IntPtr jnienv, IntPtr native__this)
-		{
-			global::Com.Appodeal.Ads.Native_ad.Views.NativeAdView __this = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.Native_ad.Views.NativeAdView> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			return JNIEnv.ToLocalJniHandle (__this.ImageView);
-		}
-#pragma warning restore 0169
-
-		static IntPtr id_getImageView;
-		public virtual unsafe global::Android.Widget.ImageView ImageView {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads.native_ad.views']/class[@name='NativeAdView']/method[@name='getImageView' and count(parameter)=0]"
-			[Register ("getImageView", "()Landroid/widget/ImageView;", "GetGetImageViewHandler")]
-			get {
-				if (id_getImageView == IntPtr.Zero)
-					id_getImageView = JNIEnv.GetMethodID (class_ref, "getImageView", "()Landroid/widget/ImageView;");
-				try {
-
-					if (GetType () == ThresholdType)
-						return global::Java.Lang.Object.GetObject<global::Android.Widget.ImageView> (JNIEnv.CallObjectMethod  (Handle, id_getImageView), JniHandleOwnership.TransferLocalRef);
-					else
-						return global::Java.Lang.Object.GetObject<global::Android.Widget.ImageView> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getImageView", "()Landroid/widget/ImageView;")), JniHandleOwnership.TransferLocalRef);
+						return global::Java.Lang.Object.GetObject<global::Android.Widget.ImageView> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getIconView", "()Landroid/widget/ImageView;")), JniHandleOwnership.TransferLocalRef);
 				} finally {
 				}
 			}
@@ -344,9 +344,9 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				try {
 
 					if (GetType () == ThresholdType)
-						return global::Java.Lang.Object.GetObject<global::Android.Widget.RatingBar> (JNIEnv.CallObjectMethod  (Handle, id_getRatingBar), JniHandleOwnership.TransferLocalRef);
+						return global::Java.Lang.Object.GetObject<global::Android.Widget.RatingBar> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getRatingBar), JniHandleOwnership.TransferLocalRef);
 					else
-						return global::Java.Lang.Object.GetObject<global::Android.Widget.RatingBar> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getRatingBar", "()Landroid/widget/RatingBar;")), JniHandleOwnership.TransferLocalRef);
+						return global::Java.Lang.Object.GetObject<global::Android.Widget.RatingBar> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getRatingBar", "()Landroid/widget/RatingBar;")), JniHandleOwnership.TransferLocalRef);
 				} finally {
 				}
 			}
@@ -378,9 +378,9 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				try {
 
 					if (GetType () == ThresholdType)
-						return global::Java.Lang.Object.GetObject<global::Android.Widget.TextView> (JNIEnv.CallObjectMethod  (Handle, id_getTitleView), JniHandleOwnership.TransferLocalRef);
+						return global::Java.Lang.Object.GetObject<global::Android.Widget.TextView> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getTitleView), JniHandleOwnership.TransferLocalRef);
 					else
-						return global::Java.Lang.Object.GetObject<global::Android.Widget.TextView> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getTitleView", "()Landroid/widget/TextView;")), JniHandleOwnership.TransferLocalRef);
+						return global::Java.Lang.Object.GetObject<global::Android.Widget.TextView> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getTitleView", "()Landroid/widget/TextView;")), JniHandleOwnership.TransferLocalRef);
 				} finally {
 				}
 			}
@@ -414,9 +414,9 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				__args [0] = new JValue (p0);
 
 				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setCallToActionColor_I, __args);
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setCallToActionColor_I, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setCallToActionColor", "(I)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setCallToActionColor", "(I)V"), __args);
 			} finally {
 			}
 		}
@@ -451,9 +451,9 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				__args [0] = new JValue (native_p0);
 
 				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setCallToActionColor_Ljava_lang_String_, __args);
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setCallToActionColor_Ljava_lang_String_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setCallToActionColor", "(Ljava/lang/String;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setCallToActionColor", "(Ljava/lang/String;)V"), __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
@@ -488,9 +488,9 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				__args [0] = new JValue (p0);
 
 				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_setNativeAd_Lcom_appodeal_ads_NativeAd_, __args);
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_setNativeAd_Lcom_appodeal_ads_NativeAd_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setNativeAd", "(Lcom/appodeal/ads/NativeAd;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setNativeAd", "(Lcom/appodeal/ads/NativeAd;)V"), __args);
 			} finally {
 			}
 		}
@@ -523,9 +523,9 @@ namespace Com.Appodeal.Ads.Native_ad.Views {
 				__args [0] = new JValue (p0);
 
 				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_showSponsored_Z, __args);
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_showSponsored_Z, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "showSponsored", "(Z)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "showSponsored", "(Z)V"), __args);
 			} finally {
 			}
 		}

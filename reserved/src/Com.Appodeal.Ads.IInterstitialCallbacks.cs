@@ -68,7 +68,7 @@ namespace Com.Appodeal.Ads {
 
 		public IInterstitialCallbacksInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
 		{
-			IntPtr local_ref = JNIEnv.GetObjectClass (Handle);
+			IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
 			this.class_ref = JNIEnv.NewGlobalRef (local_ref);
 			JNIEnv.DeleteLocalRef (local_ref);
 		}
@@ -94,7 +94,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onInterstitialClicked == IntPtr.Zero)
 				id_onInterstitialClicked = JNIEnv.GetMethodID (class_ref, "onInterstitialClicked", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onInterstitialClicked);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onInterstitialClicked);
 		}
 
 		static Delegate cb_onInterstitialClosed;
@@ -118,7 +118,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onInterstitialClosed == IntPtr.Zero)
 				id_onInterstitialClosed = JNIEnv.GetMethodID (class_ref, "onInterstitialClosed", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onInterstitialClosed);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onInterstitialClosed);
 		}
 
 		static Delegate cb_onInterstitialFailedToLoad;
@@ -142,7 +142,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onInterstitialFailedToLoad == IntPtr.Zero)
 				id_onInterstitialFailedToLoad = JNIEnv.GetMethodID (class_ref, "onInterstitialFailedToLoad", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onInterstitialFailedToLoad);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onInterstitialFailedToLoad);
 		}
 
 		static Delegate cb_onInterstitialLoaded_Z;
@@ -168,7 +168,7 @@ namespace Com.Appodeal.Ads {
 				id_onInterstitialLoaded_Z = JNIEnv.GetMethodID (class_ref, "onInterstitialLoaded", "(Z)V");
 			JValue* __args = stackalloc JValue [1];
 			__args [0] = new JValue (p0);
-			JNIEnv.CallVoidMethod (Handle, id_onInterstitialLoaded_Z, __args);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onInterstitialLoaded_Z, __args);
 		}
 
 		static Delegate cb_onInterstitialShown;
@@ -192,7 +192,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onInterstitialShown == IntPtr.Zero)
 				id_onInterstitialShown = JNIEnv.GetMethodID (class_ref, "onInterstitialShown", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onInterstitialShown);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onInterstitialShown);
 		}
 
 	}

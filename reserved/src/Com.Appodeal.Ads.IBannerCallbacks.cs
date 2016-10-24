@@ -64,7 +64,7 @@ namespace Com.Appodeal.Ads {
 
 		public IBannerCallbacksInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
 		{
-			IntPtr local_ref = JNIEnv.GetObjectClass (Handle);
+			IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
 			this.class_ref = JNIEnv.NewGlobalRef (local_ref);
 			JNIEnv.DeleteLocalRef (local_ref);
 		}
@@ -90,7 +90,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onBannerClicked == IntPtr.Zero)
 				id_onBannerClicked = JNIEnv.GetMethodID (class_ref, "onBannerClicked", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onBannerClicked);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onBannerClicked);
 		}
 
 		static Delegate cb_onBannerFailedToLoad;
@@ -114,7 +114,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onBannerFailedToLoad == IntPtr.Zero)
 				id_onBannerFailedToLoad = JNIEnv.GetMethodID (class_ref, "onBannerFailedToLoad", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onBannerFailedToLoad);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onBannerFailedToLoad);
 		}
 
 		static Delegate cb_onBannerLoaded_IZ;
@@ -141,7 +141,7 @@ namespace Com.Appodeal.Ads {
 			JValue* __args = stackalloc JValue [2];
 			__args [0] = new JValue (p0);
 			__args [1] = new JValue (p1);
-			JNIEnv.CallVoidMethod (Handle, id_onBannerLoaded_IZ, __args);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onBannerLoaded_IZ, __args);
 		}
 
 		static Delegate cb_onBannerShown;
@@ -165,7 +165,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onBannerShown == IntPtr.Zero)
 				id_onBannerShown = JNIEnv.GetMethodID (class_ref, "onBannerShown", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onBannerShown);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onBannerShown);
 		}
 
 	}

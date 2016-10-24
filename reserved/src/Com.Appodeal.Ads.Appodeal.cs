@@ -17,10 +17,6 @@ namespace Com.Appodeal.Ads {
 		[Register ("BANNER_BOTTOM")]
 		public const int BANNER_BOTTOM = (int) 8;
 
-		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER_CENTER']"
-		[Register ("BANNER_CENTER")]
-		public const int BANNER_CENTER = (int) 32;
-
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER_TOP']"
 		[Register ("BANNER_TOP")]
 		public const int BANNER_TOP = (int) 16;
@@ -57,29 +53,6 @@ namespace Com.Appodeal.Ads {
 		[Register ("SKIPPABLE_VIDEO")]
 		public const int SKIPPABLE_VIDEO = (int) 2;
 
-		static IntPtr b_jfieldId;
-
-		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='b']"
-		[Register ("b")]
-		public static global::Android.App.Activity B {
-			get {
-				if (b_jfieldId == IntPtr.Zero)
-					b_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "b", "Landroid/app/Activity;");
-				IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, b_jfieldId);
-				return global::Java.Lang.Object.GetObject<global::Android.App.Activity> (__ret, JniHandleOwnership.TransferLocalRef);
-			}
-			set {
-				if (b_jfieldId == IntPtr.Zero)
-					b_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "b", "Landroid/app/Activity;");
-				IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
-				try {
-					JNIEnv.SetStaticField (class_ref, b_jfieldId, native_value);
-				} finally {
-					JNIEnv.DeleteLocalRef (native_value);
-				}
-			}
-		}
-
 		internal static IntPtr java_class_handle;
 		internal static IntPtr class_ref {
 			get {
@@ -103,7 +76,7 @@ namespace Com.Appodeal.Ads {
 		public unsafe Appodeal ()
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
@@ -111,7 +84,7 @@ namespace Com.Appodeal.Ads {
 					SetHandle (
 							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "()V"),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "()V");
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
 					return;
 				}
 
@@ -120,8 +93,49 @@ namespace Com.Appodeal.Ads {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor);
 			} finally {
+			}
+		}
+
+		static IntPtr id_getLogLevel;
+		static IntPtr id_setLogLevel_Lcom_appodeal_ads_utils_Log_LogLevel_;
+		public static unsafe global::Com.Appodeal.Ads.Utils.Log.LogLevel LogLevel {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='getLogLevel' and count(parameter)=0]"
+			[Register ("getLogLevel", "()Lcom/appodeal/ads/utils/Log$LogLevel;", "GetGetLogLevelHandler")]
+			get {
+				if (id_getLogLevel == IntPtr.Zero)
+					id_getLogLevel = JNIEnv.GetStaticMethodID (class_ref, "getLogLevel", "()Lcom/appodeal/ads/utils/Log$LogLevel;");
+				try {
+					return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.Utils.Log.LogLevel> (JNIEnv.CallStaticObjectMethod  (class_ref, id_getLogLevel), JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setLogLevel' and count(parameter)=1 and parameter[1][@type='com.appodeal.ads.utils.Log.LogLevel']]"
+			[Register ("setLogLevel", "(Lcom/appodeal/ads/utils/Log$LogLevel;)V", "GetSetLogLevel_Lcom_appodeal_ads_utils_Log_LogLevel_Handler")]
+			set {
+				if (id_setLogLevel_Lcom_appodeal_ads_utils_Log_LogLevel_ == IntPtr.Zero)
+					id_setLogLevel_Lcom_appodeal_ads_utils_Log_LogLevel_ = JNIEnv.GetStaticMethodID (class_ref, "setLogLevel", "(Lcom/appodeal/ads/utils/Log$LogLevel;)V");
+				try {
+					JValue* __args = stackalloc JValue [1];
+					__args [0] = new JValue (value);
+					JNIEnv.CallStaticVoidMethod  (class_ref, id_setLogLevel_Lcom_appodeal_ads_utils_Log_LogLevel_, __args);
+				} finally {
+				}
+			}
+		}
+
+		static IntPtr id_getNativeAdBox;
+		public static unsafe global::Com.Appodeal.Ads.NativeAdBox NativeAdBox {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='getNativeAdBox' and count(parameter)=0]"
+			[Register ("getNativeAdBox", "()Lcom/appodeal/ads/NativeAdBox;", "GetGetNativeAdBoxHandler")]
+			get {
+				if (id_getNativeAdBox == IntPtr.Zero)
+					id_getNativeAdBox = JNIEnv.GetStaticMethodID (class_ref, "getNativeAdBox", "()Lcom/appodeal/ads/NativeAdBox;");
+				try {
+					return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.NativeAdBox> (JNIEnv.CallStaticObjectMethod  (class_ref, id_getNativeAdBox), JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
 			}
 		}
 
@@ -156,36 +170,6 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
-		static IntPtr id_a_Ljava_lang_Error_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='a' and count(parameter)=1 and parameter[1][@type='java.lang.Error']]"
-		[Register ("a", "(Ljava/lang/Error;)V", "")]
-		public static unsafe void A (global::Java.Lang.Error p0)
-		{
-			if (id_a_Ljava_lang_Error_ == IntPtr.Zero)
-				id_a_Ljava_lang_Error_ = JNIEnv.GetStaticMethodID (class_ref, "a", "(Ljava/lang/Error;)V");
-			try {
-				JValue* __args = stackalloc JValue [1];
-				__args [0] = new JValue (p0);
-				JNIEnv.CallStaticVoidMethod  (class_ref, id_a_Ljava_lang_Error_, __args);
-			} finally {
-			}
-		}
-
-		static IntPtr id_a_Ljava_lang_Exception_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='a' and count(parameter)=1 and parameter[1][@type='java.lang.Exception']]"
-		[Register ("a", "(Ljava/lang/Exception;)V", "")]
-		public static unsafe void A (global::Java.Lang.Exception p0)
-		{
-			if (id_a_Ljava_lang_Exception_ == IntPtr.Zero)
-				id_a_Ljava_lang_Exception_ = JNIEnv.GetStaticMethodID (class_ref, "a", "(Ljava/lang/Exception;)V");
-			try {
-				JValue* __args = stackalloc JValue [1];
-				__args [0] = new JValue (p0);
-				JNIEnv.CallStaticVoidMethod  (class_ref, id_a_Ljava_lang_Exception_, __args);
-			} finally {
-			}
-		}
-
 		static IntPtr id_a_Ljava_lang_String_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='a' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
 		[Register ("a", "(Ljava/lang/String;)V", "")]
@@ -203,17 +187,35 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
-		static IntPtr id_a_Lorg_json_JSONObject_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='a' and count(parameter)=1 and parameter[1][@type='org.json.JSONObject']]"
-		[Register ("a", "(Lorg/json/JSONObject;)V", "")]
-		public static unsafe void A (global::Org.Json.JSONObject p0)
+		static IntPtr id_a_Ljava_lang_String_Lcom_appodeal_ads_utils_Log_LogLevel_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='a' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='com.appodeal.ads.utils.Log.LogLevel']]"
+		[Register ("a", "(Ljava/lang/String;Lcom/appodeal/ads/utils/Log$LogLevel;)V", "")]
+		public static unsafe void A (string p0, global::Com.Appodeal.Ads.Utils.Log.LogLevel p1)
 		{
-			if (id_a_Lorg_json_JSONObject_ == IntPtr.Zero)
-				id_a_Lorg_json_JSONObject_ = JNIEnv.GetStaticMethodID (class_ref, "a", "(Lorg/json/JSONObject;)V");
+			if (id_a_Ljava_lang_String_Lcom_appodeal_ads_utils_Log_LogLevel_ == IntPtr.Zero)
+				id_a_Ljava_lang_String_Lcom_appodeal_ads_utils_Log_LogLevel_ = JNIEnv.GetStaticMethodID (class_ref, "a", "(Ljava/lang/String;Lcom/appodeal/ads/utils/Log$LogLevel;)V");
+			IntPtr native_p0 = JNIEnv.NewString (p0);
+			try {
+				JValue* __args = stackalloc JValue [2];
+				__args [0] = new JValue (native_p0);
+				__args [1] = new JValue (p1);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_a_Ljava_lang_String_Lcom_appodeal_ads_utils_Log_LogLevel_, __args);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_p0);
+			}
+		}
+
+		static IntPtr id_a_Ljava_lang_Throwable_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='a' and count(parameter)=1 and parameter[1][@type='java.lang.Throwable']]"
+		[Register ("a", "(Ljava/lang/Throwable;)V", "")]
+		public static unsafe void A (global::Java.Lang.Throwable p0)
+		{
+			if (id_a_Ljava_lang_Throwable_ == IntPtr.Zero)
+				id_a_Ljava_lang_Throwable_ = JNIEnv.GetStaticMethodID (class_ref, "a", "(Ljava/lang/Throwable;)V");
 			try {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
-				JNIEnv.CallStaticVoidMethod  (class_ref, id_a_Lorg_json_JSONObject_, __args);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_a_Ljava_lang_Throwable_, __args);
 			} finally {
 			}
 		}
@@ -520,17 +522,32 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
-		static IntPtr id_setAutoCacheNativeImages_Z;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setAutoCacheNativeImages' and count(parameter)=1 and parameter[1][@type='boolean']]"
-		[Register ("setAutoCacheNativeImages", "(Z)V", "")]
-		public static unsafe void SetAutoCacheNativeImages (bool p0)
+		static IntPtr id_setAutoCacheNativeMedia_Z;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setAutoCacheNativeMedia' and count(parameter)=1 and parameter[1][@type='boolean']]"
+		[Register ("setAutoCacheNativeMedia", "(Z)V", "")]
+		public static unsafe void SetAutoCacheNativeMedia (bool p0)
 		{
-			if (id_setAutoCacheNativeImages_Z == IntPtr.Zero)
-				id_setAutoCacheNativeImages_Z = JNIEnv.GetStaticMethodID (class_ref, "setAutoCacheNativeImages", "(Z)V");
+			if (id_setAutoCacheNativeMedia_Z == IntPtr.Zero)
+				id_setAutoCacheNativeMedia_Z = JNIEnv.GetStaticMethodID (class_ref, "setAutoCacheNativeMedia", "(Z)V");
 			try {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
-				JNIEnv.CallStaticVoidMethod  (class_ref, id_setAutoCacheNativeImages_Z, __args);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_setAutoCacheNativeMedia_Z, __args);
+			} finally {
+			}
+		}
+
+		static IntPtr id_setBannerAnimation_Z;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setBannerAnimation' and count(parameter)=1 and parameter[1][@type='boolean']]"
+		[Register ("setBannerAnimation", "(Z)V", "")]
+		public static unsafe void SetBannerAnimation (bool p0)
+		{
+			if (id_setBannerAnimation_Z == IntPtr.Zero)
+				id_setBannerAnimation_Z = JNIEnv.GetStaticMethodID (class_ref, "setBannerAnimation", "(Z)V");
+			try {
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue (p0);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_setBannerAnimation_Z, __args);
 			} finally {
 			}
 		}
@@ -565,74 +582,74 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
-		static IntPtr id_setCustomSegment_Ljava_lang_String_Z;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setCustomSegment' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='boolean']]"
-		[Register ("setCustomSegment", "(Ljava/lang/String;Z)V", "")]
-		public static unsafe void SetCustomSegment (string p0, bool p1)
+		static IntPtr id_setCustomRule_Ljava_lang_String_Z;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setCustomRule' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='boolean']]"
+		[Register ("setCustomRule", "(Ljava/lang/String;Z)V", "")]
+		public static unsafe void SetCustomRule (string p0, bool p1)
 		{
-			if (id_setCustomSegment_Ljava_lang_String_Z == IntPtr.Zero)
-				id_setCustomSegment_Ljava_lang_String_Z = JNIEnv.GetStaticMethodID (class_ref, "setCustomSegment", "(Ljava/lang/String;Z)V");
+			if (id_setCustomRule_Ljava_lang_String_Z == IntPtr.Zero)
+				id_setCustomRule_Ljava_lang_String_Z = JNIEnv.GetStaticMethodID (class_ref, "setCustomRule", "(Ljava/lang/String;Z)V");
 			IntPtr native_p0 = JNIEnv.NewString (p0);
 			try {
 				JValue* __args = stackalloc JValue [2];
 				__args [0] = new JValue (native_p0);
 				__args [1] = new JValue (p1);
-				JNIEnv.CallStaticVoidMethod  (class_ref, id_setCustomSegment_Ljava_lang_String_Z, __args);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_setCustomRule_Ljava_lang_String_Z, __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
 		}
 
-		static IntPtr id_setCustomSegment_Ljava_lang_String_D;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setCustomSegment' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='double']]"
-		[Register ("setCustomSegment", "(Ljava/lang/String;D)V", "")]
-		public static unsafe void SetCustomSegment (string p0, double p1)
+		static IntPtr id_setCustomRule_Ljava_lang_String_D;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setCustomRule' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='double']]"
+		[Register ("setCustomRule", "(Ljava/lang/String;D)V", "")]
+		public static unsafe void SetCustomRule (string p0, double p1)
 		{
-			if (id_setCustomSegment_Ljava_lang_String_D == IntPtr.Zero)
-				id_setCustomSegment_Ljava_lang_String_D = JNIEnv.GetStaticMethodID (class_ref, "setCustomSegment", "(Ljava/lang/String;D)V");
+			if (id_setCustomRule_Ljava_lang_String_D == IntPtr.Zero)
+				id_setCustomRule_Ljava_lang_String_D = JNIEnv.GetStaticMethodID (class_ref, "setCustomRule", "(Ljava/lang/String;D)V");
 			IntPtr native_p0 = JNIEnv.NewString (p0);
 			try {
 				JValue* __args = stackalloc JValue [2];
 				__args [0] = new JValue (native_p0);
 				__args [1] = new JValue (p1);
-				JNIEnv.CallStaticVoidMethod  (class_ref, id_setCustomSegment_Ljava_lang_String_D, __args);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_setCustomRule_Ljava_lang_String_D, __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
 		}
 
-		static IntPtr id_setCustomSegment_Ljava_lang_String_I;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setCustomSegment' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='int']]"
-		[Register ("setCustomSegment", "(Ljava/lang/String;I)V", "")]
-		public static unsafe void SetCustomSegment (string p0, int p1)
+		static IntPtr id_setCustomRule_Ljava_lang_String_I;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setCustomRule' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='int']]"
+		[Register ("setCustomRule", "(Ljava/lang/String;I)V", "")]
+		public static unsafe void SetCustomRule (string p0, int p1)
 		{
-			if (id_setCustomSegment_Ljava_lang_String_I == IntPtr.Zero)
-				id_setCustomSegment_Ljava_lang_String_I = JNIEnv.GetStaticMethodID (class_ref, "setCustomSegment", "(Ljava/lang/String;I)V");
+			if (id_setCustomRule_Ljava_lang_String_I == IntPtr.Zero)
+				id_setCustomRule_Ljava_lang_String_I = JNIEnv.GetStaticMethodID (class_ref, "setCustomRule", "(Ljava/lang/String;I)V");
 			IntPtr native_p0 = JNIEnv.NewString (p0);
 			try {
 				JValue* __args = stackalloc JValue [2];
 				__args [0] = new JValue (native_p0);
 				__args [1] = new JValue (p1);
-				JNIEnv.CallStaticVoidMethod  (class_ref, id_setCustomSegment_Ljava_lang_String_I, __args);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_setCustomRule_Ljava_lang_String_I, __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 			}
 		}
 
-		static IntPtr id_setCustomSegment_Ljava_lang_String_Ljava_lang_String_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setCustomSegment' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]"
-		[Register ("setCustomSegment", "(Ljava/lang/String;Ljava/lang/String;)V", "")]
-		public static unsafe void SetCustomSegment (string p0, string p1)
+		static IntPtr id_setCustomRule_Ljava_lang_String_Ljava_lang_String_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setCustomRule' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]"
+		[Register ("setCustomRule", "(Ljava/lang/String;Ljava/lang/String;)V", "")]
+		public static unsafe void SetCustomRule (string p0, string p1)
 		{
-			if (id_setCustomSegment_Ljava_lang_String_Ljava_lang_String_ == IntPtr.Zero)
-				id_setCustomSegment_Ljava_lang_String_Ljava_lang_String_ = JNIEnv.GetStaticMethodID (class_ref, "setCustomSegment", "(Ljava/lang/String;Ljava/lang/String;)V");
+			if (id_setCustomRule_Ljava_lang_String_Ljava_lang_String_ == IntPtr.Zero)
+				id_setCustomRule_Ljava_lang_String_Ljava_lang_String_ = JNIEnv.GetStaticMethodID (class_ref, "setCustomRule", "(Ljava/lang/String;Ljava/lang/String;)V");
 			IntPtr native_p0 = JNIEnv.NewString (p0);
 			IntPtr native_p1 = JNIEnv.NewString (p1);
 			try {
 				JValue* __args = stackalloc JValue [2];
 				__args [0] = new JValue (native_p0);
 				__args [1] = new JValue (native_p1);
-				JNIEnv.CallStaticVoidMethod  (class_ref, id_setCustomSegment_Ljava_lang_String_Ljava_lang_String_, __args);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_setCustomRule_Ljava_lang_String_Ljava_lang_String_, __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 				JNIEnv.DeleteLocalRef (native_p1);
@@ -650,21 +667,6 @@ namespace Com.Appodeal.Ads {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
 				JNIEnv.CallStaticVoidMethod  (class_ref, id_setInterstitialCallbacks_Lcom_appodeal_ads_InterstitialCallbacks_, __args);
-			} finally {
-			}
-		}
-
-		static IntPtr id_setLogging_Z;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setLogging' and count(parameter)=1 and parameter[1][@type='boolean']]"
-		[Register ("setLogging", "(Z)V", "")]
-		public static unsafe void SetLogging (bool p0)
-		{
-			if (id_setLogging_Z == IntPtr.Zero)
-				id_setLogging_Z = JNIEnv.GetStaticMethodID (class_ref, "setLogging", "(Z)V");
-			try {
-				JValue* __args = stackalloc JValue [1];
-				__args [0] = new JValue (p0);
-				JNIEnv.CallStaticVoidMethod  (class_ref, id_setLogging_Z, __args);
 			} finally {
 			}
 		}
@@ -695,6 +697,21 @@ namespace Com.Appodeal.Ads {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
 				JNIEnv.CallStaticVoidMethod  (class_ref, id_setMrecViewId_I, __args);
+			} finally {
+			}
+		}
+
+		static IntPtr id_setNativeAdType_Lcom_appodeal_ads_Native_NativeAdType_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setNativeAdType' and count(parameter)=1 and parameter[1][@type='com.appodeal.ads.Native.NativeAdType']]"
+		[Register ("setNativeAdType", "(Lcom/appodeal/ads/Native$NativeAdType;)V", "")]
+		public static unsafe void SetNativeAdType (global::Com.Appodeal.Ads.Native.NativeAdType p0)
+		{
+			if (id_setNativeAdType_Lcom_appodeal_ads_Native_NativeAdType_ == IntPtr.Zero)
+				id_setNativeAdType_Lcom_appodeal_ads_Native_NativeAdType_ = JNIEnv.GetStaticMethodID (class_ref, "setNativeAdType", "(Lcom/appodeal/ads/Native$NativeAdType;)V");
+			try {
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue (p0);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_setNativeAdType_Lcom_appodeal_ads_Native_NativeAdType_, __args);
 			} finally {
 			}
 		}
@@ -741,21 +758,6 @@ namespace Com.Appodeal.Ads {
 				__args [0] = new JValue (p0);
 				__args [1] = new JValue (p1);
 				JNIEnv.CallStaticVoidMethod  (class_ref, id_setOnLoadedTriggerBoth_IZ, __args);
-			} finally {
-			}
-		}
-
-		static IntPtr id_setRequestCallbacks_Lcom_appodeal_ads_AppodealRequestCallbacks_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setRequestCallbacks' and count(parameter)=1 and parameter[1][@type='com.appodeal.ads.AppodealRequestCallbacks']]"
-		[Register ("setRequestCallbacks", "(Lcom/appodeal/ads/AppodealRequestCallbacks;)V", "")]
-		public static unsafe void SetRequestCallbacks (global::Com.Appodeal.Ads.IAppodealRequestCallbacks p0)
-		{
-			if (id_setRequestCallbacks_Lcom_appodeal_ads_AppodealRequestCallbacks_ == IntPtr.Zero)
-				id_setRequestCallbacks_Lcom_appodeal_ads_AppodealRequestCallbacks_ = JNIEnv.GetStaticMethodID (class_ref, "setRequestCallbacks", "(Lcom/appodeal/ads/AppodealRequestCallbacks;)V");
-			try {
-				JValue* __args = stackalloc JValue [1];
-				__args [0] = new JValue (p0);
-				JNIEnv.CallStaticVoidMethod  (class_ref, id_setRequestCallbacks_Lcom_appodeal_ads_AppodealRequestCallbacks_, __args);
 			} finally {
 			}
 		}

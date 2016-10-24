@@ -80,7 +80,7 @@ namespace Com.Appodeal.Ads.Utils {
 
 			public IAppodealPermissionCallbacksInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
 			{
-				IntPtr local_ref = JNIEnv.GetObjectClass (Handle);
+				IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
 				this.class_ref = JNIEnv.NewGlobalRef (local_ref);
 				JNIEnv.DeleteLocalRef (local_ref);
 			}
@@ -108,7 +108,7 @@ namespace Com.Appodeal.Ads.Utils {
 					id_accessCoarseLocationResponse_I = JNIEnv.GetMethodID (class_ref, "accessCoarseLocationResponse", "(I)V");
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
-				JNIEnv.CallVoidMethod (Handle, id_accessCoarseLocationResponse_I, __args);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_accessCoarseLocationResponse_I, __args);
 			}
 
 			static Delegate cb_writeExternalStorageResponse_I;
@@ -134,7 +134,7 @@ namespace Com.Appodeal.Ads.Utils {
 					id_writeExternalStorageResponse_I = JNIEnv.GetMethodID (class_ref, "writeExternalStorageResponse", "(I)V");
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
-				JNIEnv.CallVoidMethod (Handle, id_writeExternalStorageResponse_I, __args);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_writeExternalStorageResponse_I, __args);
 			}
 
 		}
@@ -163,7 +163,7 @@ namespace Com.Appodeal.Ads.Utils {
 		public unsafe PermissionsHelper ()
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
-			if (Handle != IntPtr.Zero)
+			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
 			try {
@@ -171,7 +171,7 @@ namespace Com.Appodeal.Ads.Utils {
 					SetHandle (
 							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "()V"),
 							JniHandleOwnership.TransferLocalRef);
-					global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "()V");
+					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
 					return;
 				}
 
@@ -180,7 +180,7 @@ namespace Com.Appodeal.Ads.Utils {
 				SetHandle (
 						global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor),
 						JniHandleOwnership.TransferLocalRef);
-				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor);
+				JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, class_ref, id_ctor);
 			} finally {
 			}
 		}
@@ -229,9 +229,9 @@ namespace Com.Appodeal.Ads.Utils {
 				__args [1] = new JValue (p1);
 
 				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_a_Landroid_app_Activity_Lcom_appodeal_ads_utils_PermissionsHelper_AppodealPermissionCallbacks_, __args);
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_a_Landroid_app_Activity_Lcom_appodeal_ads_utils_PermissionsHelper_AppodealPermissionCallbacks_, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "a", "(Landroid/app/Activity;Lcom/appodeal/ads/utils/PermissionsHelper$AppodealPermissionCallbacks;)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "a", "(Landroid/app/Activity;Lcom/appodeal/ads/utils/PermissionsHelper$AppodealPermissionCallbacks;)V"), __args);
 			} finally {
 			}
 		}
@@ -265,9 +265,9 @@ namespace Com.Appodeal.Ads.Utils {
 				__args [1] = new JValue (p1);
 
 				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_a_II, __args);
+					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_a_II, __args);
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "a", "(II)V"), __args);
+					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "a", "(II)V"), __args);
 			} finally {
 			}
 		}

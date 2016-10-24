@@ -64,7 +64,7 @@ namespace Com.Appodeal.Ads {
 
 		public INativeCallbacksInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
 		{
-			IntPtr local_ref = JNIEnv.GetObjectClass (Handle);
+			IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
 			this.class_ref = JNIEnv.NewGlobalRef (local_ref);
 			JNIEnv.DeleteLocalRef (local_ref);
 		}
@@ -93,7 +93,7 @@ namespace Com.Appodeal.Ads {
 				id_onNativeClicked_Lcom_appodeal_ads_NativeAd_ = JNIEnv.GetMethodID (class_ref, "onNativeClicked", "(Lcom/appodeal/ads/NativeAd;)V");
 			JValue* __args = stackalloc JValue [1];
 			__args [0] = new JValue (p0);
-			JNIEnv.CallVoidMethod (Handle, id_onNativeClicked_Lcom_appodeal_ads_NativeAd_, __args);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onNativeClicked_Lcom_appodeal_ads_NativeAd_, __args);
 		}
 
 		static Delegate cb_onNativeFailedToLoad;
@@ -117,7 +117,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onNativeFailedToLoad == IntPtr.Zero)
 				id_onNativeFailedToLoad = JNIEnv.GetMethodID (class_ref, "onNativeFailedToLoad", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onNativeFailedToLoad);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onNativeFailedToLoad);
 		}
 
 		static Delegate cb_onNativeLoaded_Ljava_util_List_;
@@ -145,7 +145,7 @@ namespace Com.Appodeal.Ads {
 			IntPtr native_p0 = global::Android.Runtime.JavaList<global::Com.Appodeal.Ads.INativeAd>.ToLocalJniHandle (p0);
 			JValue* __args = stackalloc JValue [1];
 			__args [0] = new JValue (native_p0);
-			JNIEnv.CallVoidMethod (Handle, id_onNativeLoaded_Ljava_util_List_, __args);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onNativeLoaded_Ljava_util_List_, __args);
 			JNIEnv.DeleteLocalRef (native_p0);
 		}
 
@@ -173,7 +173,7 @@ namespace Com.Appodeal.Ads {
 				id_onNativeShown_Lcom_appodeal_ads_NativeAd_ = JNIEnv.GetMethodID (class_ref, "onNativeShown", "(Lcom/appodeal/ads/NativeAd;)V");
 			JValue* __args = stackalloc JValue [1];
 			__args [0] = new JValue (p0);
-			JNIEnv.CallVoidMethod (Handle, id_onNativeShown_Lcom_appodeal_ads_NativeAd_, __args);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onNativeShown_Lcom_appodeal_ads_NativeAd_, __args);
 		}
 
 	}

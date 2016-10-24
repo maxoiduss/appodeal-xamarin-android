@@ -68,7 +68,7 @@ namespace Com.Appodeal.Ads {
 
 		public IRewardedVideoCallbacksInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
 		{
-			IntPtr local_ref = JNIEnv.GetObjectClass (Handle);
+			IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
 			this.class_ref = JNIEnv.NewGlobalRef (local_ref);
 			JNIEnv.DeleteLocalRef (local_ref);
 		}
@@ -96,7 +96,7 @@ namespace Com.Appodeal.Ads {
 				id_onRewardedVideoClosed_Z = JNIEnv.GetMethodID (class_ref, "onRewardedVideoClosed", "(Z)V");
 			JValue* __args = stackalloc JValue [1];
 			__args [0] = new JValue (p0);
-			JNIEnv.CallVoidMethod (Handle, id_onRewardedVideoClosed_Z, __args);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onRewardedVideoClosed_Z, __args);
 		}
 
 		static Delegate cb_onRewardedVideoFailedToLoad;
@@ -120,7 +120,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onRewardedVideoFailedToLoad == IntPtr.Zero)
 				id_onRewardedVideoFailedToLoad = JNIEnv.GetMethodID (class_ref, "onRewardedVideoFailedToLoad", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onRewardedVideoFailedToLoad);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onRewardedVideoFailedToLoad);
 		}
 
 		static Delegate cb_onRewardedVideoFinished_ILjava_lang_String_;
@@ -149,7 +149,7 @@ namespace Com.Appodeal.Ads {
 			JValue* __args = stackalloc JValue [2];
 			__args [0] = new JValue (p0);
 			__args [1] = new JValue (native_p1);
-			JNIEnv.CallVoidMethod (Handle, id_onRewardedVideoFinished_ILjava_lang_String_, __args);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onRewardedVideoFinished_ILjava_lang_String_, __args);
 			JNIEnv.DeleteLocalRef (native_p1);
 		}
 
@@ -174,7 +174,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onRewardedVideoLoaded == IntPtr.Zero)
 				id_onRewardedVideoLoaded = JNIEnv.GetMethodID (class_ref, "onRewardedVideoLoaded", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onRewardedVideoLoaded);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onRewardedVideoLoaded);
 		}
 
 		static Delegate cb_onRewardedVideoShown;
@@ -198,7 +198,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onRewardedVideoShown == IntPtr.Zero)
 				id_onRewardedVideoShown = JNIEnv.GetMethodID (class_ref, "onRewardedVideoShown", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onRewardedVideoShown);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onRewardedVideoShown);
 		}
 
 	}

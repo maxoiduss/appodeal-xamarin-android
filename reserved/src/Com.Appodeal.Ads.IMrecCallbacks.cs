@@ -16,9 +16,9 @@ namespace Com.Appodeal.Ads {
 		[Register ("onMrecFailedToLoad", "()V", "GetOnMrecFailedToLoadHandler:Com.Appodeal.Ads.IMrecCallbacksInvoker, AppodealXamarinPlugin")]
 		void OnMrecFailedToLoad ();
 
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/interface[@name='MrecCallbacks']/method[@name='onMrecLoaded' and count(parameter)=0]"
-		[Register ("onMrecLoaded", "()V", "GetOnMrecLoadedHandler:Com.Appodeal.Ads.IMrecCallbacksInvoker, AppodealXamarinPlugin")]
-		void OnMrecLoaded ();
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/interface[@name='MrecCallbacks']/method[@name='onMrecLoaded' and count(parameter)=1 and parameter[1][@type='boolean']]"
+		[Register ("onMrecLoaded", "(Z)V", "GetOnMrecLoaded_ZHandler:Com.Appodeal.Ads.IMrecCallbacksInvoker, AppodealXamarinPlugin")]
+		void OnMrecLoaded (bool p0);
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/interface[@name='MrecCallbacks']/method[@name='onMrecShown' and count(parameter)=0]"
 		[Register ("onMrecShown", "()V", "GetOnMrecShownHandler:Com.Appodeal.Ads.IMrecCallbacksInvoker, AppodealXamarinPlugin")]
@@ -64,7 +64,7 @@ namespace Com.Appodeal.Ads {
 
 		public IMrecCallbacksInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
 		{
-			IntPtr local_ref = JNIEnv.GetObjectClass (Handle);
+			IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
 			this.class_ref = JNIEnv.NewGlobalRef (local_ref);
 			JNIEnv.DeleteLocalRef (local_ref);
 		}
@@ -90,7 +90,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onMrecClicked == IntPtr.Zero)
 				id_onMrecClicked = JNIEnv.GetMethodID (class_ref, "onMrecClicked", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onMrecClicked);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onMrecClicked);
 		}
 
 		static Delegate cb_onMrecFailedToLoad;
@@ -114,31 +114,33 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onMrecFailedToLoad == IntPtr.Zero)
 				id_onMrecFailedToLoad = JNIEnv.GetMethodID (class_ref, "onMrecFailedToLoad", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onMrecFailedToLoad);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onMrecFailedToLoad);
 		}
 
-		static Delegate cb_onMrecLoaded;
+		static Delegate cb_onMrecLoaded_Z;
 #pragma warning disable 0169
-		static Delegate GetOnMrecLoadedHandler ()
+		static Delegate GetOnMrecLoaded_ZHandler ()
 		{
-			if (cb_onMrecLoaded == null)
-				cb_onMrecLoaded = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr>) n_OnMrecLoaded);
-			return cb_onMrecLoaded;
+			if (cb_onMrecLoaded_Z == null)
+				cb_onMrecLoaded_Z = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, bool>) n_OnMrecLoaded_Z);
+			return cb_onMrecLoaded_Z;
 		}
 
-		static void n_OnMrecLoaded (IntPtr jnienv, IntPtr native__this)
+		static void n_OnMrecLoaded_Z (IntPtr jnienv, IntPtr native__this, bool p0)
 		{
 			global::Com.Appodeal.Ads.IMrecCallbacks __this = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.IMrecCallbacks> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			__this.OnMrecLoaded ();
+			__this.OnMrecLoaded (p0);
 		}
 #pragma warning restore 0169
 
-		IntPtr id_onMrecLoaded;
-		public unsafe void OnMrecLoaded ()
+		IntPtr id_onMrecLoaded_Z;
+		public unsafe void OnMrecLoaded (bool p0)
 		{
-			if (id_onMrecLoaded == IntPtr.Zero)
-				id_onMrecLoaded = JNIEnv.GetMethodID (class_ref, "onMrecLoaded", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onMrecLoaded);
+			if (id_onMrecLoaded_Z == IntPtr.Zero)
+				id_onMrecLoaded_Z = JNIEnv.GetMethodID (class_ref, "onMrecLoaded", "(Z)V");
+			JValue* __args = stackalloc JValue [1];
+			__args [0] = new JValue (p0);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onMrecLoaded_Z, __args);
 		}
 
 		static Delegate cb_onMrecShown;
@@ -162,7 +164,7 @@ namespace Com.Appodeal.Ads {
 		{
 			if (id_onMrecShown == IntPtr.Zero)
 				id_onMrecShown = JNIEnv.GetMethodID (class_ref, "onMrecShown", "()V");
-			JNIEnv.CallVoidMethod (Handle, id_onMrecShown);
+			JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onMrecShown);
 		}
 
 	}
