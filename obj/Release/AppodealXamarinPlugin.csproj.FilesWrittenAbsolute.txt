@@ -1,0 +1,12 @@
+/Users/NazarKozak/Dropbox/Appodeal/appodeal-plugins/appodeal-xamarin-plugin/obj/Release/MonoAndroid,Version=v5.1.AssemblyAttribute.cs
+/Users/NazarKozak/Dropbox/Appodeal/appodeal-plugins/appodeal-xamarin-plugin/obj/Release/AppodealXamarinPlugin.Jars.appodeal-1.15.7.jar
+/Users/NazarKozak/Dropbox/Appodeal/appodeal-plugins/appodeal-xamarin-plugin/obj/Release/AppodealXamarinPlugin.Jars.yandex-metrica-2.41.jar
+/Users/NazarKozak/Dropbox/Appodeal/appodeal-plugins/appodeal-xamarin-plugin/obj/Release/AppodealXamarinPlugin.Jars.unity-ads-2.0.4.jar
+/Users/NazarKozak/Dropbox/Appodeal/appodeal-plugins/appodeal-xamarin-plugin/obj/Release/AppodealXamarinPlugin.Jars.applovin-6.3.0.jar
+/Users/NazarKozak/Dropbox/Appodeal/appodeal-plugins/appodeal-xamarin-plugin/obj/Release/AppodealXamarinPlugin.Jars.chartboost-6.5.1.jar
+/Users/NazarKozak/Dropbox/Appodeal/appodeal-plugins/appodeal-xamarin-plugin/obj/Release/AppodealXamarinPlugin.Jars.flurry-analytics-6.5.0.jar
+/Users/NazarKozak/Dropbox/Appodeal/appodeal-plugins/appodeal-xamarin-plugin/obj/Release/AppodealXamarinPlugin.Jars.my-target-4.5.10.jar
+/Users/NazarKozak/Dropbox/Appodeal/appodeal-plugins/appodeal-xamarin-plugin/obj/Release/AppodealXamarinPlugin.Jars.cheetah-mobile-3.4.7.aar
+/Users/NazarKozak/Dropbox/Appodeal/appodeal-plugins/appodeal-xamarin-plugin/bin/Release/AppodealXamarinPlugin.dll
+/Users/NazarKozak/Dropbox/Appodeal/appodeal-plugins/appodeal-xamarin-plugin/obj/Release/AppodealXamarinPlugin.dll
+/Users/NazarKozak/Dropbox/Appodeal/appodeal-plugins/appodeal-xamarin-plugin/obj/Release/AppodealXamarinPlugin.obj.Release.__AndroidLibraryProjects__.zip

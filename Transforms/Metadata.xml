@@ -1,9 +1,63 @@
 ﻿<metadata>
-	<!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
+    <remove-node path="/api/package[@name='com.amazon.device.ads']" />
+	<remove-node path="/api/package[@name='com.mopub.volley']" />
+	<remove-node path="/api/package[@name='com.mopub.volley.toolbox']" />
+	<remove-node path="/api/package[@name='com.mopub.network']" />
+	<remove-node path="/api/package[@name='com.mopub.mraid']" />
+	<remove-node path="/api/package[@name='com.mopub.nativeads']" />
+	<remove-node path="/api/package[@name='com.mopub.nativeads.factories']" />
+	<remove-node path="/api/package[@name='com.mopub.mobileads']" />
+	<remove-node path="/api/package[@name='com.mopub.mobileads.resource']" />
+	<remove-node path="/api/package[@name='com.mopub.mobileads.factories']" />
+	<remove-node path="/api/package[@name='com.mopub.mobileads.util']" />
+	<remove-node path="/api/package[@name='com.mopub.exceptions']" />
+    <remove-node path="/api/package[@name='com.mopub.common']" />
+	<remove-node path="/api/package[@name='com.mopub.common.util']" />
+	<remove-node path="/api/package[@name='com.mopub.common.event']" />
+	<remove-node path="/api/package[@name='com.mopub.common.logging']" />
+	<remove-node path="/api/package[@name='com.mopub.common.factories']" />
+	<remove-node path="/api/package[@name='org.nexage.sourcekit.mraid']" />
+	<remove-node path="/api/package[@name='org.nexage.sourcekit.util']" />
+	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast']" />
+	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.model']" />
+	<remove-node path="/api/package[@name='org.nexage.sourcekit.mraid.internal']" />
+	<remove-node path="/api/package[@name='org.nexage.sourcekit.mraid.nativefeature']" />
+	<remove-node path="/api/package[@name='org.nexage.sourcekit.mraid.properties']" />
+	<remove-node path="/api/package[@name='org.nexage.sourcekit.mraid.rtb']" />
+	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.activity']" />
+	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.processor']" />
+	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.view']" />
+
+	<remove-node path="/api/package[@name='com.cmcm.adsdk']" />
+	<remove-node path="/api/package[@name='com.cmcm.adsdk.adapter']" />
+	<remove-node path="/api/package[@name='com.cmcm.adsdk.banner']" />
+	<remove-node path="/api/package[@name='com.cmcm.adsdk.base']" />
+	<remove-node path="/api/package[@name='com.cmcm.adsdk.config']" />
+	<remove-node path="/api/package[@name='com.cmcm.adsdk.interstitial']" />
+	<remove-node path="/api/package[@name='com.cmcm.adsdk.nativead']" />
+	<remove-node path="/api/package[@name='com.cmcm.adsdk.offerreport']" />
+	<remove-node path="/api/package[@name='com.cmcm.adsdk.unifiedreport']" />
+	<remove-node path="/api/package[@name='com.cmcm.adsdk.utils']" />
+	<remove-node path="/api/package[@name='com.cmcm.baseapi.ads']" />
+	<remove-node path="/api/package[@name='com.cmcm.picks']" />
+	<remove-node path="/api/package[@name='com.cmcm.picks.gaid']" />
+	<remove-node path="/api/package[@name='com.cmcm.picks.init']" />
+	<remove-node path="/api/package[@name='com.cmcm.picks.loader']" />
+	<remove-node path="/api/package[@name='com.cmcm.picks.market']" />
+	<remove-node path="/api/package[@name='com.cmcm.picks.mixad']" />
+	<remove-node path="/api/package[@name='com.cmcm.picks.utils']" />
+	<remove-node path="/api/package[@name='com.cmcm.picks.vastvideo']" />
+	<remove-node path="/api/package[@name='com.cmcm.picks.webview']" />
+	<remove-node path="/api/package[@name='com.cmcm.utils']" />
+
+	<!--//Appodeal-->
+	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='VideoPlayerActivity']" />
+	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='VideoActivity']" />
+	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='InterstitialActivity']" />
+	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='LoaderActivity']" />
+	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='AppodealPackageAddedReceiver']" />
+	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='AppodealSettings']" />
+	<remove-node path="/api/package[@name='com.appodeal.ads.networks.vpaid']" />
+	<remove-node path="/api/package[@name='com.appodeal.ads.networks.spotx']" />
+	<remove-node path="/api/package[@name='com.appodeal.ads.networks']" />
 </metadata>

@@ -13,7 +13,7 @@
     <AssemblyName>AppodealXamarinPlugin</AssemblyName>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Additions\AboutAdditions.txt" />
-    <LibraryProjectZip Include="Jars\cheetah-mobile-3.4.7.aar" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\EnumFields.xml" />
@@ -56,13 +55,18 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedJar Include="Jars\yandex-metrica-2.41.jar" />
-    <EmbeddedJar Include="Jars\applovin-6.3.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\yandex-metrica-2.41.jar" />
+    <EmbeddedReferenceJar Include="Jars\unity-ads-2.0.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\applovin-6.3.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\chartboost-6.5.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\flurry-analytics-6.5.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\my-target-4.5.10.jar" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedJar Include="Jars\appodeal-1.15.7.jar" />
-    <EmbeddedJar Include="Jars\chartboost-6.5.1.jar" />
-    <EmbeddedJar Include="Jars\flurry-analytics-6.5.0.jar" />
-    <EmbeddedJar Include="Jars\my-target-4.5.10.jar" />
-    <EmbeddedJar Include="Jars\unity-ads-2.0.4.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="Jars\cheetah-mobile-3.4.7.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
 </Project>

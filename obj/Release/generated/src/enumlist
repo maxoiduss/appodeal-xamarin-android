@@ -1,0 +1,7 @@
+com.appodeal.ads.Native$NativeAdType:Com.Appodeal.Ads:Native.NativeAdType
+com.appodeal.ads.UserSettings$Alcohol:Com.Appodeal.Ads:UserSettings.Alcohol
+com.appodeal.ads.UserSettings$Gender:Com.Appodeal.Ads:UserSettings.Gender
+com.appodeal.ads.UserSettings$Occupation:Com.Appodeal.Ads:UserSettings.Occupation
+com.appodeal.ads.UserSettings$Relation:Com.Appodeal.Ads:UserSettings.Relation
+com.appodeal.ads.UserSettings$Smoking:Com.Appodeal.Ads:UserSettings.Smoking
+com.appodeal.ads.utils.Log$LogLevel:Com.Appodeal.Ads.Utils:Log.LogLevel
