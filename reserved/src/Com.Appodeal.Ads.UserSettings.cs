@@ -315,7 +315,7 @@ namespace Com.Appodeal.Ads {
 
 			// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Occupation']/field[@name='SCHOOL']"
 			[Register ("SCHOOL")]
-			public static global::Com.Appodeal.Ads.UserSettings.Occupation School {
+			public static global::Com.Appodeal.Ads.UserSettings.Occupation SCHOOL {
 				get {
 					if (SCHOOL_jfieldId == IntPtr.Zero)
 						SCHOOL_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "SCHOOL", "Lcom/appodeal/ads/UserSettings$Occupation;");

@@ -60,4 +60,42 @@
 	<remove-node path="/api/package[@name='com.appodeal.ads.networks.vpaid']" />
 	<remove-node path="/api/package[@name='com.appodeal.ads.networks.spotx']" />
 	<remove-node path="/api/package[@name='com.appodeal.ads.networks']" />
+	
+	<!--//Constants fix-->
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='INTERSTITIAL']" name="managedName">INTERSTITIAL</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER']" name="managedName">BANNER</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER_BOTTOM']" name="managedName">BANNER_BOTTOM</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER_TOP']" name="managedName">BANNER_TOP</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER_VIEW']" name="managedName">BANNER_VIEW</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='MREC']" name="managedName">MREC</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='NATIVE']" name="managedName">NATIVE</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='NONE']" name="managedName">NONE</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='NON_SKIPPABLE_VIDEO']" name="managedName">NON_SKIPPABLE_VIDEO</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='REWARDED_VIDEO']" name="managedName">REWARDED_VIDEO</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='SKIPPABLE_VIDEO']" name="managedName">SKIPPABLE_VIDEO</attr>
+	
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Alcohol']/field[@name='NEGATIVE']" name="managedName">NEGATIVE</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Alcohol']/field[@name='NEUTRAL']" name="managedName">NEUTRAL</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Alcohol']/field[@name='POSITIVE']" name="managedName">POSITIVE</attr>
+	
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='FEMALE']" name="managedName">FEMALE</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='MALE']" name="managedName">MALE</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='OTHER']" name="managedName">OTHER</attr>
+	
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Occupation']/field[@name='OTHER']" name="managedName">OTHER</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Occupation']/field[@name='SCHOOL']" name="managedName">SCHOOL</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Occupation']/field[@name='UNIVERSITY']" name="managedName">UNIVERSITY</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Occupation']/field[@name='WORK']" name="managedName">WORK</attr>
+	
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Relation']/field[@name='DATING']" name="managedName">DATING</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Relation']/field[@name='ENGAGED']" name="managedName">ENGAGED</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Relation']/field[@name='MARRIED']" name="managedName">MARRIED</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Relation']/field[@name='OTHER']" name="managedName">OTHER</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Relation']/field[@name='SEARCHING']" name="managedName">SEARCHING</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Relation']/field[@name='SINGLE']" name="managedName">SINGLE</attr>
+	
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Smoking']/field[@name='NEGATIVE']" name="managedName">NEGATIVE</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Smoking']/field[@name='NEUTRAL']" name="managedName">NEUTRAL</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Smoking']/field[@name='POSITIVE']" name="managedName">POSITIVE</attr>
+	
 </metadata>
