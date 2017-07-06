@@ -14,6 +14,7 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
+    <AndroidTlsProvider></AndroidTlsProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,18 +55,24 @@
     <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\appodeal-1.15.9.jar" />
+    <Folder Include="Jars\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedReferenceJar Include="Jars\unity-ads-2.0.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\applovin-6.3.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\flurry-analytics-6.5.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\my-target-4.5.10.jar" />
-	<EmbeddedReferenceJar Include="Jars\chartboost-6.6.1.jar" />
-	<EmbeddedReferenceJar Include="Jars\yandex-metrica-2.62.jar" />
+    <EmbeddedJar Include="Jars\appodeal-2.0.2.jar" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\cheetah-mobile-3.4.7.aar" />
+    <LibraryProjectZip Include="Jars\adcolony-sdk-3.1.2.aar" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedReferenceJar Include="Jars\applovin-7.0.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\picasso-2.5.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\chartboost-6.6.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\inmobi-6.1.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\mailru-4.5.15.jar" />
+    <EmbeddedReferenceJar Include="Jars\presage-lib-1.8.5.jar" />
+    <EmbeddedReferenceJar Include="Jars\unity_ads-2.0.5.jar" />
+    <EmbeddedReferenceJar Include="Jars\yandex-metrica-2.62.jar" />
+    <EmbeddedReferenceJar Include="Jars\facebook-audience-network-4.22.0.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
 </Project>

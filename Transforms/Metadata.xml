@@ -27,29 +27,7 @@
 	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.activity']" />
 	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.processor']" />
 	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.view']" />
-
-	<remove-node path="/api/package[@name='com.cmcm.adsdk']" />
-	<remove-node path="/api/package[@name='com.cmcm.adsdk.adapter']" />
-	<remove-node path="/api/package[@name='com.cmcm.adsdk.banner']" />
-	<remove-node path="/api/package[@name='com.cmcm.adsdk.base']" />
-	<remove-node path="/api/package[@name='com.cmcm.adsdk.config']" />
-	<remove-node path="/api/package[@name='com.cmcm.adsdk.interstitial']" />
-	<remove-node path="/api/package[@name='com.cmcm.adsdk.nativead']" />
-	<remove-node path="/api/package[@name='com.cmcm.adsdk.offerreport']" />
-	<remove-node path="/api/package[@name='com.cmcm.adsdk.unifiedreport']" />
-	<remove-node path="/api/package[@name='com.cmcm.adsdk.utils']" />
-	<remove-node path="/api/package[@name='com.cmcm.baseapi.ads']" />
-	<remove-node path="/api/package[@name='com.cmcm.picks']" />
-	<remove-node path="/api/package[@name='com.cmcm.picks.gaid']" />
-	<remove-node path="/api/package[@name='com.cmcm.picks.init']" />
-	<remove-node path="/api/package[@name='com.cmcm.picks.loader']" />
-	<remove-node path="/api/package[@name='com.cmcm.picks.market']" />
-	<remove-node path="/api/package[@name='com.cmcm.picks.mixad']" />
-	<remove-node path="/api/package[@name='com.cmcm.picks.utils']" />
-	<remove-node path="/api/package[@name='com.cmcm.picks.vastvideo']" />
-	<remove-node path="/api/package[@name='com.cmcm.picks.webview']" />
-	<remove-node path="/api/package[@name='com.cmcm.utils']" />
-
+	
 	<!--//Appodeal-->
 	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='VideoPlayerActivity']" />
 	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='VideoActivity']" />
@@ -72,30 +50,9 @@
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='NONE']" name="managedName">NONE</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='NON_SKIPPABLE_VIDEO']" name="managedName">NON_SKIPPABLE_VIDEO</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='REWARDED_VIDEO']" name="managedName">REWARDED_VIDEO</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='SKIPPABLE_VIDEO']" name="managedName">SKIPPABLE_VIDEO</attr>
-	
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Alcohol']/field[@name='NEGATIVE']" name="managedName">NEGATIVE</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Alcohol']/field[@name='NEUTRAL']" name="managedName">NEUTRAL</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Alcohol']/field[@name='POSITIVE']" name="managedName">POSITIVE</attr>
-	
+
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='FEMALE']" name="managedName">FEMALE</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='MALE']" name="managedName">MALE</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='OTHER']" name="managedName">OTHER</attr>
-	
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Occupation']/field[@name='OTHER']" name="managedName">OTHER</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Occupation']/field[@name='SCHOOL']" name="managedName">SCHOOL</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Occupation']/field[@name='UNIVERSITY']" name="managedName">UNIVERSITY</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Occupation']/field[@name='WORK']" name="managedName">WORK</attr>
-	
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Relation']/field[@name='DATING']" name="managedName">DATING</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Relation']/field[@name='ENGAGED']" name="managedName">ENGAGED</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Relation']/field[@name='MARRIED']" name="managedName">MARRIED</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Relation']/field[@name='OTHER']" name="managedName">OTHER</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Relation']/field[@name='SEARCHING']" name="managedName">SEARCHING</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Relation']/field[@name='SINGLE']" name="managedName">SINGLE</attr>
-	
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Smoking']/field[@name='NEGATIVE']" name="managedName">NEGATIVE</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Smoking']/field[@name='NEUTRAL']" name="managedName">NEUTRAL</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Smoking']/field[@name='POSITIVE']" name="managedName">POSITIVE</attr>
 	
 </metadata>
