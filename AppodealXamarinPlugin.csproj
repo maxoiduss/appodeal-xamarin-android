@@ -53,17 +53,16 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
     <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedReferenceJar Include="Jars\yandex-metrica-2.41.jar" />
-    <EmbeddedReferenceJar Include="Jars\unity-ads-2.0.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\applovin-6.3.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\chartboost-6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\flurry-analytics-6.5.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\my-target-4.5.10.jar" />
+    <EmbeddedJar Include="Jars\appodeal-1.15.9.jar" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\appodeal-1.15.7.jar" />
+    <EmbeddedReferenceJar Include="Jars\unity-ads-2.0.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\applovin-6.3.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\flurry-analytics-6.5.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\my-target-4.5.10.jar" />
+	<EmbeddedReferenceJar Include="Jars\chartboost-6.6.1.jar" />
+	<EmbeddedReferenceJar Include="Jars\yandex-metrica-2.62.jar" />
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\cheetah-mobile-3.4.7.aar" />

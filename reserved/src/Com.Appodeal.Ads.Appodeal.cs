@@ -53,6 +53,28 @@ namespace Com.Appodeal.Ads {
 		[Register ("SKIPPABLE_VIDEO")]
 		public const int SKIPPABLE_VIDEO = (int) 2;
 
+		static IntPtr b_jfieldId;
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='b']"
+		[Register ("b")]
+		public static global::Android.App.Activity B {
+			get {
+				if (b_jfieldId == IntPtr.Zero)
+					b_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "b", "Landroid/app/Activity;");
+				IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, b_jfieldId);
+				return global::Java.Lang.Object.GetObject<global::Android.App.Activity> (__ret, JniHandleOwnership.TransferLocalRef);
+			}
+			set {
+				if (b_jfieldId == IntPtr.Zero)
+					b_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "b", "Landroid/app/Activity;");
+				IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
+				try {
+					JNIEnv.SetStaticField (class_ref, b_jfieldId, native_value);
+				} finally {
+					JNIEnv.DeleteLocalRef (native_value);
+				}
+			}
+		}
 		internal static IntPtr java_class_handle;
 		internal static IntPtr class_ref {
 			get {
