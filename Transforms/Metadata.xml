@@ -39,6 +39,10 @@
 	<remove-node path="/api/package[@name='com.appodeal.ads.networks.spotx']" />
 	<remove-node path="/api/package[@name='com.appodeal.ads.networks']" />
 	
+	<!-- AdColony -->
+	<remove-node path="/api/package[@name='com.adcolony.sdk']" />
+	<remove-node path="/api/package[@name='com.adcolony.adcolonysdk']" />
+	
 	<!--//Constants fix-->
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='INTERSTITIAL']" name="managedName">INTERSTITIAL</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER']" name="managedName">BANNER</attr>

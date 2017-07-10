@@ -65,14 +65,25 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedReferenceJar Include="Jars\applovin-7.0.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\picasso-2.5.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\chartboost-6.6.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\inmobi-6.1.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\mailru-4.5.15.jar" />
+	<EmbeddedReferenceJar Include="Jars\avocarrot-3.7.6.jar" />
+	<EmbeddedReferenceJar Include="Jars\chartboost-6.6.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\dagger-2.7.jar" />
+	<EmbeddedReferenceJar Include="Jars\facebook-audience-network-4.22.0.jar" />
+	<EmbeddedReferenceJar Include="Jars\flurry-ads-6.6.0.jar" />
+	<EmbeddedReferenceJar Include="Jars\flurry-analytics-6.6.0.jar" />
+	<EmbeddedReferenceJar Include="Jars\inmobi-6.1.1.jar" />
+	<EmbeddedReferenceJar Include="Jars\ironsource-6.4.21.jar" />
+	<EmbeddedReferenceJar Include="Jars\javax.inject-1.jar" />
+	<EmbeddedReferenceJar Include="Jars\mailru-4.5.15.jar" />
+	<EmbeddedReferenceJar Include="Jars\picasso-2.5.2.jar" />
     <EmbeddedReferenceJar Include="Jars\presage-lib-1.8.5.jar" />
+	<EmbeddedReferenceJar Include="Jars\startapp-3.5.1.jar" />
+	<EmbeddedReferenceJar Include="Jars\tapjoy-11.8.2.jar" />
     <EmbeddedReferenceJar Include="Jars\unity_ads-2.0.5.jar" />
+	<EmbeddedReferenceJar Include="Jars\vungle-publisher-adaptive-id-4.0.3.jar" />
     <EmbeddedReferenceJar Include="Jars\yandex-metrica-2.62.jar" />
-    <EmbeddedReferenceJar Include="Jars\facebook-audience-network-4.22.0.jar" />
+	<EmbeddedReferenceJar Include="Jars\yandex-mobileads-2.50.jar" />
+    
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
 </Project>
