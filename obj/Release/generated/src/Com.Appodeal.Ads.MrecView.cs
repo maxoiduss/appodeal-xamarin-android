@@ -8,8 +8,8 @@ namespace Com.Appodeal.Ads {
 	[global::Android.Runtime.Register ("com/appodeal/ads/MrecView", DoNotGenerateAcw=true)]
 	public partial class MrecView : global::Android.Widget.FrameLayout {
 
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/appodeal/ads/MrecView", ref java_class_handle);
 			}
@@ -38,9 +38,9 @@ namespace Com.Appodeal.Ads {
 				JValue* __args = stackalloc JValue [2];
 				__args [0] = new JValue (p0);
 				__args [1] = new JValue (p1);
-				if (GetType () != typeof (MrecView)) {
+				if (((object) this).GetType () != typeof (MrecView)) {
 					SetHandle (
-							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Landroid/content/Context;Landroid/util/AttributeSet;)V", __args),
+							global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "(Landroid/content/Context;Landroid/util/AttributeSet;)V", __args),
 							JniHandleOwnership.TransferLocalRef);
 					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "(Landroid/content/Context;Landroid/util/AttributeSet;)V", __args);
 					return;
