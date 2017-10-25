@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <DefineConstants>$(DefineConstants);ANDROID_1;ANDROID_2;ANDROID_3;ANDROID_4;ANDROID_5;ANDROID_6;ANDROID_7;ANDROID_8;ANDROID_9;ANDROID_10;ANDROID_11;ANDROID_12;ANDROID_13;ANDROID_14;ANDROID_15;ANDROID_16;ANDROID_17;ANDROID_18;ANDROID_19;ANDROID_20;ANDROID_21;ANDROID_22</DefineConstants>
+    <DefineConstants>$(DefineConstants);ANDROID_1;ANDROID_2;ANDROID_3;ANDROID_4;ANDROID_5;ANDROID_6;ANDROID_7;ANDROID_8;ANDROID_9;ANDROID_10;ANDROID_11;ANDROID_12;ANDROID_13;ANDROID_14;ANDROID_15;ANDROID_16;ANDROID_17;ANDROID_18;ANDROID_19;ANDROID_20;ANDROID_21</DefineConstants>
   </PropertyGroup>
   <!-- Classes -->
   <ItemGroup>
@@ -13,6 +13,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Appodeal.Ads.IMrecCallbacks.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Appodeal.Ads.INativeAd.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Appodeal.Ads.INativeCallbacks.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Appodeal.Ads.INativeCallbacksInternal.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Appodeal.Ads.INonSkippableVideoCallbacks.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Appodeal.Ads.IRewardedVideoCallbacks.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Appodeal.Ads.MrecView.cs" />

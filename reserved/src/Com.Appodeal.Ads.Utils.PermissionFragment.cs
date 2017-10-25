@@ -8,8 +8,8 @@ namespace Com.Appodeal.Ads.Utils {
 	[global::Android.Runtime.Register ("com/appodeal/ads/utils/PermissionFragment", DoNotGenerateAcw=true)]
 	public partial class PermissionFragment : global::Android.App.Fragment {
 
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/appodeal/ads/utils/PermissionFragment", ref java_class_handle);
 			}
@@ -35,9 +35,9 @@ namespace Com.Appodeal.Ads.Utils {
 				return;
 
 			try {
-				if (GetType () != typeof (PermissionFragment)) {
+				if (((object) this).GetType () != typeof (PermissionFragment)) {
 					SetHandle (
-							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "()V"),
+							global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "()V"),
 							JniHandleOwnership.TransferLocalRef);
 					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
 					return;
@@ -78,7 +78,7 @@ namespace Com.Appodeal.Ads.Utils {
 				id_a = JNIEnv.GetMethodID (class_ref, "a", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_a);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "a", "()V"));
@@ -123,7 +123,7 @@ namespace Com.Appodeal.Ads.Utils {
 				__args [1] = new JValue (native_p1);
 				__args [2] = new JValue (native_p2);
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onRequestPermissionsResult_IarrayLjava_lang_String_arrayI, __args);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onRequestPermissionsResult", "(I[Ljava/lang/String;[I)V"), __args);
