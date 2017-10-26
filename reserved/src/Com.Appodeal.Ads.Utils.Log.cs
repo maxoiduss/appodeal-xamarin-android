@@ -51,8 +51,8 @@ namespace Com.Appodeal.Ads.Utils {
 					return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.Utils.Log.LogLevel> (__ret, JniHandleOwnership.TransferLocalRef);
 				}
 			}
-			internal static IntPtr java_class_handle;
-			internal static IntPtr class_ref {
+			internal static new IntPtr java_class_handle;
+			internal static new IntPtr class_ref {
 				get {
 					return JNIEnv.FindClass ("com/appodeal/ads/utils/Log$LogLevel", ref java_class_handle);
 				}
@@ -144,8 +144,8 @@ namespace Com.Appodeal.Ads.Utils {
 
 		}
 
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/appodeal/ads/utils/Log", ref java_class_handle);
 			}

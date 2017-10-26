@@ -51,8 +51,8 @@ namespace Com.Appodeal.Ads {
 					return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings.Gender> (__ret, JniHandleOwnership.TransferLocalRef);
 				}
 			}
-			internal static IntPtr java_class_handle;
-			internal static IntPtr class_ref {
+			internal static new IntPtr java_class_handle;
+			internal static new IntPtr class_ref {
 				get {
 					return JNIEnv.FindClass ("com/appodeal/ads/UserSettings$Gender", ref java_class_handle);
 				}
@@ -225,8 +225,8 @@ namespace Com.Appodeal.Ads {
 					return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings.Relation> (__ret, JniHandleOwnership.TransferLocalRef);
 				}
 			}
-			internal static IntPtr java_class_handle;
-			internal static IntPtr class_ref {
+			internal static new IntPtr java_class_handle;
+			internal static new IntPtr class_ref {
 				get {
 					return JNIEnv.FindClass ("com/appodeal/ads/UserSettings$Relation", ref java_class_handle);
 				}
@@ -303,8 +303,8 @@ namespace Com.Appodeal.Ads {
 
 		}
 
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/appodeal/ads/UserSettings", ref java_class_handle);
 			}
@@ -345,7 +345,7 @@ namespace Com.Appodeal.Ads {
 					id_getAge = JNIEnv.GetMethodID (class_ref, "getAge", "()Ljava/lang/Integer;");
 				try {
 
-					if (GetType () == ThresholdType)
+					if (((object) this).GetType () == ThresholdType)
 						return global::Java.Lang.Object.GetObject<global::Java.Lang.Integer> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getAge), JniHandleOwnership.TransferLocalRef);
 					else
 						return global::Java.Lang.Object.GetObject<global::Java.Lang.Integer> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getAge", "()Ljava/lang/Integer;")), JniHandleOwnership.TransferLocalRef);
@@ -379,7 +379,7 @@ namespace Com.Appodeal.Ads {
 					id_getUserId = JNIEnv.GetMethodID (class_ref, "getUserId", "()Ljava/lang/String;");
 				try {
 
-					if (GetType () == ThresholdType)
+					if (((object) this).GetType () == ThresholdType)
 						return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getUserId), JniHandleOwnership.TransferLocalRef);
 					else
 						return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getUserId", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
@@ -413,7 +413,7 @@ namespace Com.Appodeal.Ads {
 				id_a = JNIEnv.GetMethodID (class_ref, "a", "()Lcom/appodeal/ads/UserSettings$Relation;");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings.Relation> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_a), JniHandleOwnership.TransferLocalRef);
 				else
 					return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings.Relation> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "a", "()Lcom/appodeal/ads/UserSettings$Relation;")), JniHandleOwnership.TransferLocalRef);
@@ -451,7 +451,7 @@ namespace Com.Appodeal.Ads {
 				__args [0] = new JValue (p0);
 
 				global::Com.Appodeal.Ads.UserSettings __ret;
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_a_Lcom_appodeal_ads_UserSettings_Relation_, __args), JniHandleOwnership.TransferLocalRef);
 				else
 					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "a", "(Lcom/appodeal/ads/UserSettings$Relation;)Lcom/appodeal/ads/UserSettings;"), __args), JniHandleOwnership.TransferLocalRef);
@@ -491,7 +491,7 @@ namespace Com.Appodeal.Ads {
 				__args [0] = new JValue (native_p0);
 
 				global::Com.Appodeal.Ads.UserSettings __ret;
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_a_Ljava_lang_String_, __args), JniHandleOwnership.TransferLocalRef);
 				else
 					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "a", "(Ljava/lang/String;)Lcom/appodeal/ads/UserSettings;"), __args), JniHandleOwnership.TransferLocalRef);
@@ -526,7 +526,7 @@ namespace Com.Appodeal.Ads {
 				id_b = JNIEnv.GetMethodID (class_ref, "b", "()Ljava/lang/String;");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_b), JniHandleOwnership.TransferLocalRef);
 				else
 					return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "b", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
@@ -559,7 +559,7 @@ namespace Com.Appodeal.Ads {
 				id_c = JNIEnv.GetMethodID (class_ref, "c", "()Ljava/lang/String;");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_c), JniHandleOwnership.TransferLocalRef);
 				else
 					return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "c", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
@@ -592,7 +592,7 @@ namespace Com.Appodeal.Ads {
 				id_d = JNIEnv.GetMethodID (class_ref, "d", "()Ljava/lang/String;");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_d), JniHandleOwnership.TransferLocalRef);
 				else
 					return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "d", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
@@ -625,7 +625,7 @@ namespace Com.Appodeal.Ads {
 				id_e = JNIEnv.GetMethodID (class_ref, "e", "()Ljava/lang/String;");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_e), JniHandleOwnership.TransferLocalRef);
 				else
 					return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "e", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
@@ -658,7 +658,7 @@ namespace Com.Appodeal.Ads {
 				id_f = JNIEnv.GetMethodID (class_ref, "f", "()Ljava/lang/String;");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_f), JniHandleOwnership.TransferLocalRef);
 				else
 					return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "f", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
@@ -691,7 +691,7 @@ namespace Com.Appodeal.Ads {
 				id_g = JNIEnv.GetMethodID (class_ref, "g", "()Ljava/lang/Float;");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					return global::Java.Lang.Object.GetObject<global::Java.Lang.Float> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_g), JniHandleOwnership.TransferLocalRef);
 				else
 					return global::Java.Lang.Object.GetObject<global::Java.Lang.Float> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "g", "()Ljava/lang/Float;")), JniHandleOwnership.TransferLocalRef);
@@ -724,7 +724,7 @@ namespace Com.Appodeal.Ads {
 				id_getGender = JNIEnv.GetMethodID (class_ref, "getGender", "()Lcom/appodeal/ads/UserSettings$Gender;");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings.Gender> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getGender), JniHandleOwnership.TransferLocalRef);
 				else
 					return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings.Gender> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getGender", "()Lcom/appodeal/ads/UserSettings$Gender;")), JniHandleOwnership.TransferLocalRef);
@@ -757,7 +757,7 @@ namespace Com.Appodeal.Ads {
 				id_h = JNIEnv.GetMethodID (class_ref, "h", "()Ljava/lang/Float;");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					return global::Java.Lang.Object.GetObject<global::Java.Lang.Float> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_h), JniHandleOwnership.TransferLocalRef);
 				else
 					return global::Java.Lang.Object.GetObject<global::Java.Lang.Float> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "h", "()Ljava/lang/Float;")), JniHandleOwnership.TransferLocalRef);
@@ -790,7 +790,7 @@ namespace Com.Appodeal.Ads {
 				id_i = JNIEnv.GetMethodID (class_ref, "i", "()Ljava/lang/String;");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_i), JniHandleOwnership.TransferLocalRef);
 				else
 					return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "i", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
@@ -823,7 +823,7 @@ namespace Com.Appodeal.Ads {
 				id_j = JNIEnv.GetMethodID (class_ref, "j", "()Ljava/lang/String;");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_j), JniHandleOwnership.TransferLocalRef);
 				else
 					return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "j", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
@@ -856,7 +856,7 @@ namespace Com.Appodeal.Ads {
 				id_l = JNIEnv.GetMethodID (class_ref, "l", "()Ljava/lang/String;");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					return JNIEnv.GetString (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_l), JniHandleOwnership.TransferLocalRef);
 				else
 					return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "l", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
@@ -891,7 +891,7 @@ namespace Com.Appodeal.Ads {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_setAge_I, __args), JniHandleOwnership.TransferLocalRef);
 				else
 					return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setAge", "(I)Lcom/appodeal/ads/UserSettings;"), __args), JniHandleOwnership.TransferLocalRef);
@@ -929,7 +929,7 @@ namespace Com.Appodeal.Ads {
 				__args [0] = new JValue (p0);
 
 				global::Com.Appodeal.Ads.UserSettings __ret;
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_setGender_Lcom_appodeal_ads_UserSettings_Gender_, __args), JniHandleOwnership.TransferLocalRef);
 				else
 					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setGender", "(Lcom/appodeal/ads/UserSettings$Gender;)Lcom/appodeal/ads/UserSettings;"), __args), JniHandleOwnership.TransferLocalRef);
@@ -969,7 +969,7 @@ namespace Com.Appodeal.Ads {
 				__args [0] = new JValue (native_p0);
 
 				global::Com.Appodeal.Ads.UserSettings __ret;
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_setUserId_Ljava_lang_String_, __args), JniHandleOwnership.TransferLocalRef);
 				else
 					__ret = global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.UserSettings> (JNIEnv.CallNonvirtualObjectMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setUserId", "(Ljava/lang/String;)Lcom/appodeal/ads/UserSettings;"), __args), JniHandleOwnership.TransferLocalRef);

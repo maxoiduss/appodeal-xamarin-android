@@ -140,8 +140,8 @@ namespace Com.Appodeal.Ads {
 				}
 			}
 		}
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/appodeal/ads/Appodeal", ref java_class_handle);
 			}
@@ -734,6 +734,21 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
+		static IntPtr id_setChildDirectedTreatment_Z;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setChildDirectedTreatment' and count(parameter)=1 and parameter[1][@type='boolean']]"
+		[Register ("setChildDirectedTreatment", "(Z)V", "")]
+		public static unsafe void SetChildDirectedTreatment (bool p0)
+		{
+			if (id_setChildDirectedTreatment_Z == IntPtr.Zero)
+				id_setChildDirectedTreatment_Z = JNIEnv.GetStaticMethodID (class_ref, "setChildDirectedTreatment", "(Z)V");
+			try {
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue (p0);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_setChildDirectedTreatment_Z, __args);
+			} finally {
+			}
+		}
+
 		static IntPtr id_setCustomRule_Ljava_lang_String_Z;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setCustomRule' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='boolean']]"
 		[Register ("setCustomRule", "(Ljava/lang/String;Z)V", "")]
@@ -822,6 +837,28 @@ namespace Com.Appodeal.Ads {
 				__args [0] = new JValue (native_p0);
 				__args [1] = new JValue (native_p1);
 				JNIEnv.CallStaticVoidMethod  (class_ref, id_setFramework_Ljava_lang_String_Ljava_lang_String_, __args);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_p0);
+				JNIEnv.DeleteLocalRef (native_p1);
+			}
+		}
+
+		static IntPtr id_setFramework_Ljava_lang_String_Ljava_lang_String_ZZ;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='setFramework' and count(parameter)=4 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='boolean'] and parameter[4][@type='boolean']]"
+		[Register ("setFramework", "(Ljava/lang/String;Ljava/lang/String;ZZ)V", "")]
+		public static unsafe void SetFramework (string p0, string p1, bool p2, bool p3)
+		{
+			if (id_setFramework_Ljava_lang_String_Ljava_lang_String_ZZ == IntPtr.Zero)
+				id_setFramework_Ljava_lang_String_Ljava_lang_String_ZZ = JNIEnv.GetStaticMethodID (class_ref, "setFramework", "(Ljava/lang/String;Ljava/lang/String;ZZ)V");
+			IntPtr native_p0 = JNIEnv.NewString (p0);
+			IntPtr native_p1 = JNIEnv.NewString (p1);
+			try {
+				JValue* __args = stackalloc JValue [4];
+				__args [0] = new JValue (native_p0);
+				__args [1] = new JValue (native_p1);
+				__args [2] = new JValue (p2);
+				__args [3] = new JValue (p3);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_setFramework_Ljava_lang_String_Ljava_lang_String_ZZ, __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_p0);
 				JNIEnv.DeleteLocalRef (native_p1);

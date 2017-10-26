@@ -8,8 +8,8 @@ namespace Com.Appodeal.Ads {
 	[global::Android.Runtime.Register ("com/appodeal/ads/TestActivity", DoNotGenerateAcw=true)]
 	public partial class TestActivity : global::Android.App.Activity, global::Com.Appodeal.Ads.IBannerCallbacks, global::Com.Appodeal.Ads.IInterstitialCallbacks, global::Com.Appodeal.Ads.IMrecCallbacks, global::Com.Appodeal.Ads.INativeCallbacks, global::Com.Appodeal.Ads.IRewardedVideoCallbacks {
 
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/appodeal/ads/TestActivity", ref java_class_handle);
 			}
@@ -35,9 +35,9 @@ namespace Com.Appodeal.Ads {
 				return;
 
 			try {
-				if (GetType () != typeof (TestActivity)) {
+				if (((object) this).GetType () != typeof (TestActivity)) {
 					SetHandle (
-							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "()V"),
+							global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "()V"),
 							JniHandleOwnership.TransferLocalRef);
 					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
 					return;
@@ -78,7 +78,7 @@ namespace Com.Appodeal.Ads {
 				id_a = JNIEnv.GetMethodID (class_ref, "a", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_a);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "a", "()V"));
@@ -111,7 +111,7 @@ namespace Com.Appodeal.Ads {
 				id_b = JNIEnv.GetMethodID (class_ref, "b", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_b);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "b", "()V"));
@@ -144,7 +144,7 @@ namespace Com.Appodeal.Ads {
 				id_onBannerClicked = JNIEnv.GetMethodID (class_ref, "onBannerClicked", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onBannerClicked);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onBannerClicked", "()V"));
@@ -177,7 +177,7 @@ namespace Com.Appodeal.Ads {
 				id_onBannerFailedToLoad = JNIEnv.GetMethodID (class_ref, "onBannerFailedToLoad", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onBannerFailedToLoad);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onBannerFailedToLoad", "()V"));
@@ -213,7 +213,7 @@ namespace Com.Appodeal.Ads {
 				__args [0] = new JValue (p0);
 				__args [1] = new JValue (p1);
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onBannerLoaded_IZ, __args);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onBannerLoaded", "(IZ)V"), __args);
@@ -246,7 +246,7 @@ namespace Com.Appodeal.Ads {
 				id_onBannerShown = JNIEnv.GetMethodID (class_ref, "onBannerShown", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onBannerShown);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onBannerShown", "()V"));
@@ -282,7 +282,7 @@ namespace Com.Appodeal.Ads {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onCreate_Landroid_os_Bundle_, __args);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onCreate", "(Landroid/os/Bundle;)V"), __args);
@@ -315,7 +315,7 @@ namespace Com.Appodeal.Ads {
 				id_onInterstitialClicked = JNIEnv.GetMethodID (class_ref, "onInterstitialClicked", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onInterstitialClicked);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onInterstitialClicked", "()V"));
@@ -348,7 +348,7 @@ namespace Com.Appodeal.Ads {
 				id_onInterstitialClosed = JNIEnv.GetMethodID (class_ref, "onInterstitialClosed", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onInterstitialClosed);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onInterstitialClosed", "()V"));
@@ -381,7 +381,7 @@ namespace Com.Appodeal.Ads {
 				id_onInterstitialFailedToLoad = JNIEnv.GetMethodID (class_ref, "onInterstitialFailedToLoad", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onInterstitialFailedToLoad);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onInterstitialFailedToLoad", "()V"));
@@ -416,7 +416,7 @@ namespace Com.Appodeal.Ads {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onInterstitialLoaded_Z, __args);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onInterstitialLoaded", "(Z)V"), __args);
@@ -449,7 +449,7 @@ namespace Com.Appodeal.Ads {
 				id_onInterstitialShown = JNIEnv.GetMethodID (class_ref, "onInterstitialShown", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onInterstitialShown);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onInterstitialShown", "()V"));
@@ -482,7 +482,7 @@ namespace Com.Appodeal.Ads {
 				id_onMrecClicked = JNIEnv.GetMethodID (class_ref, "onMrecClicked", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onMrecClicked);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onMrecClicked", "()V"));
@@ -515,7 +515,7 @@ namespace Com.Appodeal.Ads {
 				id_onMrecFailedToLoad = JNIEnv.GetMethodID (class_ref, "onMrecFailedToLoad", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onMrecFailedToLoad);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onMrecFailedToLoad", "()V"));
@@ -550,7 +550,7 @@ namespace Com.Appodeal.Ads {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onMrecLoaded_Z, __args);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onMrecLoaded", "(Z)V"), __args);
@@ -583,7 +583,7 @@ namespace Com.Appodeal.Ads {
 				id_onMrecShown = JNIEnv.GetMethodID (class_ref, "onMrecShown", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onMrecShown);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onMrecShown", "()V"));
@@ -619,7 +619,7 @@ namespace Com.Appodeal.Ads {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onNativeClicked_Lcom_appodeal_ads_NativeAd_, __args);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onNativeClicked", "(Lcom/appodeal/ads/NativeAd;)V"), __args);
@@ -652,7 +652,7 @@ namespace Com.Appodeal.Ads {
 				id_onNativeFailedToLoad = JNIEnv.GetMethodID (class_ref, "onNativeFailedToLoad", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onNativeFailedToLoad);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onNativeFailedToLoad", "()V"));
@@ -685,7 +685,7 @@ namespace Com.Appodeal.Ads {
 				id_onNativeLoaded = JNIEnv.GetMethodID (class_ref, "onNativeLoaded", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onNativeLoaded);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onNativeLoaded", "()V"));
@@ -721,7 +721,7 @@ namespace Com.Appodeal.Ads {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onNativeShown_Lcom_appodeal_ads_NativeAd_, __args);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onNativeShown", "(Lcom/appodeal/ads/NativeAd;)V"), __args);
@@ -754,7 +754,7 @@ namespace Com.Appodeal.Ads {
 				id_onResume = JNIEnv.GetMethodID (class_ref, "onResume", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onResume);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onResume", "()V"));
@@ -789,7 +789,7 @@ namespace Com.Appodeal.Ads {
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (p0);
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onRewardedVideoClosed_Z, __args);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onRewardedVideoClosed", "(Z)V"), __args);
@@ -822,7 +822,7 @@ namespace Com.Appodeal.Ads {
 				id_onRewardedVideoFailedToLoad = JNIEnv.GetMethodID (class_ref, "onRewardedVideoFailedToLoad", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onRewardedVideoFailedToLoad);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onRewardedVideoFailedToLoad", "()V"));
@@ -860,7 +860,7 @@ namespace Com.Appodeal.Ads {
 				__args [0] = new JValue (p0);
 				__args [1] = new JValue (native_p1);
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onRewardedVideoFinished_ILjava_lang_String_, __args);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onRewardedVideoFinished", "(ILjava/lang/String;)V"), __args);
@@ -894,7 +894,7 @@ namespace Com.Appodeal.Ads {
 				id_onRewardedVideoLoaded = JNIEnv.GetMethodID (class_ref, "onRewardedVideoLoaded", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onRewardedVideoLoaded);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onRewardedVideoLoaded", "()V"));
@@ -927,7 +927,7 @@ namespace Com.Appodeal.Ads {
 				id_onRewardedVideoShown = JNIEnv.GetMethodID (class_ref, "onRewardedVideoShown", "()V");
 			try {
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onRewardedVideoShown);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "onRewardedVideoShown", "()V"));

@@ -140,8 +140,8 @@ namespace Com.Appodeal.Ads.Utils {
 		}
 
 
-		internal static IntPtr java_class_handle;
-		internal static IntPtr class_ref {
+		internal static new IntPtr java_class_handle;
+		internal static new IntPtr class_ref {
 			get {
 				return JNIEnv.FindClass ("com/appodeal/ads/utils/PermissionsHelper", ref java_class_handle);
 			}
@@ -167,9 +167,9 @@ namespace Com.Appodeal.Ads.Utils {
 				return;
 
 			try {
-				if (GetType () != typeof (PermissionsHelper)) {
+				if (((object) this).GetType () != typeof (PermissionsHelper)) {
 					SetHandle (
-							global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "()V"),
+							global::Android.Runtime.JNIEnv.StartCreateInstance (((object) this).GetType (), "()V"),
 							JniHandleOwnership.TransferLocalRef);
 					global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
 					return;
@@ -228,7 +228,7 @@ namespace Com.Appodeal.Ads.Utils {
 				__args [0] = new JValue (p0);
 				__args [1] = new JValue (p1);
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_a_Landroid_app_Activity_Lcom_appodeal_ads_utils_PermissionsHelper_AppodealPermissionCallbacks_, __args);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "a", "(Landroid/app/Activity;Lcom/appodeal/ads/utils/PermissionsHelper$AppodealPermissionCallbacks;)V"), __args);
@@ -264,7 +264,7 @@ namespace Com.Appodeal.Ads.Utils {
 				__args [0] = new JValue (p0);
 				__args [1] = new JValue (p1);
 
-				if (GetType () == ThresholdType)
+				if (((object) this).GetType () == ThresholdType)
 					JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_a_II, __args);
 				else
 					JNIEnv.CallNonvirtualVoidMethod (((global::Java.Lang.Object) this).Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "a", "(II)V"), __args);
