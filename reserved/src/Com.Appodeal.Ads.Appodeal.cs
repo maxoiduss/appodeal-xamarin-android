@@ -359,6 +359,21 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
+		static IntPtr id_destroy_I;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='destroy' and count(parameter)=1 and parameter[1][@type='int']]"
+		[Register ("destroy", "(I)V", "")]
+		public static unsafe void Destroy (int p0)
+		{
+			if (id_destroy_I == IntPtr.Zero)
+				id_destroy_I = JNIEnv.GetStaticMethodID (class_ref, "destroy", "(I)V");
+			try {
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue (p0);
+				JNIEnv.CallStaticVoidMethod  (class_ref, id_destroy_I, __args);
+			} finally {
+			}
+		}
+
 		static IntPtr id_disableLocationPermissionCheck;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/method[@name='disableLocationPermissionCheck' and count(parameter)=0]"
 		[Register ("disableLocationPermissionCheck", "()V", "")]

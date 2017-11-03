@@ -1,3 +1,0 @@
-D:\work\plugins\Xamarin\appodeal-xamarin-plugin\bin\Release\AppodealXamarinPlugin.dll
-D:\work\plugins\Xamarin\appodeal-xamarin-plugin\obj\Release\AppodealXamarinPlugin.csprojResolveAssemblyReference.cache
-D:\work\plugins\Xamarin\appodeal-xamarin-plugin\obj\Release\AppodealXamarinPlugin.dll

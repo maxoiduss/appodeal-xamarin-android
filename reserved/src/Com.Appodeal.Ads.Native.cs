@@ -13,44 +13,38 @@ namespace Com.Appodeal.Ads {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Native']/field[@name='B']"
 		[Register ("B")]
-		public static global::Com.Appodeal.Ads.Native.NativeAdType B {
+		public static bool B {
 			get {
 				if (B_jfieldId == IntPtr.Zero)
-					B_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "B", "Lcom/appodeal/ads/Native$NativeAdType;");
-				IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, B_jfieldId);
-				return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.Native.NativeAdType> (__ret, JniHandleOwnership.TransferLocalRef);
+					B_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "B", "Z");
+				return JNIEnv.GetStaticBooleanField (class_ref, B_jfieldId);
 			}
 			set {
 				if (B_jfieldId == IntPtr.Zero)
-					B_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "B", "Lcom/appodeal/ads/Native$NativeAdType;");
-				IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
+					B_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "B", "Z");
 				try {
-					JNIEnv.SetStaticField (class_ref, B_jfieldId, native_value);
+					JNIEnv.SetStaticField (class_ref, B_jfieldId, value);
 				} finally {
-					JNIEnv.DeleteLocalRef (native_value);
 				}
 			}
 		}
 
-		static IntPtr d_jfieldId;
+		static IntPtr D_jfieldId;
 
-		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Native']/field[@name='d']"
-		[Register ("d")]
-		public static global::Com.Appodeal.Ads.INativeCallbacks D {
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Native']/field[@name='D']"
+		[Register ("D")]
+		public static bool D {
 			get {
-				if (d_jfieldId == IntPtr.Zero)
-					d_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "d", "Lcom/appodeal/ads/NativeCallbacks;");
-				IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, d_jfieldId);
-				return global::Java.Lang.Object.GetObject<global::Com.Appodeal.Ads.INativeCallbacks> (__ret, JniHandleOwnership.TransferLocalRef);
+				if (D_jfieldId == IntPtr.Zero)
+					D_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "D", "Z");
+				return JNIEnv.GetStaticBooleanField (class_ref, D_jfieldId);
 			}
 			set {
-				if (d_jfieldId == IntPtr.Zero)
-					d_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "d", "Lcom/appodeal/ads/NativeCallbacks;");
-				IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
+				if (D_jfieldId == IntPtr.Zero)
+					D_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "D", "Z");
 				try {
-					JNIEnv.SetStaticField (class_ref, d_jfieldId, native_value);
+					JNIEnv.SetStaticField (class_ref, D_jfieldId, value);
 				} finally {
-					JNIEnv.DeleteLocalRef (native_value);
 				}
 			}
 		}
@@ -98,21 +92,41 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
-		static IntPtr j_jfieldId;
+		static IntPtr i_jfieldId;
 
-		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Native']/field[@name='j']"
-		[Register ("j")]
-		public static bool J {
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Native']/field[@name='i']"
+		[Register ("i")]
+		public static bool I {
 			get {
-				if (j_jfieldId == IntPtr.Zero)
-					j_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "j", "Z");
-				return JNIEnv.GetStaticBooleanField (class_ref, j_jfieldId);
+				if (i_jfieldId == IntPtr.Zero)
+					i_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "i", "Z");
+				return JNIEnv.GetStaticBooleanField (class_ref, i_jfieldId);
 			}
 			set {
-				if (j_jfieldId == IntPtr.Zero)
-					j_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "j", "Z");
+				if (i_jfieldId == IntPtr.Zero)
+					i_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "i", "Z");
 				try {
-					JNIEnv.SetStaticField (class_ref, j_jfieldId, value);
+					JNIEnv.SetStaticField (class_ref, i_jfieldId, value);
+				} finally {
+				}
+			}
+		}
+
+		static IntPtr k_jfieldId;
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Native']/field[@name='k']"
+		[Register ("k")]
+		public static int K {
+			get {
+				if (k_jfieldId == IntPtr.Zero)
+					k_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "k", "I");
+				return JNIEnv.GetStaticIntField (class_ref, k_jfieldId);
+			}
+			set {
+				if (k_jfieldId == IntPtr.Zero)
+					k_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "k", "I");
+				try {
+					JNIEnv.SetStaticField (class_ref, k_jfieldId, value);
 				} finally {
 				}
 			}
@@ -122,19 +136,12 @@ namespace Com.Appodeal.Ads {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Native']/field[@name='l']"
 		[Register ("l")]
-		public static int L {
+		public static global::System.Collections.IList L {
 			get {
 				if (l_jfieldId == IntPtr.Zero)
-					l_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "l", "I");
-				return JNIEnv.GetStaticIntField (class_ref, l_jfieldId);
-			}
-			set {
-				if (l_jfieldId == IntPtr.Zero)
-					l_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "l", "I");
-				try {
-					JNIEnv.SetStaticField (class_ref, l_jfieldId, value);
-				} finally {
-				}
+					l_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "l", "Ljava/util/ArrayList;");
+				IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, l_jfieldId);
+				return global::Android.Runtime.JavaList.FromJniHandle (__ret, JniHandleOwnership.TransferLocalRef);
 			}
 		}
 
@@ -142,12 +149,19 @@ namespace Com.Appodeal.Ads {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Native']/field[@name='m']"
 		[Register ("m")]
-		public static global::System.Collections.IList M {
+		public static int M {
 			get {
 				if (m_jfieldId == IntPtr.Zero)
-					m_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "m", "Ljava/util/ArrayList;");
-				IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, m_jfieldId);
-				return global::Android.Runtime.JavaList.FromJniHandle (__ret, JniHandleOwnership.TransferLocalRef);
+					m_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "m", "I");
+				return JNIEnv.GetStaticIntField (class_ref, m_jfieldId);
+			}
+			set {
+				if (m_jfieldId == IntPtr.Zero)
+					m_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "m", "I");
+				try {
+					JNIEnv.SetStaticField (class_ref, m_jfieldId, value);
+				} finally {
+				}
 			}
 		}
 
@@ -155,15 +169,15 @@ namespace Com.Appodeal.Ads {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Native']/field[@name='n']"
 		[Register ("n")]
-		public static int N {
+		public static bool N {
 			get {
 				if (n_jfieldId == IntPtr.Zero)
-					n_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "n", "I");
-				return JNIEnv.GetStaticIntField (class_ref, n_jfieldId);
+					n_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "n", "Z");
+				return JNIEnv.GetStaticBooleanField (class_ref, n_jfieldId);
 			}
 			set {
 				if (n_jfieldId == IntPtr.Zero)
-					n_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "n", "I");
+					n_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "n", "Z");
 				try {
 					JNIEnv.SetStaticField (class_ref, n_jfieldId, value);
 				} finally {
@@ -191,21 +205,21 @@ namespace Com.Appodeal.Ads {
 			}
 		}
 
-		static IntPtr p_jfieldId;
+		static IntPtr v_jfieldId;
 
-		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Native']/field[@name='p']"
-		[Register ("p")]
-		public static bool P {
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Native']/field[@name='v']"
+		[Register ("v")]
+		public static int V {
 			get {
-				if (p_jfieldId == IntPtr.Zero)
-					p_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "p", "Z");
-				return JNIEnv.GetStaticBooleanField (class_ref, p_jfieldId);
+				if (v_jfieldId == IntPtr.Zero)
+					v_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "v", "I");
+				return JNIEnv.GetStaticIntField (class_ref, v_jfieldId);
 			}
 			set {
-				if (p_jfieldId == IntPtr.Zero)
-					p_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "p", "Z");
+				if (v_jfieldId == IntPtr.Zero)
+					v_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "v", "I");
 				try {
-					JNIEnv.SetStaticField (class_ref, p_jfieldId, value);
+					JNIEnv.SetStaticField (class_ref, v_jfieldId, value);
 				} finally {
 				}
 			}
@@ -215,37 +229,17 @@ namespace Com.Appodeal.Ads {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Native']/field[@name='w']"
 		[Register ("w")]
-		public static int W {
+		public static bool W {
 			get {
 				if (w_jfieldId == IntPtr.Zero)
-					w_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "w", "I");
-				return JNIEnv.GetStaticIntField (class_ref, w_jfieldId);
+					w_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "w", "Z");
+				return JNIEnv.GetStaticBooleanField (class_ref, w_jfieldId);
 			}
 			set {
 				if (w_jfieldId == IntPtr.Zero)
-					w_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "w", "I");
+					w_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "w", "Z");
 				try {
 					JNIEnv.SetStaticField (class_ref, w_jfieldId, value);
-				} finally {
-				}
-			}
-		}
-
-		static IntPtr x_jfieldId;
-
-		// Metadata.xml XPath field reference: path="/api/package[@name='com.appodeal.ads']/class[@name='Native']/field[@name='x']"
-		[Register ("x")]
-		public static bool X {
-			get {
-				if (x_jfieldId == IntPtr.Zero)
-					x_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "x", "Z");
-				return JNIEnv.GetStaticBooleanField (class_ref, x_jfieldId);
-			}
-			set {
-				if (x_jfieldId == IntPtr.Zero)
-					x_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "x", "Z");
-				try {
-					JNIEnv.SetStaticField (class_ref, x_jfieldId, value);
 				} finally {
 				}
 			}
