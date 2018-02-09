@@ -59,35 +59,34 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\adcolony-sdk-3.1.2.aar" />
+    <LibraryProjectZip Include="Jars\adcolony-sdk-3.2.1.aar" />
     <LibraryProjectZip Include="Jars\mmedia-6.4.0.aar" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedReferenceJar Include="Jars\applovin-7.4.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\applovin-7.5.0.jar" />
     <EmbeddedReferenceJar Include="Jars\appnext-2.0.3.459.jar" />
     <EmbeddedReferenceJar Include="Jars\avocarrot-3.8.2.jar" />
     <EmbeddedReferenceJar Include="Jars\chartboost-6.6.3.jar" />
     <EmbeddedReferenceJar Include="Jars\dagger-2.7.jar" />
     <EmbeddedReferenceJar Include="Jars\eventbus-2.2.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\facebook-4.26.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\flurry-ads-7.0.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\flurry-analytics-7.0.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\facebook-4.26.1.jar" />
     <EmbeddedReferenceJar Include="Jars\inmobi-6.2.3.jar" />
-    <EmbeddedReferenceJar Include="Jars\ironsource-6.6.2.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\ironsource-6.7.3.jar" />
     <EmbeddedReferenceJar Include="Jars\javax.inject-1.jar" />
     <EmbeddedReferenceJar Include="Jars\mailru-4.6.17.jar" />
-    <EmbeddedReferenceJar Include="Jars\ogury-2.1.15.jar" />
     <EmbeddedReferenceJar Include="Jars\picasso-2.5.2.jar" />
     <EmbeddedReferenceJar Include="Jars\rxjava-1.2.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\startapp-3.6.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\startapp-3.6.7.jar" />
     <EmbeddedReferenceJar Include="Jars\tapjoy-11.11.0.jar" />
     <EmbeddedReferenceJar Include="Jars\unity_ads-2.1.0.jar" />
     <EmbeddedReferenceJar Include="Jars\vungle-sdk-android-5.1.0.jar" />
     <EmbeddedReferenceJar Include="Jars\yandex-metrica-2.73.jar" />
     <EmbeddedReferenceJar Include="Jars\yandex-mobileads-2.61.jar" />
+	<EmbeddedReferenceJar Include="Jars\adcolony-sdk-3.2.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\mmedia-6.4.0.jar" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\appodeal-2.1.7.jar" />
+    <EmbeddedJar Include="Jars\appodeal-2.1.9.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
 </Project>
