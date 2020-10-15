@@ -29,7 +29,6 @@
 	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.view']" />
 	
 	<!--//Appodeal-->
-	<!--
 	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='VideoPlayerActivity']" />
 	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='VideoActivity']" />
 	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='InterstitialActivity']" />
@@ -39,22 +38,16 @@
 	<remove-node path="/api/package[@name='com.appodeal.ads.networks.vpaid']" />
 	<remove-node path="/api/package[@name='com.appodeal.ads.networks.spotx']" />
 	<remove-node path="/api/package[@name='com.appodeal.ads.networks']" />
-	-->
+	
 	<!-- AdColony -->
-	<remove-node path="/api/package[@name='com.adcolony.sdk']" />
+	<!--<remove-node path="/api/package[@name='com.adcolony.sdk']" />
 	<remove-node path="/api/package[@name='com.adcolony.adcolonysdk']" />
-	
-	<!-- MobVista -->
-	<remove-node path="/api/package[@name='com.mobvista.sdk']" />
-	<remove-node path="/api/package[@name='com.mobvista.msdk']" />
-	
-	<remove-node path="/api/package[@name='com.moat.analytics.mobile.vng']" />
-	
+	-->
 	<!-- AdColony fix -->
-	<!--
+	
 	<attr path="/api/package[@name='com.integralads.avid.library.adcolony.walking.async']/class[@name='AvidCleanupAsyncTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object...']]/parameter[1]" name="managedType">params Java.Lang.Object []</attr>
 	<attr path="/api/package[@name='com.integralads.avid.library.adcolony.walking.async']/class[@name='AvidCleanupAsyncTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object...']]" name="managedReturn">Java.Lang.Object</attr>
-	-->
+	
 	
 	<!--
 	<add-node path="/api/package[@name='com.acrcloud.rec.sdk.utils']">

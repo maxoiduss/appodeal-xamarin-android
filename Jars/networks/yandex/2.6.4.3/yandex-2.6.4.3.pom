@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.appodeal.ads.sdk.networks</groupId>
+  <artifactId>yandex</artifactId>
+  <version>2.6.4.3</version>
+  <packaging>aar</packaging>
+  <dependencies>
+    <dependency>
+      <groupId>com.appodeal.ads.sdk</groupId>
+      <artifactId>core</artifactId>
+      <version>2.6.4</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.yandex.android</groupId>
+      <artifactId>mobmetricalib</artifactId>
+      <version>3.13.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>com.android.support</groupId>
+          <artifactId>support-v4</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.yandex.android</groupId>
+      <artifactId>mobileads</artifactId>
+      <version>2.142</version>
+      <exclusions>
+        <exclusion>
+          <groupId>com.android.support</groupId>
+          <artifactId>support-v4</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+</project>
