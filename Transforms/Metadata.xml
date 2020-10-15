@@ -1,4 +1,5 @@
 ﻿<metadata>
+	<!--
     <remove-node path="/api/package[@name='com.amazon.device.ads']" />
 	<remove-node path="/api/package[@name='com.mopub.volley']" />
 	<remove-node path="/api/package[@name='com.mopub.volley.toolbox']" />
@@ -27,8 +28,11 @@
 	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.activity']" />
 	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.processor']" />
 	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.view']" />
-	
+	-->
 	<!--//Appodeal-->
+		<!-- last generation fix -->
+	<remove-node path="/api/package[@name='com.moat.analytics.mobile.vng/']/class[@name='ReactiveVideoTrackerPlugin']" />
+	<!--
 	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='VideoPlayerActivity']" />
 	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='VideoActivity']" />
 	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='InterstitialActivity']" />
@@ -38,12 +42,13 @@
 	<remove-node path="/api/package[@name='com.appodeal.ads.networks.vpaid']" />
 	<remove-node path="/api/package[@name='com.appodeal.ads.networks.spotx']" />
 	<remove-node path="/api/package[@name='com.appodeal.ads.networks']" />
-	
+	-->
 	<!-- AdColony -->
 	<remove-node path="/api/package[@name='com.adcolony.sdk']" />
 	<remove-node path="/api/package[@name='com.adcolony.adcolonysdk']" />
 	
 	<!--//Constants fix-->
+	<!--
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='INTERSTITIAL']" name="managedName">INTERSTITIAL</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER']" name="managedName">BANNER</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER_BOTTOM']" name="managedName">BANNER_BOTTOM</attr>
@@ -55,8 +60,11 @@
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='NON_SKIPPABLE_VIDEO']" name="managedName">NON_SKIPPABLE_VIDEO</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='REWARDED_VIDEO']" name="managedName">REWARDED_VIDEO</attr>
 
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='FEMALE']" name="managedName">FEMALE</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='MALE']" name="managedName">MALE</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='OTHER']" name="managedName">OTHER</attr>
-	
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='FEMALE']"
+		  name="managedName">FEMALE</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='MALE']"
+		  name="managedName">MALE</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='OTHER']"
+		  name="managedName">OTHER</attr>
+	-->
 </metadata>
