@@ -1,52 +1,12 @@
 ﻿<metadata>
+	<!-- last generation fix -->
 	<!--
-    <remove-node path="/api/package[@name='com.amazon.device.ads']" />
-	<remove-node path="/api/package[@name='com.mopub.volley']" />
-	<remove-node path="/api/package[@name='com.mopub.volley.toolbox']" />
-	<remove-node path="/api/package[@name='com.mopub.network']" />
-	<remove-node path="/api/package[@name='com.mopub.mraid']" />
-	<remove-node path="/api/package[@name='com.mopub.nativeads']" />
-	<remove-node path="/api/package[@name='com.mopub.nativeads.factories']" />
-	<remove-node path="/api/package[@name='com.mopub.mobileads']" />
-	<remove-node path="/api/package[@name='com.mopub.mobileads.resource']" />
-	<remove-node path="/api/package[@name='com.mopub.mobileads.factories']" />
-	<remove-node path="/api/package[@name='com.mopub.mobileads.util']" />
-	<remove-node path="/api/package[@name='com.mopub.exceptions']" />
-    <remove-node path="/api/package[@name='com.mopub.common']" />
-	<remove-node path="/api/package[@name='com.mopub.common.util']" />
-	<remove-node path="/api/package[@name='com.mopub.common.event']" />
-	<remove-node path="/api/package[@name='com.mopub.common.logging']" />
-	<remove-node path="/api/package[@name='com.mopub.common.factories']" />
-	<remove-node path="/api/package[@name='org.nexage.sourcekit.mraid']" />
-	<remove-node path="/api/package[@name='org.nexage.sourcekit.util']" />
-	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast']" />
-	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.model']" />
-	<remove-node path="/api/package[@name='org.nexage.sourcekit.mraid.internal']" />
-	<remove-node path="/api/package[@name='org.nexage.sourcekit.mraid.nativefeature']" />
-	<remove-node path="/api/package[@name='org.nexage.sourcekit.mraid.properties']" />
-	<remove-node path="/api/package[@name='org.nexage.sourcekit.mraid.rtb']" />
-	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.activity']" />
-	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.processor']" />
-	<remove-node path="/api/package[@name='org.nexage.sourcekit.vast.view']" />
-	-->
-	<!--//Appodeal-->
-		<!-- last generation fix -->
 	<remove-node path="/api/package[@name='com.moat.analytics.mobile.vng/']/class[@name='ReactiveVideoTrackerPlugin']" />
-	<!--
-	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='VideoPlayerActivity']" />
-	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='VideoActivity']" />
-	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='InterstitialActivity']" />
-	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='LoaderActivity']" />
-	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='AppodealPackageAddedReceiver']" />
-	<remove-node path="/api/package[@name='com.appodeal.ads']/class[@name='AppodealSettings']" />
-	<remove-node path="/api/package[@name='com.appodeal.ads.networks.vpaid']" />
-	<remove-node path="/api/package[@name='com.appodeal.ads.networks.spotx']" />
-	<remove-node path="/api/package[@name='com.appodeal.ads.networks']" />
 	-->
 	<!-- AdColony -->
-	<remove-node path="/api/package[@name='com.adcolony.sdk']" />
+	<!--<remove-node path="/api/package[@name='com.adcolony.sdk']" />
 	<remove-node path="/api/package[@name='com.adcolony.adcolonysdk']" />
-	
+	-->
 	<!--//Constants fix-->
 	<!--
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='INTERSTITIAL']" name="managedName">INTERSTITIAL</attr>
@@ -59,12 +19,12 @@
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='NONE']" name="managedName">NONE</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='NON_SKIPPABLE_VIDEO']" name="managedName">NON_SKIPPABLE_VIDEO</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='REWARDED_VIDEO']" name="managedName">REWARDED_VIDEO</attr>
-
+	-->
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='FEMALE']"
 		  name="managedName">FEMALE</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='MALE']"
 		  name="managedName">MALE</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='OTHER']"
 		  name="managedName">OTHER</attr>
-	-->
+	
 </metadata>
