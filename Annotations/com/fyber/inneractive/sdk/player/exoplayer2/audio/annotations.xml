@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.AudioProcessor boolean configure(int, int, int) 2">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_E_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS_HD}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.AudioProcessor int getOutputEncoding()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_E_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS_HD}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.AudioProcessor.UnhandledFormatException UnhandledFormatException(int, int, int) 2">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_E_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS_HD}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.AudioTrack encoding">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_E_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS_HD}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.AudioTrack int getEncodingForMimeType(java.lang.String)">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_E_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS_HD}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.AudioTrack int getFramesPerEncodedSample(int, java.nio.ByteBuffer) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_E_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS_HD}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.AudioTrack outputEncoding">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_E_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS_HD}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.AudioTrack streamType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.C.STREAM_TYPE_ALARM, com.fyber.inneractive.sdk.player.exoplayer2.C.STREAM_TYPE_MUSIC, com.fyber.inneractive.sdk.player.exoplayer2.C.STREAM_TYPE_NOTIFICATION, com.fyber.inneractive.sdk.player.exoplayer2.C.STREAM_TYPE_RING, com.fyber.inneractive.sdk.player.exoplayer2.C.STREAM_TYPE_SYSTEM, com.fyber.inneractive.sdk.player.exoplayer2.C.STREAM_TYPE_VOICE_CALL}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.AudioTrack void configure(java.lang.String, int, int, int, int) 3">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.AudioTrack void configure(java.lang.String, int, int, int, int, int[]) 3">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.AudioTrack void setStreamType(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.C.STREAM_TYPE_ALARM, com.fyber.inneractive.sdk.player.exoplayer2.C.STREAM_TYPE_MUSIC, com.fyber.inneractive.sdk.player.exoplayer2.C.STREAM_TYPE_NOTIFICATION, com.fyber.inneractive.sdk.player.exoplayer2.C.STREAM_TYPE_RING, com.fyber.inneractive.sdk.player.exoplayer2.C.STREAM_TYPE_SYSTEM, com.fyber.inneractive.sdk.player.exoplayer2.C.STREAM_TYPE_VOICE_CALL}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.ChannelMappingAudioProcessor boolean configure(int, int, int) 2">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_E_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS_HD}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.ResamplingAudioProcessor boolean configure(int, int, int) 2">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_E_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS_HD}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.ResamplingAudioProcessor encoding">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.SimpleDecoderAudioRenderer decoderReinitializationState">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.audio.SimpleDecoderAudioRenderer.REINITIALIZATION_STATE_NONE, com.fyber.inneractive.sdk.player.exoplayer2.audio.SimpleDecoderAudioRenderer.REINITIALIZATION_STATE_SIGNAL_END_OF_STREAM, com.fyber.inneractive.sdk.player.exoplayer2.audio.SimpleDecoderAudioRenderer.REINITIALIZATION_STATE_WAIT_END_OF_STREAM}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.audio.SonicAudioProcessor boolean configure(int, int, int) 2">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_E_AC3, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_DTS_HD}" />
+    </annotation>
+  </item>
+</root>
+

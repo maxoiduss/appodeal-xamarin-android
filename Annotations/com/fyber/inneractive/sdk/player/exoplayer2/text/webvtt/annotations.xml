@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle bold">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.UNSPECIFIED, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.OFF, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.ON}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle fontSizeUnit">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.UNSPECIFIED, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.FONT_SIZE_UNIT_PIXEL, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.FONT_SIZE_UNIT_EM, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.FONT_SIZE_UNIT_PERCENT}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle int getFontSizeUnit()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.UNSPECIFIED, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.FONT_SIZE_UNIT_PIXEL, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.FONT_SIZE_UNIT_EM, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.FONT_SIZE_UNIT_PERCENT}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle int getStyle()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.UNSPECIFIED, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.STYLE_NORMAL, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.STYLE_BOLD, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.STYLE_ITALIC, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.STYLE_BOLD_ITALIC}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle italic">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.UNSPECIFIED, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.OFF, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.ON}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle linethrough">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.UNSPECIFIED, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.OFF, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.ON}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle underline">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.UNSPECIFIED, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.OFF, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.ON}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.FontSizeUnit">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.UNSPECIFIED, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.FONT_SIZE_UNIT_PIXEL, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.FONT_SIZE_UNIT_EM, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.FONT_SIZE_UNIT_PERCENT}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.StyleFlags">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.UNSPECIFIED, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.STYLE_NORMAL, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.STYLE_BOLD, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.STYLE_ITALIC, com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCssStyle.STYLE_BOLD_ITALIC}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCue WebvttCue(long, long, java.lang.CharSequence, android.text.Layout.Alignment, float, int, int, float, int, float) 5">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.LINE_TYPE_FRACTION, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.LINE_TYPE_NUMBER}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCue WebvttCue(long, long, java.lang.CharSequence, android.text.Layout.Alignment, float, int, int, float, int, float) 6">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_START, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_MIDDLE, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_END}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.webvtt.WebvttCue WebvttCue(long, long, java.lang.CharSequence, android.text.Layout.Alignment, float, int, int, float, int, float) 8">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_START, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_MIDDLE, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_END}" />
+    </annotation>
+  </item>
+</root>
+

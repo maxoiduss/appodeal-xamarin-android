@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.vungle.warren.model.AdAsset fileType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.AdAsset.FileType.ZIP, com.vungle.warren.model.AdAsset.FileType.ZIP_ASSET, com.vungle.warren.model.AdAsset.FileType.ASSET}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.AdAsset retryTypeError">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.AdAsset.ErrorType.CAN_RETRY_ERROR, com.vungle.warren.model.AdAsset.ErrorType.CANNOT_RETRY_ERROR, com.vungle.warren.model.AdAsset.ErrorType.NO_ERROR}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.AdAsset status">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.AdAsset.Status.NEW, com.vungle.warren.model.AdAsset.Status.DOWNLOAD_RUNNING, com.vungle.warren.model.AdAsset.Status.DOWNLOAD_FAILED, com.vungle.warren.model.AdAsset.Status.DOWNLOAD_SUCCESS, com.vungle.warren.model.AdAsset.Status.PROCESSED}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.AdAsset.ErrorType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.AdAsset.ErrorType.CAN_RETRY_ERROR, com.vungle.warren.model.AdAsset.ErrorType.CANNOT_RETRY_ERROR, com.vungle.warren.model.AdAsset.ErrorType.NO_ERROR}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.AdAsset.FileType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.AdAsset.FileType.ZIP, com.vungle.warren.model.AdAsset.FileType.ZIP_ASSET, com.vungle.warren.model.AdAsset.FileType.ASSET}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.AdAsset.Status">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.AdAsset.Status.NEW, com.vungle.warren.model.AdAsset.Status.DOWNLOAD_RUNNING, com.vungle.warren.model.AdAsset.Status.DOWNLOAD_FAILED, com.vungle.warren.model.AdAsset.Status.DOWNLOAD_SUCCESS, com.vungle.warren.model.AdAsset.Status.PROCESSED}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Advertisement adType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Advertisement.TYPE_VUNGLE_LOCAL, com.vungle.warren.model.Advertisement.TYPE_VUNGLE_MRAID}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Advertisement int getAdType()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Advertisement.TYPE_VUNGLE_LOCAL, com.vungle.warren.model.Advertisement.TYPE_VUNGLE_MRAID}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Advertisement int getOrientation()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Advertisement.PORTRAIT, com.vungle.warren.model.Advertisement.LANDSCAPE}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Advertisement int getState()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Advertisement.NEW, com.vungle.warren.model.Advertisement.READY, com.vungle.warren.model.Advertisement.VIEWING, com.vungle.warren.model.Advertisement.DONE, com.vungle.warren.model.Advertisement.ERROR}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Advertisement void setState(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Advertisement.NEW, com.vungle.warren.model.Advertisement.READY, com.vungle.warren.model.Advertisement.VIEWING, com.vungle.warren.model.Advertisement.DONE, com.vungle.warren.model.Advertisement.ERROR}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Advertisement.AdType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Advertisement.TYPE_VUNGLE_LOCAL, com.vungle.warren.model.Advertisement.TYPE_VUNGLE_MRAID}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Advertisement.CacheKey">
+    <annotation name="androidx.annotation.StringDef">
+      <val name="value" val="{com.vungle.warren.model.Advertisement.KEY_POSTROLL, com.vungle.warren.model.Advertisement.KEY_VIDEO, com.vungle.warren.model.Advertisement.KEY_TEMPLATE}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Advertisement.Orientation">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Advertisement.PORTRAIT, com.vungle.warren.model.Advertisement.LANDSCAPE}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Advertisement.State">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Advertisement.NEW, com.vungle.warren.model.Advertisement.READY, com.vungle.warren.model.Advertisement.VIEWING, com.vungle.warren.model.Advertisement.DONE, com.vungle.warren.model.Advertisement.ERROR}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Placement int getPlacementAdType()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Placement.TYPE_DEFAULT, com.vungle.warren.model.Placement.TYPE_VUNGLE_BANNER, com.vungle.warren.model.Placement.TYPE_DEPRECTAED_TEMPLATE}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Placement placementAdType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Placement.TYPE_DEFAULT, com.vungle.warren.model.Placement.TYPE_VUNGLE_BANNER, com.vungle.warren.model.Placement.TYPE_DEPRECTAED_TEMPLATE}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Placement.PlacementAdType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Placement.TYPE_DEFAULT, com.vungle.warren.model.Placement.TYPE_VUNGLE_BANNER, com.vungle.warren.model.Placement.TYPE_DEPRECTAED_TEMPLATE}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Report int getStatus()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Report.NEW, com.vungle.warren.model.Report.READY, com.vungle.warren.model.Report.SENDING, com.vungle.warren.model.Report.FAILED}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Report void setStatus(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Report.NEW, com.vungle.warren.model.Report.READY, com.vungle.warren.model.Report.SENDING, com.vungle.warren.model.Report.FAILED}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.model.Report.Status">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Report.NEW, com.vungle.warren.model.Report.READY, com.vungle.warren.model.Report.SENDING, com.vungle.warren.model.Report.FAILED}" />
+    </annotation>
+  </item>
+</root>
+

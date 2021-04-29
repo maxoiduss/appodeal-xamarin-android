@@ -12,9 +12,8 @@
     <AssemblyName>AppodealXamarinAndroid</AssemblyName>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
-    <AndroidTlsProvider>
-    </AndroidTlsProvider>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <AndroidTlsProvider></AndroidTlsProvider>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
   </PropertyGroup>
@@ -31,7 +30,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
-    <DebugType>embedded</DebugType>
+    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
@@ -47,7 +46,6 @@
     <Reference Include="Xamarin.Jetbrains.Annotations">
       <HintPath>packages\Xamarin.Jetbrains.Annotations.13.0.0.2\lib\monoandroid90\Xamarin.Jetbrains.Annotations.dll</HintPath>
     </Reference>
-    <Reference Include="Java.Interop" />
     <Reference Include="Xamarin.Kotlin.StdLib.Common">
       <HintPath>packages\Xamarin.Kotlin.StdLib.Common.1.4.10\lib\monoandroid90\Xamarin.Kotlin.StdLib.Common.dll</HintPath>
     </Reference>
@@ -57,12 +55,38 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Additions\AppodealX\Com.Appodeal.Ads.Adapters.Appodealx.AppodealXNetwork.Builder.cs" />
+    <Compile Include="Additions\AppodealX\Com.Appodeal.Ads.Adapters.Appodealx.Banner.AppodealX.cs" />
+    <Compile Include="Additions\AppodealX\Com.Appodeal.Ads.Adapters.Appodealx.Interstitial.AppodealX.cs" />
+    <Compile Include="Additions\AppodealX\Com.Appodeal.Ads.Adapters.Appodealx.Native_ad.AppodealX.cs" />
+    <Compile Include="Additions\AppodealX\Com.Appodeal.Ads.Adapters.Appodealx.Rewarded_video.AppodealX.cs" />
+    <Compile Include="Additions\AppodealX\Com.Appodeal.Ads.Adapters.Appodealx.Video.AppodealX.cs" />
     <Compile Include="Additions\Com.Appodeal.Ads.Utils.Version.cs" />
+    <Compile Include="Additions\Com.Appodeal.Ads.Adapters.Appodeal.Native_ad.AppodealNative.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Additions\AboutAdditions.txt" />
     <None Include="packages.config" />
-    <None Include="Jars\com.google.auto.value.auto-value-1.5.2.jar" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="JavaDocs\com.applovin.applovin-sdk-9.14.10-javadoc.jar" />
+    <None Include="JavaDocs\com.criteo.publisher.criteo-publisher-sdk-4.0.0-javadoc.jar" />
+    <None Include="JavaDocs\com.google.android.exoplayer.exoplayer-core.exoplayer-core-2.11.7-javadoc.jar" />
+    <None Include="JavaDocs\com.google.android.exoplayer.exoplayer-hls.exoplayer-hls-2.8.4-javadoc.jar" />
+    <None Include="JavaDocs\com.google.code.gson.gson.gson-2.8.6-javadoc.jar" />
+    <None Include="JavaDocs\com.mopub.mopub-sdk.mopub-sdk-5.8.0-javadoc.jar" />
+    <None Include="JavaDocs\com.mopub.mopub-sdk-banner.mopub-sdk-banner-5.8.0-javadoc.jar" />
+    <None Include="JavaDocs\com.mopub.mopub-sdk-base.mopub-sdk-base-5.8.0-javadoc.jar" />
+    <None Include="JavaDocs\com.mopub.mopub-sdk-interstitial.mopub-sdk-interstitial-5.8.0-javadoc.jar" />
+    <None Include="JavaDocs\com.mopub.mopub-sdk-rewardedvideo.mopub-sdk-rewardedvideo-5.8.0-javadoc.jar" />
+    <None Include="JavaDocs\com.mopub.volley.mopub-volley.mopub-volley-2.1.0-javadoc.jar" />
+    <None Include="JavaDocs\com.smaato.android.sdk.module-core.module-core-21.5.4-javadoc.jar" />
+    <None Include="JavaDocs\com.smaato.android.sdk.smaato-sdk-interstitial.smaato-sdk-interstitial-21.5.4-javadoc.jar" />
+    <None Include="JavaDocs\com.unity3d.ads.unity-ads.unity-ads-3.5.1-javadoc.jar" />
+    <None Include="JavaDocs\com.yandex.android.mobileads.mobileads-3.1.1-javadoc.jar" />
+    <None Include="JavaDocs\com.yandex.android.mobmetricalib.mobmetricalib-3.14.3-javadoc.jar" />
+    <None Include="JavaDocs\com.amazon.android.mobile-ads-6.0.0-javadoc.jar" />
+    <None Include="Resources\Resource.Designer.cs" />
+    <None Include="JavaDocs\readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\EnumFields.xml" />
@@ -72,90 +96,142 @@
   <ItemGroup />
   <ItemGroup>
     <Folder Include="Jars\" />
+    <Folder Include="Annotations\" />
+    <Folder Include="Aars\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\com.appodeal.ads.sdk.core-2.6.5.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.a4g-2.6.5.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.adcolony-2.6.5.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.amazon-ads-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.applovin-2.6.5.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.appodeal-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.appodealx-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.chartboost-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.facebook-2.6.5.3.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.flurry-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.fyber-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.inmobi-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.inner-active-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.ironsource-2.6.5.3.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.mopub-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.mraid-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.my-target-2.6.5.3.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.nast-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.ogury-2.6.5.3.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.smaato-2.6.5.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.startapp-2.6.5.5.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.tapjoy-2.6.5.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.unity-ads-2.6.5.3.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.vast-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.vungle-2.6.4.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.yandex-2.6.5.3.jar" />
-    <EmbeddedJar Include="Jars\com.appodeal.ads.sdk-2.6.5.0.jar" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.adcolony-2.6.5.4-r-classes.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.applovin-2.6.5.4-r-classes.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.appodealx-2.6.5.1-r-classes.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.facebook-2.6.5.3-r-classes.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.my-target-2.6.5.3-r-classes.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks.tapjoy-2.6.5.2-r-classes.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.core-2.6.5-r-classes.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.adcolony.sdk-4.1.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.applovin.applovin.sdk-9.11.6.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.protobuf.models-1.0.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.explorestack.amazon.sdk-5.9.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.explorestack.chartboost.sdk-7.5.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.explorestack.consent-1.0.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.explorestack.consent-models-1.0.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.explorestack.iab-0.5.6.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.explorestack.ogury.sdk-4.7.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.adcolony.sdk-4.3.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.amazon.android.mobile-ads-6.0.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.applovin.applovin-sdk-9.14.10.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.criteo.publisher.criteo-publisher-sdk-4.0.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.facebook.android.audience-network-sdk-6.2.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.flurry.android. analytics.analytics-11.6.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.flurry.android.ads.ads-11.6.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.fyber.vamp.core-sdk.core-sdk-7.5.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.fyber.vamp.mraid-kit.mraid-kit-7.5.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.fyber.vamp.video-kit.video-kit-7.5.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.inmobi.monetization.inmobi-ads.inmobi-ads-7.3.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.ironsource.sdk.mediationsdk.mediationsdk-7.0.4.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.mopub.mopub-sdk.mopub-sdk-5.8.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.mopub.mopub-sdk-banner.mopub-sdk-banner-5.8.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.mopub.mopub-sdk-base.mopub-sdk-base-5.8.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.mopub.mopub-sdk-interstitial.mopub-sdk-interstitial-5.8.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.mopub.mopub-sdk-rewardedvideo.mopub-sdk-rewardedvideo-5.8.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.mopub.volley.mopub-volley.mopub-volley-2.1.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.my.target.mytarget-sdk.mytarget-sdk-5.11.7.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.ryanharter.auto.value.auto-value-gson-runtime.auto-value-gson-runtime-1.3.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.module-core.module-core-21.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.module-richmedia.module-richmedia-21.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.module-video.module-video-21.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk.smaato-sdk-21.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-base.smaato-sdk-base-21.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-interstitial.smaato-sdk-interstitial-21.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.startapp.inapp-sdk.inapp-sdk-4.6.3.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.tapjoy.tapjoy-android-sdk.tapjoy-android-sdk-12.4.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.unity3d.ads.unity-ads.unity-ads-3.5.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.vungle.publisher-sdk-android.publisher-sdk-android-6.8.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.yandex.android.mobileads.mobileads-3.1.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\a4g-2.8.1.7.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\adcolony-2.8.1.8.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\amazon_ads-2.8.1.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\applovin-2.8.1.9.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\chartboost-2.6.5.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\facebook-2.8.1.8.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\flurry-2.6.5.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\fyber-2.6.5.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\inmobi-2.6.5.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\inner-active-2.6.5.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\ironsource-2.8.1.8.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\mopub-2.6.5.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\mraid-2.8.1.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\my_target-2.8.1.8.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\nast-2.8.1.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\ogury-2.8.1.6.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\smaato-2.8.1.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\startapp-2.8.1.7.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\tapjoy-2.6.5.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\unity_ads-2.8.1.7.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\vast-2.8.1.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\vungle-2.8.1.5.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\yandex-2.8.1.6.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\bidmachine-2.8.1.3.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.explorestack.consent-1.0.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.explorestack.consent-models-1.0.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.explorestack.iab-0.5.9.jar" />
     <EmbeddedReferenceJar Include="Jars\com.explorestack.protobuf-java-1.0.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.facebook.android.audience-network.sdk-5.7.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.flurry.android.ads-11.6.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.flurry.android.analytics-11.6.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.flurry.android.analytics-11.6.0-lint.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.fyber.vamp.core-sdk-7.5.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.fyber.vamp.mraid-kit-7.5.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.fyber.vamp.video-kit-7.5.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.google.code.findbugs.jsr305-3.0.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.google.j2objc.j2objc-annotations-1.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.inmobi.monetization.inmobi-ads-7.3.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.mopub.volley.mopub-volley-2.1.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.squareup.picasso.picasso-2.5.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.google.android.exoplayer.exoplayer-core-2.8.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.google.android.exoplayer.exoplayer-hls-2.8.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.ironsource.sdk.mediationsdk-6.16.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.mopub.mopub-sdk-5.8.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.mopub.mopub-sdk-banner-5.8.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.mopub.mopub-sdk-base-5.8.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.mopub.mopub-sdk-interstitial-5.8.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.mopub.mopub-sdk-native-static-5.8.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.mopub.mopub-sdk-rewardedvideo-5.8.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.my.target.mytarget-sdk-5.5.6.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.module-core-21.3.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.module-richmedia-21.3.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.module-video-21.3.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-21.3.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-banner-21.3.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-interstitial-21.3.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-rewarded-ads-21.3.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.startapp.inapp-sdk-4.5.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.tapjoy.tapjoy-android-sdk-12.4.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.unity3d.ads.unity-ads-3.4.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.yandex.android.mobileads-2.142.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.yandex.android.mobileads-2.142-lint.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.yandex.android.mobmetricalib-3.13.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.yandex.android.mobmetricalib-3.13.1-r-classes.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.explorestack.protobuf-models-1.1.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.android.tools.lint.lint-gradle-api.lint-gradle-api-26.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.google.android.exoplayer.exoplayer-core.exoplayer-core-2.11.7.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.google.android.exoplayer.exoplayer-hls.exoplayer-hls-2.8.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.google.code.gson.gson.gson-2.8.6.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.yandex.android.mobmetricalib.mobmetricalib-3.14.3.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.moat.analytics.mobile.vng.app-kit-2.6.3.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.yandex.android.mobmetricalib-r-classes.jar" />
+    <EmbeddedReferenceJar Include="Jars\io.bidmachine.ads-1.6.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\io.bidmachine.ads.networks.adcolony-1.6.1.6.jar" />
+    <EmbeddedReferenceJar Include="Jars\io.bidmachine.ads.networks.criteo-1.6.1.6.jar" />
+    <EmbeddedReferenceJar Include="Jars\io.bidmachine.ads.networks.facebook-1.6.1.5.jar" />
+    <EmbeddedReferenceJar Include="Jars\io.bidmachine.ads.networks.my_target-1.6.1.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\io.sweers.autotransient.autotransient-1.0.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\lint.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\com.appodeal.ads-2.8.1.1.jar" />
+    <EmbeddedJar Include="Jars\com.appodeal.protobuf-models-1.0.3.jar" />
+    <EmbeddedJar Include="Jars\com.appodeal.ads.sdk.core-2.8.1.jar" />
+    <EmbeddedJar Include="Jars\com.appodeal.ads.sdk.networks\appodeal-2.8.1.2.jar" />
+    <EmbeddedJar Include="Jars\com.appodeal.ads.sdk.networks\appodealx-2.6.5.1.jar" />
+    <EmbeddedJar Include="Jars\protobuf-models-1.1.0.jar" />
+    <EmbeddedJar Include="Jars\com.appodealx.r-classesX.jar" />
+    <EmbeddedJar Include="Jars\com.appodealx.tapjoy-2.6.5.2-r-classes.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\audio\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\decoder\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\drm\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\extractor\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\extractor\mkv\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\extractor\mp3\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\extractor\mp4\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\extractor\ts\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\extractor\wav\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\source\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\source\chunk\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\text\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\text\cea\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\text\ttml\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\text\webvtt\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\upstream\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\upstream\cache\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\util\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\video\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\smaato\sdk\core\api\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\smaato\sdk\video\vast\build\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\smaato\sdk\video\vast\model\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\smaato\sdk\video\vast\player\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\smaato\sdk\video\vast\tracking\macro\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\smaato\sdk\video\vast\widget\element\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\startapp\sdk\adsbase\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\startapp\sdk\rsc\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\startapp\sdk\rsc\triggers\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\vungle\warren\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\vungle\warren\downloader\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\vungle\warren\error\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\vungle\warren\model\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\vungle\warren\persistence\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\vungle\warren\tasks\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\vungle\warren\tasks\runnable\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\vungle\warren\ui\contract\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\vungle\warren\ui\presenter\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\vungle\warren\ui\view\annotations.xml" />
+    <EmbeddedResource Include="Annotations\com\yandex\metrica\impl\annotations.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <JavaDocJar Include="JavaDocs\com.appodeal.ads.sdk.core-2.8.1-javadoc.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="Aars\resources.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <Import Project="packages\Xamarin.Jetbrains.Annotations.13.0.0.2\build\monoandroid90\Xamarin.Jetbrains.Annotations.targets" Condition="Exists('packages\Xamarin.Jetbrains.Annotations.13.0.0.2\build\monoandroid90\Xamarin.Jetbrains.Annotations.targets')" />

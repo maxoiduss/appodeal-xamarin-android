@@ -1,13 +1,22 @@
 ﻿<metadata>
-	<!-- last generation fix -->
-	<!--
-	<remove-node path="/api/package[@name='com.moat.analytics.mobile.vng/']/class[@name='ReactiveVideoTrackerPlugin']" />
-	-->
-	<!-- AdColony -->
-	<!--<remove-node path="/api/package[@name='com.adcolony.sdk']" />
-	<remove-node path="/api/package[@name='com.adcolony.adcolonysdk']" />
-	-->
-	<!--//Constants fix-->
+	<!-- NetworkInitializationListener fix -->
+	<attr path="/api/package[@name='com.appodeal.ads']/interface[@name='NetworkInitializationListener']/method[@name='onInitializationFailed']" name="argsType">InitializationNetworkFailedEventArgs</attr>
+	<attr path="/api/package[@name='com.appodeal.ads']/interface[@name='NetworkInitializationListener']/method[@name='onInitializationFinished']" name="argsType">InitializationNetworkFinishedEventArgs</attr>
+	
+	<!-- Appodeal native_ad fix - using Additions -->
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodeal.native_ad']/class[@name='AppodealNative']/method[@name='load']" name="name">loadNative</attr>
+	<!-- AppodealX ad types fix - using Additions -->
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx']/class[@name='AppodealXNetwork.builder']/method[@name='build']" name="name">buildNetwork</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.banner']/class[@name='AppodealX']/method[@name='load']" name="name">loadBanner</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.native_ad']/class[@name='AppodealX']/method[@name='load']" name="name">loadNative</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.rewarded_video']/class[@name='AppodealX']/method[@name='load']" name="name">loadRewarded</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.rewarded_video']/class[@name='AppodealX']/method[@name='show']" name="name">showRewarded</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.video']/class[@name='AppodealX']/method[@name='load']" name="name">loadVideo</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.video']/class[@name='AppodealX']/method[@name='show']" name="name">showVideo</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.interstitial']/class[@name='AppodealX']/method[@name='load']" name="name">loadInterstitial</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.interstitial']/class[@name='AppodealX']/method[@name='show']" name="name">showInterstitial</attr>
+	
+	<!--//Constants fix - examples from previous version -->
 	<!--
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='INTERSTITIAL']" name="managedName">INTERSTITIAL</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER']" name="managedName">BANNER</attr>
@@ -20,11 +29,4 @@
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='NON_SKIPPABLE_VIDEO']" name="managedName">NON_SKIPPABLE_VIDEO</attr>
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='REWARDED_VIDEO']" name="managedName">REWARDED_VIDEO</attr>
 	-->
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='FEMALE']"
-		  name="managedName">FEMALE</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='MALE']"
-		  name="managedName">MALE</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='UserSettings.Gender']/field[@name='OTHER']"
-		  name="managedName">OTHER</attr>
-	
 </metadata>

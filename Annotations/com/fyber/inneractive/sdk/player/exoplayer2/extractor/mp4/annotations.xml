@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.AtomParsers.StsdData requiredSampleTransformation">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Track.TRANSFORMATION_NONE, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Track.TRANSFORMATION_CEA608_CDAT}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor FragmentedMp4Extractor(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_EVERY_VIDEO_FRAME_IS_SYNC_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_IGNORE_TFDT_BOX, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_EMSG_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_CEA608_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_SIDELOADED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor FragmentedMp4Extractor(int, com.fyber.inneractive.sdk.player.exoplayer2.util.TimestampAdjuster) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_EVERY_VIDEO_FRAME_IS_SYNC_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_IGNORE_TFDT_BOX, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_EMSG_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_CEA608_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_SIDELOADED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor FragmentedMp4Extractor(int, com.fyber.inneractive.sdk.player.exoplayer2.util.TimestampAdjuster, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Track) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_EVERY_VIDEO_FRAME_IS_SYNC_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_IGNORE_TFDT_BOX, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_EMSG_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_CEA608_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_SIDELOADED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor flags">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_EVERY_VIDEO_FRAME_IS_SYNC_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_IGNORE_TFDT_BOX, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_EMSG_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_CEA608_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_SIDELOADED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor int parseTrun(com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.TrackBundle, int, long, int, com.fyber.inneractive.sdk.player.exoplayer2.util.ParsableByteArray, int) 3">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_EVERY_VIDEO_FRAME_IS_SYNC_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_IGNORE_TFDT_BOX, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_EMSG_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_CEA608_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_SIDELOADED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor void parseMoof(com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Atom.ContainerAtom, android.util.SparseArray&lt;com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.TrackBundle&gt;, int, byte[]) 2">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_EVERY_VIDEO_FRAME_IS_SYNC_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_IGNORE_TFDT_BOX, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_EMSG_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_CEA608_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_SIDELOADED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor void parseTraf(com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Atom.ContainerAtom, android.util.SparseArray&lt;com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.TrackBundle&gt;, int, byte[]) 2">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_EVERY_VIDEO_FRAME_IS_SYNC_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_IGNORE_TFDT_BOX, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_EMSG_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_CEA608_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_SIDELOADED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor void parseTruns(com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Atom.ContainerAtom, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.TrackBundle, long, int) 3">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_EVERY_VIDEO_FRAME_IS_SYNC_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_IGNORE_TFDT_BOX, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_EMSG_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_CEA608_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_SIDELOADED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.Flags">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_EVERY_VIDEO_FRAME_IS_SYNC_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_IGNORE_TFDT_BOX, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_EMSG_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_CEA608_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_SIDELOADED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Mp4Extractor parserState">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Mp4Extractor.STATE_READING_ATOM_HEADER, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Mp4Extractor.STATE_READING_ATOM_PAYLOAD, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Mp4Extractor.STATE_READING_SAMPLE}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Track Track(int, int, long, long, long, com.fyber.inneractive.sdk.player.exoplayer2.Format, int, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.TrackEncryptionBox[], int, long[], long[]) 6">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Track.TRANSFORMATION_NONE, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Track.TRANSFORMATION_CEA608_CDAT}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Track sampleTransformation">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Track.TRANSFORMATION_NONE, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Track.TRANSFORMATION_CEA608_CDAT}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Track.Transformation">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Track.TRANSFORMATION_NONE, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.Track.TRANSFORMATION_CEA608_CDAT}" />
+    </annotation>
+  </item>
+</root>
+

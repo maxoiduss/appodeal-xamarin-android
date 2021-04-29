@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.startapp.sdk.adsbase.BaseRequest BaseRequest(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.startapp.sdk.adsbase.BaseRequest.Type.SDK_DOWNLOAD, com.startapp.sdk.adsbase.BaseRequest.Type.METADATA, com.startapp.sdk.adsbase.BaseRequest.Type.GET_AD, com.startapp.sdk.adsbase.BaseRequest.Type.INFO_EVENT, com.startapp.sdk.adsbase.BaseRequest.Type.TRACKING}" />
+    </annotation>
+  </item>
+  <item name="com.startapp.sdk.adsbase.BaseRequest BaseRequest(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.startapp.sdk.adsbase.BaseRequest.Type.SDK_DOWNLOAD, com.startapp.sdk.adsbase.BaseRequest.Type.METADATA, com.startapp.sdk.adsbase.BaseRequest.Type.GET_AD, com.startapp.sdk.adsbase.BaseRequest.Type.INFO_EVENT, com.startapp.sdk.adsbase.BaseRequest.Type.TRACKING}" />
+    </annotation>
+  </item>
+  <item name="com.startapp.sdk.adsbase.BaseRequest int getRequestType()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.startapp.sdk.adsbase.BaseRequest.Type.SDK_DOWNLOAD, com.startapp.sdk.adsbase.BaseRequest.Type.METADATA, com.startapp.sdk.adsbase.BaseRequest.Type.GET_AD, com.startapp.sdk.adsbase.BaseRequest.Type.INFO_EVENT, com.startapp.sdk.adsbase.BaseRequest.Type.TRACKING}" />
+    </annotation>
+  </item>
+  <item name="com.startapp.sdk.adsbase.BaseRequest int getRequestType()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.startapp.sdk.adsbase.BaseRequest.Type.SDK_DOWNLOAD, com.startapp.sdk.adsbase.BaseRequest.Type.METADATA, com.startapp.sdk.adsbase.BaseRequest.Type.GET_AD, com.startapp.sdk.adsbase.BaseRequest.Type.INFO_EVENT, com.startapp.sdk.adsbase.BaseRequest.Type.TRACKING}" />
+    </annotation>
+  </item>
+  <item name="com.startapp.sdk.adsbase.BaseRequest requestType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.startapp.sdk.adsbase.BaseRequest.Type.SDK_DOWNLOAD, com.startapp.sdk.adsbase.BaseRequest.Type.METADATA, com.startapp.sdk.adsbase.BaseRequest.Type.GET_AD, com.startapp.sdk.adsbase.BaseRequest.Type.INFO_EVENT, com.startapp.sdk.adsbase.BaseRequest.Type.TRACKING}" />
+    </annotation>
+  </item>
+  <item name="com.startapp.sdk.adsbase.BaseRequest requestType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.startapp.sdk.adsbase.BaseRequest.Type.SDK_DOWNLOAD, com.startapp.sdk.adsbase.BaseRequest.Type.METADATA, com.startapp.sdk.adsbase.BaseRequest.Type.GET_AD, com.startapp.sdk.adsbase.BaseRequest.Type.INFO_EVENT, com.startapp.sdk.adsbase.BaseRequest.Type.TRACKING}" />
+    </annotation>
+  </item>
+  <item name="com.startapp.sdk.adsbase.BaseRequest.Type">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.startapp.sdk.adsbase.BaseRequest.Type.SDK_DOWNLOAD, com.startapp.sdk.adsbase.BaseRequest.Type.METADATA, com.startapp.sdk.adsbase.BaseRequest.Type.GET_AD, com.startapp.sdk.adsbase.BaseRequest.Type.INFO_EVENT, com.startapp.sdk.adsbase.BaseRequest.Type.TRACKING}" />
+    </annotation>
+  </item>
+  <item name="com.startapp.sdk.adsbase.BaseRequest.Type">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.startapp.sdk.adsbase.BaseRequest.Type.SDK_DOWNLOAD, com.startapp.sdk.adsbase.BaseRequest.Type.METADATA, com.startapp.sdk.adsbase.BaseRequest.Type.GET_AD, com.startapp.sdk.adsbase.BaseRequest.Type.INFO_EVENT, com.startapp.sdk.adsbase.BaseRequest.Type.TRACKING}" />
+    </annotation>
+  </item>
+</root>
+

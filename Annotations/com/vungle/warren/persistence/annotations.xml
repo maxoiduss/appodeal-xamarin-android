@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.vungle.warren.persistence.Repository void saveAndApplyState(com.vungle.warren.model.Advertisement, java.lang.String, int) 2">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.model.Advertisement.NEW, com.vungle.warren.model.Advertisement.READY, com.vungle.warren.model.Advertisement.VIEWING, com.vungle.warren.model.Advertisement.DONE, com.vungle.warren.model.Advertisement.ERROR}" />
+    </annotation>
+  </item>
+</root>
+

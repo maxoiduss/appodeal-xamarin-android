@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.vungle.warren.AdConfig adOrientation">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.AdConfig.PORTRAIT, com.vungle.warren.AdConfig.LANDSCAPE, com.vungle.warren.AdConfig.AUTO_ROTATE, com.vungle.warren.AdConfig.MATCH_VIDEO}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdConfig int getAdOrientation()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.AdConfig.PORTRAIT, com.vungle.warren.AdConfig.LANDSCAPE, com.vungle.warren.AdConfig.AUTO_ROTATE, com.vungle.warren.AdConfig.MATCH_VIDEO}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdConfig void setAdOrientation(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.AdConfig.PORTRAIT, com.vungle.warren.AdConfig.LANDSCAPE, com.vungle.warren.AdConfig.AUTO_ROTATE, com.vungle.warren.AdConfig.MATCH_VIDEO}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdConfig.Orientation">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.AdConfig.PORTRAIT, com.vungle.warren.AdConfig.LANDSCAPE, com.vungle.warren.AdConfig.AUTO_ROTATE, com.vungle.warren.AdConfig.MATCH_VIDEO}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdConfig.Settings">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.vungle.warren.AdConfig.MUTED, com.vungle.warren.AdConfig.IMMEDIATE_BACK, com.vungle.warren.AdConfig.IMMERSIVE, com.vungle.warren.AdConfig.TRANSITION_ANIMATE}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdLoader com.vungle.warren.downloader.DownloadRequest getDownloadRequest(com.vungle.warren.model.AdAsset, int) 1">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.AdLoader.Priority.HIGHEST, com.vungle.warren.AdLoader.Priority.HIGH, com.vungle.warren.AdLoader.Priority.LOWEST}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdLoader int getAssetPriority(int)">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.downloader.DownloadRequest.Priority.CRITICAL, com.vungle.warren.downloader.DownloadRequest.Priority.HIGHEST, com.vungle.warren.downloader.DownloadRequest.Priority.HIGH, com.vungle.warren.downloader.DownloadRequest.Priority.LOWEST}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdLoader int getAssetPriority(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.AdLoader.Priority.HIGHEST, com.vungle.warren.AdLoader.Priority.HIGH, com.vungle.warren.AdLoader.Priority.LOWEST}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdLoader void onError(com.vungle.warren.AdLoader.Operation, int) 1">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.error.VungleException.NO_SERVE, com.vungle.warren.error.VungleException.UNKNOWN_ERROR, com.vungle.warren.error.VungleException.CONFIGURATION_ERROR, com.vungle.warren.error.VungleException.AD_EXPIRED, com.vungle.warren.error.VungleException.DIRECT_DOWNLOAD_VALIDATION_ERROR, com.vungle.warren.error.VungleException.MISSING_REQUIRED_ARGUMENTS_FOR_INIT, com.vungle.warren.error.VungleException.APPLICATION_CONTEXT_REQUIRED, com.vungle.warren.error.VungleException.OPERATION_ONGOING, com.vungle.warren.error.VungleException.VUNGLE_NOT_INTIALIZED, com.vungle.warren.error.VungleException.AD_UNABLE_TO_PLAY, com.vungle.warren.error.VungleException.PLACEMENT_NOT_FOUND, com.vungle.warren.error.VungleException.AD_FAILED_TO_DOWNLOAD, com.vungle.warren.error.VungleException.NO_AUTO_CACHED_PLACEMENT, com.vungle.warren.error.VungleException.SERVER_RETRY_ERROR, com.vungle.warren.error.VungleException.ALREADY_PLAYING_ANOTHER_AD, com.vungle.warren.error.VungleException.NO_SPACE_TO_INIT, com.vungle.warren.error.VungleException.NO_SPACE_TO_LOAD_AD, com.vungle.warren.error.VungleException.NO_SPACE_TO_LOAD_AD_AUTO_CACHED, com.vungle.warren.error.VungleException.NO_SPACE_TO_DOWNLOAD_ASSETS, com.vungle.warren.error.VungleException.NETWORK_ERROR, com.vungle.warren.error.VungleException.SERVER_ERROR, com.vungle.warren.error.VungleException.SERVER_TEMPORARY_UNAVAILABLE, com.vungle.warren.error.VungleException.ASSET_DOWNLOAD_RECOVERABLE, com.vungle.warren.error.VungleException.ASSET_DOWNLOAD_ERROR, com.vungle.warren.error.VungleException.OPERATION_CANCELED, com.vungle.warren.error.VungleException.DB_ERROR, com.vungle.warren.error.VungleException.RENDER_ERROR, com.vungle.warren.error.VungleException.INVALID_SIZE, com.vungle.warren.error.VungleException.INCORRECT_DEFAULT_API_USAGE, com.vungle.warren.error.VungleException.INCORRECT_BANNER_API_USAGE, com.vungle.warren.error.VungleException.WEB_CRASH, com.vungle.warren.error.VungleException.WEBVIEW_RENDER_UNRESPONSIVE, com.vungle.warren.error.VungleException.NETWORK_UNREACHABLE, com.vungle.warren.error.VungleException.NETWORK_PERMISSIONS_NOT_GRANTED, com.vungle.warren.error.VungleException.OK_HTTP_NOT_SUPPORTED_PLATFORM, com.vungle.warren.error.VungleException.UNSUPPORTED_CONFIGURATION}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdLoader.Operation Operation(java.lang.String, com.vungle.warren.AdConfig.AdSize, long, long, int, int, int, boolean, int, com.vungle.warren.LoadAdCallback...) 5">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.AdLoader.ReschedulePolicy.EXPONENTIAL, com.vungle.warren.AdLoader.ReschedulePolicy.EXPONENTIAL_ENDLESS_AD}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdLoader.Operation Operation(java.lang.String, com.vungle.warren.AdConfig.AdSize, long, long, int, int, int, boolean, int, com.vungle.warren.LoadAdCallback...) 8">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.AdLoader.Priority.HIGHEST, com.vungle.warren.AdLoader.Priority.HIGH, com.vungle.warren.AdLoader.Priority.LOWEST}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdLoader.Operation policy">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.AdLoader.ReschedulePolicy.EXPONENTIAL, com.vungle.warren.AdLoader.ReschedulePolicy.EXPONENTIAL_ENDLESS_AD}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdLoader.Operation priority">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.AdLoader.Priority.HIGHEST, com.vungle.warren.AdLoader.Priority.HIGH, com.vungle.warren.AdLoader.Priority.LOWEST}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdLoader.Priority">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.AdLoader.Priority.HIGHEST, com.vungle.warren.AdLoader.Priority.HIGH, com.vungle.warren.AdLoader.Priority.LOWEST}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.AdLoader.ReschedulePolicy">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.AdLoader.ReschedulePolicy.EXPONENTIAL, com.vungle.warren.AdLoader.ReschedulePolicy.EXPONENTIAL_ENDLESS_AD}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.Banners void onLoadError(java.lang.String, com.vungle.warren.LoadAdCallback, int) 2">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.error.VungleException.NO_SERVE, com.vungle.warren.error.VungleException.UNKNOWN_ERROR, com.vungle.warren.error.VungleException.CONFIGURATION_ERROR, com.vungle.warren.error.VungleException.AD_EXPIRED, com.vungle.warren.error.VungleException.DIRECT_DOWNLOAD_VALIDATION_ERROR, com.vungle.warren.error.VungleException.MISSING_REQUIRED_ARGUMENTS_FOR_INIT, com.vungle.warren.error.VungleException.APPLICATION_CONTEXT_REQUIRED, com.vungle.warren.error.VungleException.OPERATION_ONGOING, com.vungle.warren.error.VungleException.VUNGLE_NOT_INTIALIZED, com.vungle.warren.error.VungleException.AD_UNABLE_TO_PLAY, com.vungle.warren.error.VungleException.PLACEMENT_NOT_FOUND, com.vungle.warren.error.VungleException.AD_FAILED_TO_DOWNLOAD, com.vungle.warren.error.VungleException.NO_AUTO_CACHED_PLACEMENT, com.vungle.warren.error.VungleException.SERVER_RETRY_ERROR, com.vungle.warren.error.VungleException.ALREADY_PLAYING_ANOTHER_AD, com.vungle.warren.error.VungleException.NO_SPACE_TO_INIT, com.vungle.warren.error.VungleException.NO_SPACE_TO_LOAD_AD, com.vungle.warren.error.VungleException.NO_SPACE_TO_LOAD_AD_AUTO_CACHED, com.vungle.warren.error.VungleException.NO_SPACE_TO_DOWNLOAD_ASSETS, com.vungle.warren.error.VungleException.NETWORK_ERROR, com.vungle.warren.error.VungleException.SERVER_ERROR, com.vungle.warren.error.VungleException.SERVER_TEMPORARY_UNAVAILABLE, com.vungle.warren.error.VungleException.ASSET_DOWNLOAD_RECOVERABLE, com.vungle.warren.error.VungleException.ASSET_DOWNLOAD_ERROR, com.vungle.warren.error.VungleException.OPERATION_CANCELED, com.vungle.warren.error.VungleException.DB_ERROR, com.vungle.warren.error.VungleException.RENDER_ERROR, com.vungle.warren.error.VungleException.INVALID_SIZE, com.vungle.warren.error.VungleException.INCORRECT_DEFAULT_API_USAGE, com.vungle.warren.error.VungleException.INCORRECT_BANNER_API_USAGE, com.vungle.warren.error.VungleException.WEB_CRASH, com.vungle.warren.error.VungleException.WEBVIEW_RENDER_UNRESPONSIVE, com.vungle.warren.error.VungleException.NETWORK_UNREACHABLE, com.vungle.warren.error.VungleException.NETWORK_PERMISSIONS_NOT_GRANTED, com.vungle.warren.error.VungleException.OK_HTTP_NOT_SUPPORTED_PLATFORM, com.vungle.warren.error.VungleException.UNSUPPORTED_CONFIGURATION}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.Banners void onPlaybackError(java.lang.String, com.vungle.warren.PlayAdCallback, int) 2">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.error.VungleException.NO_SERVE, com.vungle.warren.error.VungleException.UNKNOWN_ERROR, com.vungle.warren.error.VungleException.CONFIGURATION_ERROR, com.vungle.warren.error.VungleException.AD_EXPIRED, com.vungle.warren.error.VungleException.DIRECT_DOWNLOAD_VALIDATION_ERROR, com.vungle.warren.error.VungleException.MISSING_REQUIRED_ARGUMENTS_FOR_INIT, com.vungle.warren.error.VungleException.APPLICATION_CONTEXT_REQUIRED, com.vungle.warren.error.VungleException.OPERATION_ONGOING, com.vungle.warren.error.VungleException.VUNGLE_NOT_INTIALIZED, com.vungle.warren.error.VungleException.AD_UNABLE_TO_PLAY, com.vungle.warren.error.VungleException.PLACEMENT_NOT_FOUND, com.vungle.warren.error.VungleException.AD_FAILED_TO_DOWNLOAD, com.vungle.warren.error.VungleException.NO_AUTO_CACHED_PLACEMENT, com.vungle.warren.error.VungleException.SERVER_RETRY_ERROR, com.vungle.warren.error.VungleException.ALREADY_PLAYING_ANOTHER_AD, com.vungle.warren.error.VungleException.NO_SPACE_TO_INIT, com.vungle.warren.error.VungleException.NO_SPACE_TO_LOAD_AD, com.vungle.warren.error.VungleException.NO_SPACE_TO_LOAD_AD_AUTO_CACHED, com.vungle.warren.error.VungleException.NO_SPACE_TO_DOWNLOAD_ASSETS, com.vungle.warren.error.VungleException.NETWORK_ERROR, com.vungle.warren.error.VungleException.SERVER_ERROR, com.vungle.warren.error.VungleException.SERVER_TEMPORARY_UNAVAILABLE, com.vungle.warren.error.VungleException.ASSET_DOWNLOAD_RECOVERABLE, com.vungle.warren.error.VungleException.ASSET_DOWNLOAD_ERROR, com.vungle.warren.error.VungleException.OPERATION_CANCELED, com.vungle.warren.error.VungleException.DB_ERROR, com.vungle.warren.error.VungleException.RENDER_ERROR, com.vungle.warren.error.VungleException.INVALID_SIZE, com.vungle.warren.error.VungleException.INCORRECT_DEFAULT_API_USAGE, com.vungle.warren.error.VungleException.INCORRECT_BANNER_API_USAGE, com.vungle.warren.error.VungleException.WEB_CRASH, com.vungle.warren.error.VungleException.WEBVIEW_RENDER_UNRESPONSIVE, com.vungle.warren.error.VungleException.NETWORK_UNREACHABLE, com.vungle.warren.error.VungleException.NETWORK_PERMISSIONS_NOT_GRANTED, com.vungle.warren.error.VungleException.OK_HTTP_NOT_SUPPORTED_PLATFORM, com.vungle.warren.error.VungleException.UNSUPPORTED_CONFIGURATION}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.VungleApiClient.ConnectionTypeDetail">
+    <annotation name="androidx.annotation.StringDef">
+      <val name="value" val="{com.vungle.warren.VungleApiClient.ConnectionTypeDetail.UNKNOWN, com.vungle.warren.VungleApiClient.ConnectionTypeDetail.CDMA_1XRTT, com.vungle.warren.VungleApiClient.ConnectionTypeDetail.WCDMA, com.vungle.warren.VungleApiClient.ConnectionTypeDetail.EDGE, com.vungle.warren.VungleApiClient.ConnectionTypeDetail.HRPD, com.vungle.warren.VungleApiClient.ConnectionTypeDetail.CDMA_EVDO_0, com.vungle.warren.VungleApiClient.ConnectionTypeDetail.CDMA_EVDO_A, com.vungle.warren.VungleApiClient.ConnectionTypeDetail.CDMA_EVDO_B, com.vungle.warren.VungleApiClient.ConnectionTypeDetail.GPRS, com.vungle.warren.VungleApiClient.ConnectionTypeDetail.HSDPA, com.vungle.warren.VungleApiClient.ConnectionTypeDetail.HSUPA, com.vungle.warren.VungleApiClient.ConnectionTypeDetail.LTE}" />
+    </annotation>
+  </item>
+</root>
+

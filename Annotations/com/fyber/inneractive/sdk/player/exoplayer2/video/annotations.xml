@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.video.ColorInfo ColorInfo(int, int, int, byte[]) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_SPACE_BT709, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_SPACE_BT601, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_SPACE_BT2020}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.video.ColorInfo ColorInfo(int, int, int, byte[]) 1">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_RANGE_LIMITED, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_RANGE_FULL}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.video.ColorInfo ColorInfo(int, int, int, byte[]) 2">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_TRANSFER_SDR, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_TRANSFER_ST2084, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_TRANSFER_HLG}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.video.ColorInfo colorRange">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_RANGE_LIMITED, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_RANGE_FULL}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.video.ColorInfo colorSpace">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_SPACE_BT709, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_SPACE_BT601, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_SPACE_BT2020}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.video.ColorInfo colorTransfer">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_TRANSFER_SDR, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_TRANSFER_ST2084, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_TRANSFER_HLG}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.video.MediaCodecVideoRenderer scalingMode">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.C.VIDEO_SCALING_MODE_SCALE_TO_FIT, com.fyber.inneractive.sdk.player.exoplayer2.C.VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING}" />
+    </annotation>
+  </item>
+</root>
+

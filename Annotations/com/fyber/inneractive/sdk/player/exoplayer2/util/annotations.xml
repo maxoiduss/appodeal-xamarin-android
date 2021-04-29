@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.util.Util int getPcmEncoding(int)">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.util.Util int getPcmFrameSize(int, int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_INVALID, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_8BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_16BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_24BIT, com.fyber.inneractive.sdk.player.exoplayer2.C.ENCODING_PCM_32BIT}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.util.Util int inferContentType(android.net.Uri)">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.C.TYPE_DASH, com.fyber.inneractive.sdk.player.exoplayer2.C.TYPE_SS, com.fyber.inneractive.sdk.player.exoplayer2.C.TYPE_HLS, com.fyber.inneractive.sdk.player.exoplayer2.C.TYPE_OTHER}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.util.Util int inferContentType(java.lang.String)">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.C.TYPE_DASH, com.fyber.inneractive.sdk.player.exoplayer2.C.TYPE_SS, com.fyber.inneractive.sdk.player.exoplayer2.C.TYPE_HLS, com.fyber.inneractive.sdk.player.exoplayer2.C.TYPE_OTHER}" />
+    </annotation>
+  </item>
+</root>
+

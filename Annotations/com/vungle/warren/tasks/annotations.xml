@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.vungle.warren.tasks.AnalyticsJob com.vungle.warren.tasks.JobInfo makeJob(int, java.lang.String, java.lang.String[]) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.AnalyticsJob.Action.RI, com.vungle.warren.tasks.AnalyticsJob.Action.PING}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.AnalyticsJob int onRunJob(android.os.Bundle, com.vungle.warren.tasks.JobRunner)">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.Job.Result.SUCCESS, com.vungle.warren.tasks.Job.Result.FAILURE, com.vungle.warren.tasks.Job.Result.RESCHEDULE}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.AnalyticsJob.Action">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.AnalyticsJob.Action.RI, com.vungle.warren.tasks.AnalyticsJob.Action.PING}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.DownloadJob int onRunJob(android.os.Bundle, com.vungle.warren.tasks.JobRunner)">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.Job.Result.SUCCESS, com.vungle.warren.tasks.Job.Result.FAILURE, com.vungle.warren.tasks.Job.Result.RESCHEDULE}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.Job int onRunJob(android.os.Bundle, com.vungle.warren.tasks.JobRunner)">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.Job.Result.SUCCESS, com.vungle.warren.tasks.Job.Result.FAILURE, com.vungle.warren.tasks.Job.Result.RESCHEDULE}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.Job.Result">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.Job.Result.SUCCESS, com.vungle.warren.tasks.Job.Result.FAILURE, com.vungle.warren.tasks.Job.Result.RESCHEDULE}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.JobInfo com.vungle.warren.tasks.JobInfo setPriority(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.JobInfo.Priority.LOWEST, com.vungle.warren.tasks.JobInfo.Priority.LOW, com.vungle.warren.tasks.JobInfo.Priority.NORMAL, com.vungle.warren.tasks.JobInfo.Priority.HIGH, com.vungle.warren.tasks.JobInfo.Priority.HIGHEST, com.vungle.warren.tasks.JobInfo.Priority.CRITICAL}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.JobInfo com.vungle.warren.tasks.JobInfo setRequiredNetworkType(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.JobInfo.NetworkType.ANY, com.vungle.warren.tasks.JobInfo.NetworkType.CONNECTED}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.JobInfo com.vungle.warren.tasks.JobInfo setReschedulePolicy(long, int) 1">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.JobInfo.ReschedulePolicy.LINEAR, com.vungle.warren.tasks.JobInfo.ReschedulePolicy.EXPONENTIAL}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.JobInfo priority">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.JobInfo.Priority.LOWEST, com.vungle.warren.tasks.JobInfo.Priority.LOW, com.vungle.warren.tasks.JobInfo.Priority.NORMAL, com.vungle.warren.tasks.JobInfo.Priority.HIGH, com.vungle.warren.tasks.JobInfo.Priority.HIGHEST, com.vungle.warren.tasks.JobInfo.Priority.CRITICAL}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.JobInfo requiredNetworkType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.JobInfo.NetworkType.ANY, com.vungle.warren.tasks.JobInfo.NetworkType.CONNECTED}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.JobInfo reschedulePolicy">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.JobInfo.ReschedulePolicy.LINEAR, com.vungle.warren.tasks.JobInfo.ReschedulePolicy.EXPONENTIAL}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.JobInfo.NetworkType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.JobInfo.NetworkType.ANY, com.vungle.warren.tasks.JobInfo.NetworkType.CONNECTED}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.JobInfo.Priority">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.JobInfo.Priority.LOWEST, com.vungle.warren.tasks.JobInfo.Priority.LOW, com.vungle.warren.tasks.JobInfo.Priority.NORMAL, com.vungle.warren.tasks.JobInfo.Priority.HIGH, com.vungle.warren.tasks.JobInfo.Priority.HIGHEST, com.vungle.warren.tasks.JobInfo.Priority.CRITICAL}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.tasks.JobInfo.ReschedulePolicy">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.tasks.JobInfo.ReschedulePolicy.LINEAR, com.vungle.warren.tasks.JobInfo.ReschedulePolicy.EXPONENTIAL}" />
+    </annotation>
+  </item>
+</root>
+

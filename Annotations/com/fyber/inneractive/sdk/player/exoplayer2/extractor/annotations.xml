@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory setFragmentedMp4ExtractorFlags(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_EVERY_VIDEO_FRAME_IS_SYNC_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_IGNORE_TFDT_BOX, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_EMSG_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_CEA608_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_SIDELOADED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory setMatroskaExtractorFlags(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.MatroskaExtractor.FLAG_DISABLE_SEEK_FOR_CUES}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory setMp3ExtractorFlags(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp3.Mp3Extractor.FLAG_ENABLE_CONSTANT_BITRATE_SEEKING, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp3.Mp3Extractor.FLAG_DISABLE_ID3_METADATA}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory setTsExtractorFlags(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_ALLOW_NON_IDR_KEYFRAMES, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_IGNORE_AAC_STREAM, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_IGNORE_H264_STREAM, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_DETECT_ACCESS_UNITS, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_IGNORE_SPLICE_INFO_STREAM, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_OVERRIDE_CAPTION_DESCRIPTORS}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory setTsExtractorMode(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.TsExtractor.MODE_MULTI_PMT, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.TsExtractor.MODE_SINGLE_PMT, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.TsExtractor.MODE_HLS}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory fragmentedMp4Flags">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_EVERY_VIDEO_FRAME_IS_SYNC_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_WORKAROUND_IGNORE_TFDT_BOX, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_EMSG_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_ENABLE_CEA608_TRACK, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp4.FragmentedMp4Extractor.FLAG_SIDELOADED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory matroskaFlags">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.MatroskaExtractor.FLAG_DISABLE_SEEK_FOR_CUES}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory mp3Flags">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp3.Mp3Extractor.FLAG_ENABLE_CONSTANT_BITRATE_SEEKING, com.fyber.inneractive.sdk.player.exoplayer2.extractor.mp3.Mp3Extractor.FLAG_DISABLE_ID3_METADATA}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory tsFlags">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_ALLOW_NON_IDR_KEYFRAMES, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_IGNORE_AAC_STREAM, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_IGNORE_H264_STREAM, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_DETECT_ACCESS_UNITS, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_IGNORE_SPLICE_INFO_STREAM, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_OVERRIDE_CAPTION_DESCRIPTORS}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultExtractorsFactory tsMode">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.TsExtractor.MODE_MULTI_PMT, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.TsExtractor.MODE_SINGLE_PMT, com.fyber.inneractive.sdk.player.exoplayer2.extractor.ts.TsExtractor.MODE_HLS}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultTrackOutput void sampleMetadata(long, int, int, int, byte[]) 1">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_KEY_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_END_OF_STREAM, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_ENCRYPTED, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_DECODE_ONLY}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.DefaultTrackOutput.InfoQueue void commitSample(long, int, long, int, byte[]) 1">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_KEY_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_END_OF_STREAM, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_ENCRYPTED, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_DECODE_ONLY}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.DummyTrackOutput void sampleMetadata(long, int, int, int, byte[]) 1">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_KEY_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_END_OF_STREAM, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_ENCRYPTED, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_DECODE_ONLY}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.TrackOutput void sampleMetadata(long, int, int, int, byte[]) 1">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_KEY_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_END_OF_STREAM, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_ENCRYPTED, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_DECODE_ONLY}" />
+    </annotation>
+  </item>
+</root>
+

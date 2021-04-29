@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.MatroskaExtractor MatroskaExtractor(com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.EbmlReader, int) 1">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.MatroskaExtractor.FLAG_DISABLE_SEEK_FOR_CUES}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.MatroskaExtractor MatroskaExtractor(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.MatroskaExtractor.FLAG_DISABLE_SEEK_FOR_CUES}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.MatroskaExtractor blockFlags">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_KEY_FRAME, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_END_OF_STREAM, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_ENCRYPTED, com.fyber.inneractive.sdk.player.exoplayer2.C.BUFFER_FLAG_DECODE_ONLY}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.MatroskaExtractor.Flags">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.MatroskaExtractor.FLAG_DISABLE_SEEK_FOR_CUES}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.MatroskaExtractor.Track colorRange">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_RANGE_LIMITED, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_RANGE_FULL}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.MatroskaExtractor.Track colorSpace">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_SPACE_BT709, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_SPACE_BT601, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_SPACE_BT2020}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.MatroskaExtractor.Track colorTransfer">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_TRANSFER_SDR, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_TRANSFER_ST2084, com.fyber.inneractive.sdk.player.exoplayer2.C.COLOR_TRANSFER_HLG}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.extractor.mkv.MatroskaExtractor.Track stereoMode">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.Format.NO_VALUE, com.fyber.inneractive.sdk.player.exoplayer2.C.STEREO_MODE_MONO, com.fyber.inneractive.sdk.player.exoplayer2.C.STEREO_MODE_TOP_BOTTOM, com.fyber.inneractive.sdk.player.exoplayer2.C.STEREO_MODE_LEFT_RIGHT, com.fyber.inneractive.sdk.player.exoplayer2.C.STEREO_MODE_STEREO_MESH}" />
+    </annotation>
+  </item>
+</root>
+

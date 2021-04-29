@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager int getState()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_ERROR, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_CLOSED, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_OPENING, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_OPENED, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_OPENED_WITH_KEYS}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager state">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_ERROR, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_CLOSED, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_OPENING, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_OPENED, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_OPENED_WITH_KEYS}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager void setMode(int, byte[]) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_PLAYBACK, com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_QUERY, com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_DOWNLOAD, com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_RELEASE}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.Mode">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_PLAYBACK, com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_QUERY, com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_DOWNLOAD, com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_RELEASE}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession int getState()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_ERROR, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_CLOSED, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_OPENING, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_OPENED, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_OPENED_WITH_KEYS}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.State">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_ERROR, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_CLOSED, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_OPENING, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_OPENED, com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession.STATE_OPENED_WITH_KEYS}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.drm.OfflineLicenseHelper byte[] blockingKeyRequest(int, byte[], com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmInitData) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_PLAYBACK, com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_QUERY, com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_DOWNLOAD, com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_RELEASE}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.drm.OfflineLicenseHelper com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmSession&lt;T&gt; openBlockingKeyRequest(int, byte[], com.fyber.inneractive.sdk.player.exoplayer2.drm.DrmInitData) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_PLAYBACK, com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_QUERY, com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_DOWNLOAD, com.fyber.inneractive.sdk.player.exoplayer2.drm.DefaultDrmSessionManager.MODE_RELEASE}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.drm.UnsupportedDrmException UnsupportedDrmException(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.drm.UnsupportedDrmException.REASON_UNSUPPORTED_SCHEME, com.fyber.inneractive.sdk.player.exoplayer2.drm.UnsupportedDrmException.REASON_INSTANTIATION_ERROR}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.drm.UnsupportedDrmException UnsupportedDrmException(int, java.lang.Exception) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.drm.UnsupportedDrmException.REASON_UNSUPPORTED_SCHEME, com.fyber.inneractive.sdk.player.exoplayer2.drm.UnsupportedDrmException.REASON_INSTANTIATION_ERROR}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.drm.UnsupportedDrmException reason">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.drm.UnsupportedDrmException.REASON_UNSUPPORTED_SCHEME, com.fyber.inneractive.sdk.player.exoplayer2.drm.UnsupportedDrmException.REASON_INSTANTIATION_ERROR}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.drm.UnsupportedDrmException.Reason">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.drm.UnsupportedDrmException.REASON_UNSUPPORTED_SCHEME, com.fyber.inneractive.sdk.player.exoplayer2.drm.UnsupportedDrmException.REASON_INSTANTIATION_ERROR}" />
+    </annotation>
+  </item>
+</root>
+

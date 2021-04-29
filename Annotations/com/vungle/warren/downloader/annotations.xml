@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.vungle.warren.downloader.AssetDownloadListener.DownloadError reason">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.downloader.AssetDownloadListener.DownloadError.ErrorReason.CONNECTION_ERROR, com.vungle.warren.downloader.AssetDownloadListener.DownloadError.ErrorReason.REQUEST_ERROR, com.vungle.warren.downloader.AssetDownloadListener.DownloadError.ErrorReason.DISK_ERROR, com.vungle.warren.downloader.AssetDownloadListener.DownloadError.ErrorReason.FILE_NOT_FOUND_ERROR, com.vungle.warren.downloader.AssetDownloadListener.DownloadError.ErrorReason.INTERNAL_ERROR}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.AssetDownloadListener.DownloadError.ErrorReason">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.downloader.AssetDownloadListener.DownloadError.ErrorReason.CONNECTION_ERROR, com.vungle.warren.downloader.AssetDownloadListener.DownloadError.ErrorReason.REQUEST_ERROR, com.vungle.warren.downloader.AssetDownloadListener.DownloadError.ErrorReason.DISK_ERROR, com.vungle.warren.downloader.AssetDownloadListener.DownloadError.ErrorReason.FILE_NOT_FOUND_ERROR, com.vungle.warren.downloader.AssetDownloadListener.DownloadError.ErrorReason.INTERNAL_ERROR}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.AssetDownloadListener.Progress status">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.STARTED, com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.IN_PROGRESS, com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.PAUSED, com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.CANCELLED, com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.DONE, com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.LOST_CONNECTION, com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.STATE_CHANGED}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.STARTED, com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.IN_PROGRESS, com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.PAUSED, com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.CANCELLED, com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.DONE, com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.LOST_CONNECTION, com.vungle.warren.downloader.AssetDownloadListener.Progress.ProgressStatus.STATE_CHANGED}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.AssetDownloader.DownloadPriorityRunnable DownloadPriorityRunnable(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.downloader.DownloadRequest.Priority.CRITICAL, com.vungle.warren.downloader.DownloadRequest.Priority.HIGHEST, com.vungle.warren.downloader.DownloadRequest.Priority.HIGH, com.vungle.warren.downloader.DownloadRequest.Priority.LOWEST}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.AssetDownloader.NetworkType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.vungle.warren.downloader.AssetDownloader.NetworkType.WIFI, com.vungle.warren.downloader.AssetDownloader.NetworkType.CELLULAR, com.vungle.warren.downloader.AssetDownloader.NetworkType.ANY}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.DownloadRequest DownloadRequest(int, int, java.lang.String, java.lang.String, boolean, java.lang.String) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.vungle.warren.downloader.Downloader.NetworkType.WIFI, com.vungle.warren.downloader.Downloader.NetworkType.CELLULAR, com.vungle.warren.downloader.Downloader.NetworkType.ANY}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.DownloadRequest DownloadRequest(int, int, java.lang.String, java.lang.String, boolean, java.lang.String) 1">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.downloader.DownloadRequest.Priority.CRITICAL, com.vungle.warren.downloader.DownloadRequest.Priority.HIGHEST, com.vungle.warren.downloader.DownloadRequest.Priority.HIGH, com.vungle.warren.downloader.DownloadRequest.Priority.LOWEST}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.DownloadRequest int getPriority()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.downloader.DownloadRequest.Priority.CRITICAL, com.vungle.warren.downloader.DownloadRequest.Priority.HIGHEST, com.vungle.warren.downloader.DownloadRequest.Priority.HIGH, com.vungle.warren.downloader.DownloadRequest.Priority.LOWEST}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.DownloadRequest void setPriority(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.downloader.DownloadRequest.Priority.CRITICAL, com.vungle.warren.downloader.DownloadRequest.Priority.HIGHEST, com.vungle.warren.downloader.DownloadRequest.Priority.HIGH, com.vungle.warren.downloader.DownloadRequest.Priority.LOWEST}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.DownloadRequest.Priority">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.vungle.warren.downloader.DownloadRequest.Priority.CRITICAL, com.vungle.warren.downloader.DownloadRequest.Priority.HIGHEST, com.vungle.warren.downloader.DownloadRequest.Priority.HIGH, com.vungle.warren.downloader.DownloadRequest.Priority.LOWEST}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.DownloadRequestMediator boolean is(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.vungle.warren.downloader.DownloadRequestMediator.Status.NEW, com.vungle.warren.downloader.DownloadRequestMediator.Status.IN_PROGRESS, com.vungle.warren.downloader.DownloadRequestMediator.Status.PAUSED, com.vungle.warren.downloader.DownloadRequestMediator.Status.CANCELLED, com.vungle.warren.downloader.DownloadRequestMediator.Status.DONE, com.vungle.warren.downloader.DownloadRequestMediator.Status.ERROR, com.vungle.warren.downloader.DownloadRequestMediator.Status.PUBLISHED}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.DownloadRequestMediator int getStatus()">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.vungle.warren.downloader.DownloadRequestMediator.Status.NEW, com.vungle.warren.downloader.DownloadRequestMediator.Status.IN_PROGRESS, com.vungle.warren.downloader.DownloadRequestMediator.Status.PAUSED, com.vungle.warren.downloader.DownloadRequestMediator.Status.CANCELLED, com.vungle.warren.downloader.DownloadRequestMediator.Status.DONE, com.vungle.warren.downloader.DownloadRequestMediator.Status.ERROR, com.vungle.warren.downloader.DownloadRequestMediator.Status.PUBLISHED}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.DownloadRequestMediator void set(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.vungle.warren.downloader.DownloadRequestMediator.Status.NEW, com.vungle.warren.downloader.DownloadRequestMediator.Status.IN_PROGRESS, com.vungle.warren.downloader.DownloadRequestMediator.Status.PAUSED, com.vungle.warren.downloader.DownloadRequestMediator.Status.CANCELLED, com.vungle.warren.downloader.DownloadRequestMediator.Status.DONE, com.vungle.warren.downloader.DownloadRequestMediator.Status.ERROR, com.vungle.warren.downloader.DownloadRequestMediator.Status.PUBLISHED}" />
+    </annotation>
+  </item>
+  <item name="com.vungle.warren.downloader.Downloader.NetworkType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="flag" val="true" />
+      <val name="value" val="{com.vungle.warren.downloader.Downloader.NetworkType.WIFI, com.vungle.warren.downloader.Downloader.NetworkType.CELLULAR, com.vungle.warren.downloader.Downloader.NetworkType.ANY}" />
+    </annotation>
+  </item>
+</root>
+

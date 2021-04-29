@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat CaptionStyleCompat(int, int, int, int, int, android.graphics.Typeface) 3">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_NONE, com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_OUTLINE, com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_DROP_SHADOW, com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_RAISED, com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_DEPRESSED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat edgeType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_NONE, com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_OUTLINE, com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_DROP_SHADOW, com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_RAISED, com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_DEPRESSED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EdgeType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_NONE, com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_OUTLINE, com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_DROP_SHADOW, com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_RAISED, com.fyber.inneractive.sdk.player.exoplayer2.text.CaptionStyleCompat.EDGE_TYPE_DEPRESSED}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue Cue(android.graphics.Bitmap, float, int, float, int, float, float) 2">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_START, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_MIDDLE, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_END}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue Cue(android.graphics.Bitmap, float, int, float, int, float, float) 4">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_START, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_MIDDLE, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_END}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue Cue(java.lang.CharSequence, android.text.Layout.Alignment, android.graphics.Bitmap, float, int, int, float, int, float, float, boolean, int) 4">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.LINE_TYPE_FRACTION, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.LINE_TYPE_NUMBER}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue Cue(java.lang.CharSequence, android.text.Layout.Alignment, android.graphics.Bitmap, float, int, int, float, int, float, float, boolean, int) 5">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_START, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_MIDDLE, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_END}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue Cue(java.lang.CharSequence, android.text.Layout.Alignment, android.graphics.Bitmap, float, int, int, float, int, float, float, boolean, int) 7">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_START, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_MIDDLE, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_END}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue Cue(java.lang.CharSequence, android.text.Layout.Alignment, float, int, int, float, int, float) 3">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.LINE_TYPE_FRACTION, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.LINE_TYPE_NUMBER}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue Cue(java.lang.CharSequence, android.text.Layout.Alignment, float, int, int, float, int, float) 4">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_START, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_MIDDLE, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_END}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue Cue(java.lang.CharSequence, android.text.Layout.Alignment, float, int, int, float, int, float) 6">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_START, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_MIDDLE, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_END}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue Cue(java.lang.CharSequence, android.text.Layout.Alignment, float, int, int, float, int, float, boolean, int) 3">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.LINE_TYPE_FRACTION, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.LINE_TYPE_NUMBER}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue Cue(java.lang.CharSequence, android.text.Layout.Alignment, float, int, int, float, int, float, boolean, int) 4">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_START, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_MIDDLE, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_END}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue Cue(java.lang.CharSequence, android.text.Layout.Alignment, float, int, int, float, int, float, boolean, int) 6">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_START, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_MIDDLE, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_END}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue lineAnchor">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_START, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_MIDDLE, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_END}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue lineType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.LINE_TYPE_FRACTION, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.LINE_TYPE_NUMBER}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue positionAnchor">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_START, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_MIDDLE, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_END}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.AnchorType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_START, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_MIDDLE, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.ANCHOR_TYPE_END}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.LineType">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.TYPE_UNSET, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.LINE_TYPE_FRACTION, com.fyber.inneractive.sdk.player.exoplayer2.text.Cue.LINE_TYPE_NUMBER}" />
+    </annotation>
+  </item>
+  <item name="com.fyber.inneractive.sdk.player.exoplayer2.text.TextRenderer decoderReplacementState">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{com.fyber.inneractive.sdk.player.exoplayer2.text.TextRenderer.REPLACEMENT_STATE_NONE, com.fyber.inneractive.sdk.player.exoplayer2.text.TextRenderer.REPLACEMENT_STATE_SIGNAL_END_OF_STREAM, com.fyber.inneractive.sdk.player.exoplayer2.text.TextRenderer.REPLACEMENT_STATE_WAIT_END_OF_STREAM}" />
+    </annotation>
+  </item>
+</root>
+
