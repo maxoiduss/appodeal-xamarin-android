@@ -63,6 +63,9 @@
     <Compile Include="Additions\AppodealX\Com.Appodeal.Ads.Adapters.Appodealx.Video.AppodealX.cs" />
     <Compile Include="Additions\Com.Appodeal.Ads.Utils.Version.cs" />
     <Compile Include="Additions\Com.Appodeal.Ads.Adapters.Appodeal.Native_ad.AppodealNative.cs" />
+    <Compile Include="Additions\Ogury\Com.Appodeal.Ads.Adapters.Ogury.Interstitial.OguryInterstitial.cs" />
+    <Compile Include="Additions\Ogury\Com.Appodeal.Ads.Adapters.Ogury.Rewarded_video.OguryRewarded.cs" />
+    <Compile Include="Additions\Ogury\Com.Appodeal.Ads.Adapters.Ogury.OguryNetwork.Builder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Additions\AboutAdditions.txt" />
@@ -87,6 +90,7 @@
     <None Include="JavaDocs\com.amazon.android.mobile-ads-6.0.0-javadoc.jar" />
     <None Include="Resources\Resource.Designer.cs" />
     <None Include="JavaDocs\readme.txt" />
+    <None Include="Additions\Smaato\Com.Smaato.Sdk.Core.Network.NetworkHttpRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\EnumFields.xml" />
@@ -98,6 +102,8 @@
     <Folder Include="Jars\" />
     <Folder Include="Annotations\" />
     <Folder Include="Aars\" />
+    <Folder Include="Additions\Ogury\" />
+    <Folder Include="Additions\Smaato\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedReferenceJar Include="Jars\com.adcolony.sdk-4.3.0.jar" />
@@ -120,12 +126,8 @@
     <EmbeddedReferenceJar Include="Jars\com.mopub.volley.mopub-volley.mopub-volley-2.1.0.jar" />
     <EmbeddedReferenceJar Include="Jars\com.my.target.mytarget-sdk.mytarget-sdk-5.11.7.jar" />
     <EmbeddedReferenceJar Include="Jars\com.ryanharter.auto.value.auto-value-gson-runtime.auto-value-gson-runtime-1.3.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.module-core.module-core-21.5.4.jar" />
     <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.module-richmedia.module-richmedia-21.5.4.jar" />
     <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.module-video.module-video-21.5.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk.smaato-sdk-21.5.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-base.smaato-sdk-base-21.5.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-interstitial.smaato-sdk-interstitial-21.5.4.jar" />
     <EmbeddedReferenceJar Include="Jars\com.startapp.inapp-sdk.inapp-sdk-4.6.3.jar" />
     <EmbeddedReferenceJar Include="Jars\com.tapjoy.tapjoy-android-sdk.tapjoy-android-sdk-12.4.2.jar" />
     <EmbeddedReferenceJar Include="Jars\com.unity3d.ads.unity-ads.unity-ads-3.5.1.jar" />
@@ -139,15 +141,11 @@
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\facebook-2.8.1.8.jar" />
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\flurry-2.6.5.1.jar" />
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\fyber-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\inmobi-2.6.5.1.jar" />
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\inner-active-2.6.5.1.jar" />
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\ironsource-2.8.1.8.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\mopub-2.6.5.1.jar" />
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\mraid-2.8.1.2.jar" />
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\my_target-2.8.1.8.jar" />
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\nast-2.8.1.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\ogury-2.8.1.6.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\smaato-2.8.1.4.jar" />
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\startapp-2.8.1.7.jar" />
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\tapjoy-2.6.5.2.jar" />
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\unity_ads-2.8.1.7.jar" />
@@ -174,6 +172,15 @@
     <EmbeddedReferenceJar Include="Jars\io.bidmachine.ads.networks.my_target-1.6.1.4.jar" />
     <EmbeddedReferenceJar Include="Jars\io.sweers.autotransient.autotransient-1.0.0.jar" />
     <EmbeddedReferenceJar Include="Jars\lint.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\smaato-2.8.1.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\mopub-2.6.5.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\inmobi-2.6.5.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.module-core.module-core-21.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk.smaato-sdk-21.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-base.smaato-sdk-base-21.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-interstitial.smaato-sdk-interstitial-21.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-banner.smaato-sdk-banner-21.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.explorestack.ogury.sdk.sdk-4.7.2.jar" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedJar Include="Jars\com.appodeal.ads-2.8.1.1.jar" />
@@ -184,6 +191,7 @@
     <EmbeddedJar Include="Jars\protobuf-models-1.1.0.jar" />
     <EmbeddedJar Include="Jars\com.appodealx.r-classesX.jar" />
     <EmbeddedJar Include="Jars\com.appodealx.tapjoy-2.6.5.2-r-classes.jar" />
+    <EmbeddedJar Include="Jars\com.appodeal.ads.sdk.networks\ogury-2.8.1.6.jar" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\annotations.xml" />
@@ -228,10 +236,10 @@
     <EmbeddedResource Include="Annotations\com\yandex\metrica\impl\annotations.xml" />
   </ItemGroup>
   <ItemGroup>
-    <JavaDocJar Include="JavaDocs\com.appodeal.ads.sdk.core-2.8.1-javadoc.jar" />
+    <LibraryProjectZip Include="Aars\resources.aar" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Aars\resources.aar" />
+    <JavaDocJar Include="JavaDocs\com.appodeal.ads.sdk.core-2.8.1-javadoc.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <Import Project="packages\Xamarin.Jetbrains.Annotations.13.0.0.2\build\monoandroid90\Xamarin.Jetbrains.Annotations.targets" Condition="Exists('packages\Xamarin.Jetbrains.Annotations.13.0.0.2\build\monoandroid90\Xamarin.Jetbrains.Annotations.targets')" />

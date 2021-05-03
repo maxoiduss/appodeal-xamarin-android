@@ -6,6 +6,7 @@
 	<!-- Appodeal native_ad fix - using Additions -->
 	<attr path="api/package[@name='com.appodeal.ads.adapters.appodeal.native_ad']/class[@name='AppodealNative']/method[@name='load']" name="name">loadNative</attr>
 	<!-- AppodealX ad types fix - using Additions -->
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx']/class[@name='AppodealXNetwork.builder']/method[@name='build']" name="visibility">protected</attr>
 	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx']/class[@name='AppodealXNetwork.builder']/method[@name='build']" name="name">buildNetwork</attr>
 	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.banner']/class[@name='AppodealX']/method[@name='load']" name="name">loadBanner</attr>
 	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.native_ad']/class[@name='AppodealX']/method[@name='load']" name="name">loadNative</attr>
@@ -15,7 +16,18 @@
 	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.video']/class[@name='AppodealX']/method[@name='show']" name="name">showVideo</attr>
 	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.interstitial']/class[@name='AppodealX']/method[@name='load']" name="name">loadInterstitial</attr>
 	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.interstitial']/class[@name='AppodealX']/method[@name='show']" name="name">showInterstitial</attr>
-	
+	<!-- Ogury ad types fix - using Additions  -->
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury']/class[@name='OguryNetwork.builder']/method[@name='build']" name="visibility">protected</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury']/class[@name='OguryNetwork.builder']/method[@name='build']" name="name">buildNetwork</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.interstitial']/class[@name='OguryInterstitial']/method[@name='load']" name="name">loadInterstitial</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.interstitial']/class[@name='OguryInterstitial']/method[@name='show']" name="name">showInterstitial</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.rewarded_video']/class[@name='OguryRewarded']/method[@name='load']" name="name">loadRewarded</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.rewarded_video']/class[@name='OguryRewarded']/method[@name='show']" name="name">showRewarded</attr>
+	<!-- Smaato ad types fix -->
+
+	<!-- Change the visibility of a method - example--> 
+	<!-- <attr path="/api/package[@name='namespace']/class[@name='ClassName']/method[@name='MethodName']" name="visibility">public</attr> -->
+
 	<!--//Constants fix - examples from previous version -->
 	<!--
 	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='INTERSTITIAL']" name="managedName">INTERSTITIAL</attr>
