@@ -6,7 +6,6 @@ namespace Com.Appodeal.Ads.Adapters.Appodealx
 	{
 		public partial class Builder : global::Com.Appodeal.Ads.AdNetworkBuilder
 		{
-			[Register("build", "()Lcom/appodeal/ads/adapters/appodealx/AppodealXNetwork;", "GetBuildHandler")]
 			public override unsafe global::Com.Appodeal.Ads.AdNetwork Build()
 			{
 				return BuildNetwork();

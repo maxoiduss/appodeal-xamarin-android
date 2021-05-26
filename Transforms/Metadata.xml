@@ -1,44 +1,65 @@
 ﻿<metadata>
+	<!-- Very useful info: https://developer.mozilla.org/en-US/docs/Web/XPath/Functions -->
+	<!-- Example: <remove-node path="/api/package[starts-with (@name, 'io.presage')]" />  -->
+
+	<!-- Common Appodeal fixes - obfuscation -->
+	<attr path="api/package[@name='com.appodeal.ads']/class" name="obfuscated">false</attr>
+	<attr path="api/package[@name='com.appodeal.ads.api']/class" name="obfuscated">false</attr>
+	<attr path="api/package[@name='com.appodeal.ads.native_ad.views']/class" name="obfuscated">false</attr>
+	<attr path="api/package[@name='com.appodeal.ads']/class[@name='f.b']" name="obfuscated">true</attr>
+	<attr path="/api/package[@name='com.appodeal.ads']/class[@name='NetworkRequest.a.a']" name="obfuscated">true</attr>
+	<attr path="/api/package[@name='com.appodeal.ads']/class[@name='NetworkRequest.a']" name="obfuscated">true</attr>
+	<attr path="/api/package[@name='com.appodeal.ads']/class[@name='NetworkRequest.Method']" name="obfuscated">true</attr>
+
+	<!-- Special Appodeal fixes -->
+
 	<!-- NetworkInitializationListener fix -->
 	<attr path="/api/package[@name='com.appodeal.ads']/interface[@name='NetworkInitializationListener']/method[@name='onInitializationFailed']" name="argsType">InitializationNetworkFailedEventArgs</attr>
 	<attr path="/api/package[@name='com.appodeal.ads']/interface[@name='NetworkInitializationListener']/method[@name='onInitializationFinished']" name="argsType">InitializationNetworkFinishedEventArgs</attr>
-	
+
+	<!-- SimpleJsonObjectDataBinder - autofix using Additions -->
+
 	<!-- Appodeal native_ad fix - using Additions -->
 	<attr path="api/package[@name='com.appodeal.ads.adapters.appodeal.native_ad']/class[@name='AppodealNative']/method[@name='load']" name="name">loadNative</attr>
+
 	<!-- AppodealX ad types fix - using Additions -->
 	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx']/class[@name='AppodealXNetwork.builder']/method[@name='build']" name="visibility">protected</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx']/class[@name='AppodealXNetwork.builder']/method[@name='build']" name="name">buildNetwork</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.banner']/class[@name='AppodealX']/method[@name='load']" name="name">loadBanner</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.native_ad']/class[@name='AppodealX']/method[@name='load']" name="name">loadNative</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.rewarded_video']/class[@name='AppodealX']/method[@name='load']" name="name">loadRewarded</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.rewarded_video']/class[@name='AppodealX']/method[@name='show']" name="name">showRewarded</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.video']/class[@name='AppodealX']/method[@name='load']" name="name">loadVideo</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.video']/class[@name='AppodealX']/method[@name='show']" name="name">showVideo</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.interstitial']/class[@name='AppodealX']/method[@name='load']" name="name">loadInterstitial</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.interstitial']/class[@name='AppodealX']/method[@name='show']" name="name">showInterstitial</attr>
-	<!-- Ogury ad types fix - using Additions  -->
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx']/class[@name='AppodealXNetwork.builder']/method[@name='build']" name="managedName">BuildNetwork</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.banner']/class[@name='AppodealX']/method[@name='load']" name="visibility">protected</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.banner']/class[@name='AppodealX']/method[@name='load']" name="managedName">LoadBanner</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.native_ad']/class[@name='AppodealX']/method[@name='load']" name="visibility">protected</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.native_ad']/class[@name='AppodealX']/method[@name='load']" name="managedName">LoadNative</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.rewarded_video']/class[@name='AppodealX']/method[@name='load']" name="visibility">protected</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.rewarded_video']/class[@name='AppodealX']/method[@name='load']" name="managedName">LoadRewarded</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.rewarded_video']/class[@name='AppodealX']/method[@name='show']" name="visibility">protected</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.rewarded_video']/class[@name='AppodealX']/method[@name='show']" name="managedName">ShowRewarded</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.video']/class[@name='AppodealX']/method[@name='load']" name="visibility">protected</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.video']/class[@name='AppodealX']/method[@name='load']" name="managedName">LoadVideo</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.video']/class[@name='AppodealX']/method[@name='show']" name="visibility">protected</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.video']/class[@name='AppodealX']/method[@name='show']" name="managedName">ShowVideo</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.interstitial']/class[@name='AppodealX']/method[@name='load']" name="visibility">protected</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.interstitial']/class[@name='AppodealX']/method[@name='load']" name="managedName">LoadInterstitial</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.interstitial']/class[@name='AppodealX']/method[@name='show']" name="visibility">protected</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.appodealx.interstitial']/class[@name='AppodealX']/method[@name='show']" name="managedName">ShowInterstitial</attr>
+
+	<!-- Ogury ad types fix - using Additions - example -->
 	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury']/class[@name='OguryNetwork.builder']/method[@name='build']" name="visibility">protected</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury']/class[@name='OguryNetwork.builder']/method[@name='build']" name="name">buildNetwork</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.interstitial']/class[@name='OguryInterstitial']/method[@name='load']" name="name">loadInterstitial</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.interstitial']/class[@name='OguryInterstitial']/method[@name='show']" name="name">showInterstitial</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.rewarded_video']/class[@name='OguryRewarded']/method[@name='load']" name="name">loadRewarded</attr>
-	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.rewarded_video']/class[@name='OguryRewarded']/method[@name='show']" name="name">showRewarded</attr>
-	<!-- Smaato ad types fix -->
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury']/class[@name='OguryNetwork.builder']/method[@name='build']" name="managedName">BuildNetwork</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.interstitial']/class[@name='OguryInterstitial']/method[@name='load']" name="visibility">protected</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.interstitial']/class[@name='OguryInterstitial']/method[@name='load']" name="managedName">LoadInterstitial</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.interstitial']/class[@name='OguryInterstitial']/method[@name='show']" name="visibility">protected</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.interstitial']/class[@name='OguryInterstitial']/method[@name='show']" name="managedName">ShowInterstitial</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.rewarded_video']/class[@name='OguryRewarded']/method[@name='load']" name="visibility">protected</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.rewarded_video']/class[@name='OguryRewarded']/method[@name='load']" name="managedName">LoadRewarded</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.rewarded_video']/class[@name='OguryRewarded']/method[@name='show']" name="visibility">protected</attr>
+	<attr path="api/package[@name='com.appodeal.ads.adapters.ogury.rewarded_video']/class[@name='OguryRewarded']/method[@name='show']" name="managedName">ShowRewarded</attr>
+	<!-- Ogury ad types fix - adding  nodes - example -->
+	<!-- <add-node path="/api/package[@name='com.ogury.ed']">
+		<interface abstract="true"  deprecated="not deprecated" final="false" name="OguryAdListener" visibility="public">
+			<method abstract="false" deprecated="not deprecated" final="false" name="onActivityCreated" jni-signature="(Landroid/app/Activity;Landroid/os/Bundle;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+				<parameter name="paramOguryError" type="android.app.Activity" jni-type="Landroid/app/Activity;" />
+			</method>
+		</interface>
+	</add-node> -->
 
-	<!-- Change the visibility of a method - example--> 
-	<!-- <attr path="/api/package[@name='namespace']/class[@name='ClassName']/method[@name='MethodName']" name="visibility">public</attr> -->
-
-	<!--//Constants fix - examples from previous version -->
-	<!--
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='INTERSTITIAL']" name="managedName">INTERSTITIAL</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER']" name="managedName">BANNER</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER_BOTTOM']" name="managedName">BANNER_BOTTOM</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER_TOP']" name="managedName">BANNER_TOP</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='BANNER_VIEW']" name="managedName">BANNER_VIEW</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='MREC']" name="managedName">MREC</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='NATIVE']" name="managedName">NATIVE</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='NONE']" name="managedName">NONE</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='NON_SKIPPABLE_VIDEO']" name="managedName">NON_SKIPPABLE_VIDEO</attr>
-	<attr path="api/package[@name='com.appodeal.ads']/class[@name='Appodeal']/field[@name='REWARDED_VIDEO']" name="managedName">REWARDED_VIDEO</attr>
-	-->
 </metadata>

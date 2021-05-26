@@ -16,6 +16,7 @@
     <AndroidTlsProvider></AndroidTlsProvider>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+    <AndroidApplication>True</AndroidApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,12 +32,13 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -66,6 +68,19 @@
     <Compile Include="Additions\Ogury\Com.Appodeal.Ads.Adapters.Ogury.Interstitial.OguryInterstitial.cs" />
     <Compile Include="Additions\Ogury\Com.Appodeal.Ads.Adapters.Ogury.Rewarded_video.OguryRewarded.cs" />
     <Compile Include="Additions\Ogury\Com.Appodeal.Ads.Adapters.Ogury.OguryNetwork.Builder.cs" />
+    <Compile Include="Additions\Com.Appodeal.Ads.NetworkRequest.SimpleJsonObjectDataBinder.cs" />
+    <Compile Include="Additions\Ogury\Com.Ogury.ED.IOguryBannerAdListener.cs" />
+    <Compile Include="Additions\Ogury\Com.Ogury.ED.IOguryInterstitialAdListener.cs" />
+    <Compile Include="Additions\Ogury\Com.Ogury.ED.IOguryOptinVideoAdListener.cs" />
+    <Compile Include="Additions\Ogury\Com.Ogury.ED.IOguryThumbnailAdListener.cs" />
+    <Compile Include="Additions\Ogury\Com.Ogury.Ed.IOguryAdListener.cs" />
+    <Compile Include="Additions\Ogury\Com.Ogury.Core.OguryError.cs" />
+    <Compile Include="Additions\Ogury\Com.Ogury.ED.OguryReward.cs" />
+    <Compile Include="Additions\Squareup\Com.Squareup.Picasso.ICallback.cs" />
+    <Compile Include="Additions\Smaato\Com.Smaato.Sdk.Rewarded.IEventListener.cs" />
+    <Compile Include="Additions\Smaato\Com.Smaato.Sdk.Rewarded.RewardedError.cs" />
+    <Compile Include="Additions\Smaato\Com.Smaato.Sdk.Rewarded.RewardedInterstitialAd.cs" />
+    <Compile Include="Additions\Smaato\Com.Smaato.Sdk.Rewarded.RewardedRequestError.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Additions\AboutAdditions.txt" />
@@ -91,6 +106,8 @@
     <None Include="Resources\Resource.Designer.cs" />
     <None Include="JavaDocs\readme.txt" />
     <None Include="Additions\Smaato\Com.Smaato.Sdk.Core.Network.NetworkHttpRequest.cs" />
+    <None Include="Aars\Annotations\annotations.zip" />
+    <None Include="Aars\Annotations\readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\EnumFields.xml" />
@@ -100,10 +117,11 @@
   <ItemGroup />
   <ItemGroup>
     <Folder Include="Jars\" />
-    <Folder Include="Annotations\" />
     <Folder Include="Aars\" />
     <Folder Include="Additions\Ogury\" />
     <Folder Include="Additions\Smaato\" />
+    <Folder Include="Aars\Annotations\" />
+    <Folder Include="Additions\Squareup\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedReferenceJar Include="Jars\com.adcolony.sdk-4.3.0.jar" />
@@ -156,8 +174,6 @@
     <EmbeddedReferenceJar Include="Jars\com.explorestack.consent-1.0.4.jar" />
     <EmbeddedReferenceJar Include="Jars\com.explorestack.consent-models-1.0.2.jar" />
     <EmbeddedReferenceJar Include="Jars\com.explorestack.iab-0.5.9.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.explorestack.protobuf-java-1.0.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.explorestack.protobuf-models-1.1.0.jar" />
     <EmbeddedReferenceJar Include="Jars\com.android.tools.lint.lint-gradle-api.lint-gradle-api-26.5.4.jar" />
     <EmbeddedReferenceJar Include="Jars\com.google.android.exoplayer.exoplayer-core.exoplayer-core-2.11.7.jar" />
     <EmbeddedReferenceJar Include="Jars\com.google.android.exoplayer.exoplayer-hls.exoplayer-hls-2.8.4.jar" />
@@ -171,16 +187,22 @@
     <EmbeddedReferenceJar Include="Jars\io.bidmachine.ads.networks.facebook-1.6.1.5.jar" />
     <EmbeddedReferenceJar Include="Jars\io.bidmachine.ads.networks.my_target-1.6.1.4.jar" />
     <EmbeddedReferenceJar Include="Jars\io.sweers.autotransient.autotransient-1.0.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\lint.jar" />
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\smaato-2.8.1.4.jar" />
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\mopub-2.6.5.1.jar" />
     <EmbeddedReferenceJar Include="Jars\com.appodeal.ads.sdk.networks\inmobi-2.6.5.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.module-core.module-core-21.5.4.jar" />
     <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk.smaato-sdk-21.5.4.jar" />
     <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-base.smaato-sdk-base-21.5.4.jar" />
     <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-interstitial.smaato-sdk-interstitial-21.5.4.jar" />
     <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-banner.smaato-sdk-banner-21.5.4.jar" />
-    <EmbeddedReferenceJar Include="Jars\com.explorestack.ogury.sdk.sdk-4.7.2.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.flurry.android.version.lint.lint-11.6.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\io.bidmachine.protobuf.protobuf-models-1.1.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.explorestack.protobuf-java-1.0.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.explorestack.ogury.sdk.sdk-5.0.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.squareup.picasso.picasso-2.71828.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.squareup.tape.tape-1.2.3.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.smaato-sdk-rewarded-ads.smaato-sdk-rewarded-ads-21.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.smaato.android.sdk.module-core.module-core-21.5.4.jar" />
+    <EmbeddedReferenceJar Include="Jars\com.mopub.mopub-sdk-native-static.mopub-sdk-native-static-5.8.0.jar" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedJar Include="Jars\com.appodeal.ads-2.8.1.1.jar" />
@@ -188,52 +210,10 @@
     <EmbeddedJar Include="Jars\com.appodeal.ads.sdk.core-2.8.1.jar" />
     <EmbeddedJar Include="Jars\com.appodeal.ads.sdk.networks\appodeal-2.8.1.2.jar" />
     <EmbeddedJar Include="Jars\com.appodeal.ads.sdk.networks\appodealx-2.6.5.1.jar" />
-    <EmbeddedJar Include="Jars\protobuf-models-1.1.0.jar" />
     <EmbeddedJar Include="Jars\com.appodealx.r-classesX.jar" />
     <EmbeddedJar Include="Jars\com.appodealx.tapjoy-2.6.5.2-r-classes.jar" />
     <EmbeddedJar Include="Jars\com.appodeal.ads.sdk.networks\ogury-2.8.1.6.jar" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\audio\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\decoder\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\drm\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\extractor\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\extractor\mkv\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\extractor\mp3\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\extractor\mp4\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\extractor\ts\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\extractor\wav\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\source\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\source\chunk\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\text\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\text\cea\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\text\ttml\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\text\webvtt\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\upstream\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\upstream\cache\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\util\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\fyber\inneractive\sdk\player\exoplayer2\video\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\smaato\sdk\core\api\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\smaato\sdk\video\vast\build\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\smaato\sdk\video\vast\model\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\smaato\sdk\video\vast\player\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\smaato\sdk\video\vast\tracking\macro\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\smaato\sdk\video\vast\widget\element\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\startapp\sdk\adsbase\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\startapp\sdk\rsc\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\startapp\sdk\rsc\triggers\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\vungle\warren\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\vungle\warren\downloader\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\vungle\warren\error\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\vungle\warren\model\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\vungle\warren\persistence\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\vungle\warren\tasks\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\vungle\warren\tasks\runnable\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\vungle\warren\ui\contract\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\vungle\warren\ui\presenter\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\vungle\warren\ui\view\annotations.xml" />
-    <EmbeddedResource Include="Annotations\com\yandex\metrica\impl\annotations.xml" />
+    <EmbeddedJar Include="Jars\com.explorestack.protobuf-models-1.1.0.jar" />
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Aars\resources.aar" />

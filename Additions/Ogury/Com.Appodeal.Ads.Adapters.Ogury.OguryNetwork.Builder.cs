@@ -6,7 +6,6 @@ namespace Com.Appodeal.Ads.Adapters.Ogury
 	{
 		public partial class Builder : global::Com.Appodeal.Ads.AdNetworkBuilder
 		{
-			[Register("build", "()Lcom/appodeal/ads/adapters/ogury/OguryNetwork;", "GetBuildHandler")]
 			public override unsafe global::Com.Appodeal.Ads.AdNetwork Build()
 			{
 				return BuildNetwork();

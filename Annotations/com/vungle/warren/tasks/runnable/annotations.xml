@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<root>
-  <item name="com.vungle.warren.tasks.runnable.JobRunnable java.lang.Integer getPriority()">
-    <annotation name="androidx.annotation.IntDef">
-      <val name="value" val="{com.vungle.warren.tasks.JobInfo.Priority.LOWEST, com.vungle.warren.tasks.JobInfo.Priority.LOW, com.vungle.warren.tasks.JobInfo.Priority.NORMAL, com.vungle.warren.tasks.JobInfo.Priority.HIGH, com.vungle.warren.tasks.JobInfo.Priority.HIGHEST, com.vungle.warren.tasks.JobInfo.Priority.CRITICAL}" />
-    </annotation>
-  </item>
-</root>
-

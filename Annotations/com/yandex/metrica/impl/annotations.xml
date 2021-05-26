@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<root>
-  <item name="com.yandex.metrica.impl.WifiDataProvider int getWifiAccessPointState(android.content.Context)">
-    <annotation name="android.support.annotation.IntDef">
-      <val name="value" val="{com.yandex.metrica.impl.WifiDataProvider.WIFI_AP_STATE_UNKNOWN, com.yandex.metrica.impl.WifiDataProvider.WIFI_AP_STATE_DISABLING, com.yandex.metrica.impl.WifiDataProvider.WIFI_AP_STATE_DISABLED, com.yandex.metrica.impl.WifiDataProvider.WIFI_AP_STATE_ENABLING, com.yandex.metrica.impl.WifiDataProvider.WIFI_AP_STATE_ENABLED, com.yandex.metrica.impl.WifiDataProvider.WIFI_AP_STATE_FAILED}" />
-    </annotation>
-  </item>
-</root>
-
