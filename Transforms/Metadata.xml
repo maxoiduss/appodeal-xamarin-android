@@ -1,4 +1,6 @@
 ﻿<metadata>
+	<!-- Please use Java Decompiler - it is very powerful helper -->
+
 	<!-- Very useful info: https://developer.mozilla.org/en-US/docs/Web/XPath/Functions -->
 	<!-- Example: <remove-node path="/api/package[starts-with (@name, 'io.presage')]" />  -->
 

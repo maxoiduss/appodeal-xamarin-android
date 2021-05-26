@@ -105,9 +105,9 @@
     <None Include="JavaDocs\com.amazon.android.mobile-ads-6.0.0-javadoc.jar" />
     <None Include="Resources\Resource.Designer.cs" />
     <None Include="JavaDocs\readme.txt" />
-    <None Include="Additions\Smaato\Com.Smaato.Sdk.Core.Network.NetworkHttpRequest.cs" />
     <None Include="Aars\Annotations\annotations.zip" />
     <None Include="Aars\Annotations\readme.txt" />
+    <None Include="Aars\readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\EnumFields.xml" />
